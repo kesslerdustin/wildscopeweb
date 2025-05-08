@@ -64,7 +64,9 @@
     "form_email": "E-Mail",
     "form_message": "Nachricht",
     "form_submit": "Nachricht senden",
-    "content_placeholder": "[Kontaktinformationen oder Formular werden hier angezeigt. Im Moment ist dies ein Platzhalter.]"
+    "content_placeholder": "[Kontaktinformationen oder Formular werden hier angezeigt. Im Moment ist dies ein Platzhalter.]",
+    "contact_directly": "Direkt per E-Mail kontaktieren",
+    "contact_form_title": "Oder nutzen Sie das Kontaktformular"
   },
   "NotFound": {
     "title": "Seite nicht gefunden",

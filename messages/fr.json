@@ -64,7 +64,9 @@
     "form_email": "Email",
     "form_message": "Message",
     "form_submit": "Send Message",
-    "content_placeholder": "[Contact information or form will be here. For now, this is a placeholder.]"
+    "content_placeholder": "[Contact information or form will be here. For now, this is a placeholder.]",
+    "contact_directly": "Contact directly via email",
+    "contact_form_title": "Or use the contact form"
   },
   "NotFound": {
     "title": "Page Not Found",
@@ -74,5 +76,6 @@
   "General": {
     "loading": "Loading...",
     "comingSoon": "Coming Soon"
-  }
+  },
+  "FAQ": "FAQ"
 } 
