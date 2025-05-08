@@ -1,0 +1,79 @@
+{
+  "Navigation": {
+    "home": "Startseite",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz",
+    "contact": "Kontakt",
+    "language": "Sprache"
+  },
+  "Hero": {
+    "title": "Willkommen bei Wildscope!",
+    "subtitle": "Dein ultimativer Abenteuerbegleiter. Entdecke, erkunde und teile.",
+    "cta": "Jetzt starten",
+    "cta_subtext": "Verfügbar für iOS & Android"
+  },
+  "About": {
+    "title": "Was ist Wildscope?",
+    "paragraph1": "Wildscope ist dein interaktiver Begleiter zur Entdeckung der Natur. Ob du in den Wäldern wanderst, mit deinem Hund durch einen Stadtpark spazierst oder vom Sofa aus den Amazonas erkundest, Wildscope hilft dir, auf neue, bedeutungsvolle Weise mit der Umwelt in Verbindung zu treten.",
+    "paragraph2": "Von gemütlichen Spaziergängen bis hin zu abenteuerlichen Reisen bietet Wildscope eine einzigartige Mischung aus KI-Technologie, Offline-Erkundungswerkzeugen und einer globalen Gemeinschaft von Naturliebhabern."
+  },
+  "Features": {
+    "title": "Erstaunliche Funktionen",
+    "feature1_title": "Essentielle Erkundungswerkzeuge",
+    "feature1_desc": "Navigiere selbstbewusst mit unserem maßgeschneiderten Wegpunkt-Kompass, entschlüssele Signale mit dem eingebauten Morse-Tool und greife auf die umfassende Kntos-Bibliothek zu—alles, was du für Abenteuer brauchst, an einem Ort.",
+    "feature2_title": "Wildtiere beobachten",
+    "feature2_desc": "Entdecke Flora, Fauna und Pilze in deiner Umgebung mit unserem fortschrittlichen Tracking-System. Protokolliere deine Wildtierbeobachtungen, greife auf detaillierte Arteninformationen einschließlich standortspezifischer Daten, hochwertige Bilder, interaktive Habitatkarten zu und trage zu weltweiten Citizen-Science-Projekten bei.",
+    "feature3_title": "Verbinden & Teilen",
+    "feature3_desc": "Werde Teil einer lebendigen Gemeinschaft von Naturliebhabern und Entdeckern. Finde spannende Entdeckungen von anderen Abenteurern, besuche ihre markierten Orte, like und kommentiere ihre Funde oder teile deine eigenen einzigartigen Erlebnisse, um andere zu inspirieren.",
+    "feature4_title": "Lokale & Globale Erkundungsmodi",
+    "feature4_desc": "Entdecke die Natur an deinem aktuellen Standort oder erkunde ferne Biome und Ökosysteme von zu Hause aus. Sobald ein Gebiet geladen ist, funktionieren Artendaten und detaillierte Karten völlig offline und helfen dir, auch ohne Internetzugang zu navigieren—perfekt für abgelegene Abenteuer.",
+    "feature5_title": "Quiz & Textabenteuer",
+    "feature5_desc": "Mache das Lernen angenehm mit unserer Sammlung von grundlegenden Naturquizzes und dynamisch generierten, die lokale Daten verwenden. Teste deine Überlebensfähigkeiten durch immersive Textabenteuer in vorgenerierten Szenarien oder entfessle deine Kreativität, indem du deine eigenen Wildnisherausforderungen gestaltest.",
+    "feature6_title": "Wildscope Coach",
+    "feature6_desc": "Chatte mit deinem KI-gestützten Begleiter, der deine Umgebung versteht. Teile Bilder zur sofortigen Identifikation, stelle Fragen zu nahegelegenen Arten und Sehenswürdigkeiten und erhalte personalisierte Anleitungen für deine Outdoor-Abenteuer—es ist, als hättest du einen Naturexperten in der Tasche."
+  },
+  "CallToAction": {
+    "title": "Bereit, dein Abenteuer zu beginnen?",
+    "subtitle": "Lade Wildscope herunter und beginne zu erkunden — ob tief in der Natur oder auf deinem Wohnzimmersofa.",
+    "appstore": "App Store",
+    "playstore": "Google Play",
+    "button": "Wildscope jetzt herunterladen"
+  },
+  "Footer": {
+    "copyright": "© {year} Wildscope. Alle Rechte vorbehalten.",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz",
+    "contact": "Kontakt"
+  },
+  "CookieBanner": {
+    "message": "Diese Website verwendet Cookies, um sicherzustellen, dass du die beste Erfahrung auf unserer Website machst.",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen"
+  },
+  "ImpressumPage": {
+    "title": "Impressum",
+    "content_placeholder": "[Hier wird der Inhalt des Impressums hinzugefügt. Bitte stellen Sie die erforderlichen rechtlichen Informationen bereit.]"
+  },
+  "PrivacyPage": {
+    "title": "Datenschutzerklärung",
+    "content_placeholder": "[Hier wird der Inhalt der Datenschutzrichtlinie hinzugefügt. Bitte beschreiben Sie Ihre Datenverarbeitungspraktiken.]"
+  },
+  "ContactPage": {
+    "title": "Kontaktiere uns",
+    "form_name": "Name",
+    "form_email": "E-Mail",
+    "form_message": "Nachricht",
+    "form_submit": "Nachricht senden",
+    "content_placeholder": "[Kontaktinformationen oder Formular werden hier angezeigt. Im Moment ist dies ein Platzhalter.]"
+  },
+  "NotFound": {
+    "title": "Seite nicht gefunden",
+    "message": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "goHome": "Zur Startseite"
+  },
+  "General": {
+    "loading": "Wird geladen...",
+    "comingSoon": "Demnächst verfügbar"
+  },
+  "FAQ": "FAQ"
+} 
