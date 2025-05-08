@@ -1,5 +1,5 @@
 import {unstable_setRequestLocale} from 'next-intl/server';
-import HomeContent from './HomeContent';
+import WildscopeHome from '@/app/components/WildscopeHome';
 
 type Props = {
   params: {locale: string};
@@ -11,5 +11,5 @@ export default function HomePage({params: {locale}}: Props) {
   unstable_setRequestLocale(locale);
   
   // Render the client component with the locale
-  return <HomeContent locale={locale} />;
+  return <WildscopeHome locale={locale} />;
 } 

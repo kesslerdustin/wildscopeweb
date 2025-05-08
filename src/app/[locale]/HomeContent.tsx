@@ -1,15 +1,16 @@
 'use client';
 
+import React from 'react';
 import {useTranslations} from 'next-intl';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 import CookieBanner from '@/components/CookieBanner';
 
-type Props = {
+type HomeContentProps = {
   locale: string;
 };
 
-export default function HomeContent({locale}: Props) {
+export default function HomeContent({ locale }: HomeContentProps) {
   const t = useTranslations('Hero');
   const tFeatures = useTranslations('Features');
   const tCta = useTranslations('CallToAction');

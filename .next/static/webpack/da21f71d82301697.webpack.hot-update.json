@@ -1,0 +1,1 @@
+{"c":["app/[locale]/page","app/[locale]/impressum/page","app/[locale]/datenschutz/page","app/[locale]/kontakt/page","webpack"],"r":["_app-pages-browser_messages_en_json"],"m":["(app-pages-browser)/./messages lazy recursive ^\\.\\/.*\\.json$","(app-pages-browser)/./messages/en.json"]}

@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("_app-pages-browser_messages_en_json",{
+
+/***/ "(app-pages-browser)/./messages/en.json":
+/*!**************************!*\
+  !*** ./messages/en.json ***!
+  \**************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = /*#__PURE__*/JSON.parse('{"Navigation":{"home":"Home","impressum":"Impressum","privacy":"Privacy Policy","contact":"Contact","language":"Language"},"Hero":{"title":"Welcome to Wildscope!","subtitle":"Your ultimate adventure companion. Discover, explore, and share.","cta":"Get Started","cta_subtext":"Available on iOS & Android"},"About":{"title":"What Is Wildscope?","paragraph1":"Wildscope is your interactive companion for discovering nature. Whether you\'re hiking in the woods, walking your dog through a city park, or exploring the Amazon from your couch, Wildscope helps you connect with the environment in new, meaningful ways.","paragraph2":"From casual walks to adventurous journeys, Wildscope offers a unique blend of AI technology, offline exploration tools, and a global community of nature lovers."},"Features":{"title":"Amazing Features","feature1_title":"Essential Exploration Tools","feature1_desc":"Navigate with confidence using our custom waypoint compass, decode signals with the built-in Morse tool, and access the comprehensive Kntos-library—everything you need for adventure, all in one place.","feature2_title":"Track Wildlife","feature2_desc":"Discover Flora, Fauna, and Fungi in your surroundings with our advanced tracking system. Log your wildlife sightings, access detailed species information including location-specific data, high-quality images, interactive habitat maps, and contribute to citizen science projects worldwide.","feature3_title":"Connect & Share","feature3_desc":"Join a community of nature lovers and share your experiences.","feature4_title":"Local & Global Exploration Modes","feature4_desc":"Discover nature in your current location or browse distant biomes and ecosystems from home.","feature5_title":"Quizzes, Adventures & Challenges","feature5_desc":"Make learning fun through interactive content and games."},"CallToAction":{"title":"Ready to Start Your Adventure?","subtitle":"Download Wildscope and start exploring — whether you\'re deep in nature or on your living room couch.","appstore":"App Store","playstore":"Google Play","button":"Download Wildscope Now"},"Footer":{"copyright":"© {year} Wildscope. All rights reserved.","impressum":"Impressum","privacy":"Privacy Policy","contact":"Contact"},"CookieBanner":{"message":"This website uses cookies to ensure you get the best experience on our website.","accept":"Accept","decline":"Decline"},"ImpressumPage":{"title":"Impressum","content_placeholder":"[Impressum content will be added here. Please provide the necessary legal information.]"},"PrivacyPage":{"title":"Privacy Policy (Datenschutz)","content_placeholder":"[Privacy Policy content will be added here. Please detail your data handling practices.]"},"ContactPage":{"title":"Contact Us","form_name":"Name","form_email":"Email","form_message":"Message","form_submit":"Send Message","content_placeholder":"[Contact information or form will be here. For now, this is a placeholder.]"},"NotFound":{"title":"Page Not Found","message":"The page you are looking for does not exist or has been moved.","goHome":"Go to Homepage"},"General":{"loading":"Loading...","comingSoon":"Coming Soon"}}');
+
+/***/ })
+
+});
