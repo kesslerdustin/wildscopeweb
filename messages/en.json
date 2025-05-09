@@ -113,6 +113,8 @@
     "question5": "How accurate is the species identification?",
     "answer5": "Wildscope uses location data combined with current AI technology to detect species, but it's important to note that AI can make errors. While we strive for accuracy, there can always be misidentifications. We continuously work to improve the system over time through updates and refinements to our algorithms.",
     "question6": "Can I contribute to Wildscope's database?",
-    "answer6": "Absolutely! Wildscope is built with community input in mind. Your wildlife sightings and observations are combined with our existing community data to enhance the app experience for everyone. This shared knowledge creates a richer database that benefits all Wildscope users."
+    "answer6": "Absolutely! Wildscope is built with community input in mind. Your wildlife sightings and observations are combined with our existing community data to enhance the app experience for everyone. This shared knowledge creates a richer database that benefits all Wildscope users.",
+    "question7": "Is Wildscope developed by a company?",
+    "answer7": "No, Wildscope is a one-man hobby project. It's developed and maintained by a single passionate developer in their spare time. This means updates might take longer, but it also ensures that the app stays true to its original vision of being a simple, efficient tool for wildlife enthusiasts without corporate influence or pressure to monetize user data."
   }
 } 

@@ -113,6 +113,8 @@
     "question5": "Wie genau ist die Artenidentifikation?",
     "answer5": "Wildscope verwendet Standortdaten in Kombination mit aktueller KI-Technologie zur Erkennung von Arten, aber es ist wichtig zu beachten, dass KI Fehler machen kann. Obwohl wir nach Genauigkeit streben, kann es immer zu Fehlidentifikationen kommen. Wir arbeiten kontinuierlich daran, das System im Laufe der Zeit durch Updates und Verfeinerungen unserer Algorithmen zu verbessern.",
     "question6": "Kann ich zur Wildscope-Datenbank beitragen?",
-    "answer6": "Absolut! Wildscope ist auf Gemeinschaftsbeiträge ausgerichtet. Deine Wildtierbeobachtungen werden mit unseren bestehenden Community-Daten kombiniert, um das App-Erlebnis für alle zu verbessern. Dieses geteilte Wissen schafft eine reichhaltigere Datenbank, von der alle Wildscope-Nutzer profitieren."
+    "answer6": "Absolut! Wildscope ist auf Gemeinschaftsbeiträge ausgerichtet. Deine Wildtierbeobachtungen werden mit unseren bestehenden Community-Daten kombiniert, um das App-Erlebnis für alle zu verbessern. Dieses geteilte Wissen schafft eine reichhaltigere Datenbank, von der alle Wildscope-Nutzer profitieren.",
+    "question7": "Wird Wildscope von einem Unternehmen entwickelt?",
+    "answer7": "Nein, Wildscope ist ein Ein-Mann-Hobbyprojekt. Es wird von einem einzelnen leidenschaftlichen Entwickler in seiner Freizeit entwickelt und gewartet. Das bedeutet, dass Updates länger dauern können, aber es stellt auch sicher, dass die App ihrer ursprünglichen Vision treu bleibt: ein einfaches, effizientes Werkzeug für Wildtier-Enthusiasten zu sein, ohne Unternehmenseinfluss oder Druck zur Monetarisierung von Benutzerdaten."
   }
 } 

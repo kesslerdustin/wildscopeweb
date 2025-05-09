@@ -111,8 +111,10 @@
     "question4": "¿Es gratuito el uso de Wildscope?",
     "answer4": "Wildscope ofrece una versión gratuita con funciones básicas y una suscripción premium que desbloquea funciones avanzadas. Consulta la aplicación para los detalles de precios actuales.",
     "question5": "¿Qué tan precisa es la identificación de especies?",
-    "answer5": "Wildscope utiliza datos de ubicación combinados con la tecnología de IA actual para detectar especies, pero es importante señalar que la IA puede cometer errores. Aunque nos esforzamos por la precisión, siempre puede haber identificaciones erróneas. Trabajamos continuamente para mejorar el sistema a lo largo del tiempo mediante actualizaciones y refinamientos de nuestros algoritmos.",
+    "answer5": "Wildscope utiliza datos de ubicación combinados con tecnología de IA actual para detectar especies, pero es importante tener en cuenta que la IA puede cometer errores. Aunque nos esforzamos por la precisión, siempre puede haber identificaciones erróneas. Trabajamos continuamente para mejorar el sistema a lo largo del tiempo mediante actualizaciones y refinamientos de nuestros algoritmos.",
     "question6": "¿Puedo contribuir a la base de datos de Wildscope?",
-    "answer6": "¡Absolutamente! Wildscope está construido teniendo en cuenta las contribuciones de la comunidad. Tus avistamientos de vida silvestre se combinan con nuestros datos comunitarios existentes para mejorar la experiencia de la aplicación para todos. Este conocimiento compartido crea una base de datos más rica que beneficia a todos los usuarios de Wildscope."
+    "answer6": "¡Absolutamente! Wildscope está construido pensando en las contribuciones de la comunidad. Tus avistamientos de vida silvestre y observaciones se combinan con nuestros datos comunitarios existentes para mejorar la experiencia de la aplicación para todos. Este conocimiento compartido crea una base de datos más rica que beneficia a todos los usuarios de Wildscope.",
+    "question7": "¿Está Wildscope desarrollado por una empresa?",
+    "answer7": "No, Wildscope es un proyecto hobby de una sola persona. Está desarrollado y mantenido por un único desarrollador apasionado en su tiempo libre. Esto significa que las actualizaciones pueden tardar más, pero también asegura que la aplicación se mantenga fiel a su visión original de ser una herramienta simple y eficiente para los entusiastas de la vida silvestre sin influencia corporativa ni presión para monetizar los datos de los usuarios."
   }
 } 

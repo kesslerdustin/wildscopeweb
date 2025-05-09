@@ -111,8 +111,10 @@
     "question4": "Wildscope è gratuito da usare?",
     "answer4": "Wildscope offre una versione gratuita con funzionalità di base e un abbonamento premium che sblocca funzionalità avanzate. Controlla l'app per i dettagli sui prezzi attuali.",
     "question5": "Quanto è accurata l'identificazione delle specie?",
-    "answer5": "Wildscope utilizza dati di localizzazione combinati con l'attuale tecnologia AI per rilevare le specie, ma è importante notare che l'AI può commettere errori. Sebbene puntiamo alla precisione, possono sempre verificarsi identificazioni errate. Lavoriamo continuamente per migliorare il sistema nel tempo attraverso aggiornamenti e perfezionamenti dei nostri algoritmi.",
-    "question6": "Posso contribuire al database di Wildscope?",
-    "answer6": "Assolutamente! Wildscope è costruito pensando ai contributi della comunità. Le tue osservazioni della fauna selvatica vengono combinate con i nostri dati comunitari esistenti per migliorare l'esperienza dell'app per tutti. Questa conoscenza condivisa crea un database più ricco che va a beneficio di tutti gli utenti di Wildscope."
+    "answer5": "Wildscope utilizza dati di localizzazione combinati con l'attuale tecnologia AI per rilevare le specie, ma è importante notare che l'AI può commettere errori. Sebbene ci impegniamo per la precisione, possono sempre verificarsi identificazioni errate. Lavoriamo continuamente per migliorare il sistema nel tempo attraverso aggiornamenti e perfezionamenti dei nostri algoritmi.",
+    "question6": "Posso contribuire alla banca dati di Wildscope?",
+    "answer6": "Assolutamente! Wildscope è costruito pensando al contributo della comunità. I tuoi avvistamenti di fauna selvatica e le tue osservazioni vengono combinati con i nostri dati comunitari esistenti per migliorare l'esperienza dell'app per tutti. Questa conoscenza condivisa crea un database più ricco che avvantaggia tutti gli utenti di Wildscope.",
+    "question7": "Wildscope è sviluppato da un'azienda?",
+    "answer7": "No, Wildscope è un progetto hobby di una sola persona. È sviluppato e mantenuto da un singolo sviluppatore appassionato nel suo tempo libero. Questo significa che gli aggiornamenti potrebbero richiedere più tempo, ma garantisce anche che l'app rimanga fedele alla sua visione originale di essere uno strumento semplice ed efficiente per gli appassionati di fauna selvatica, senza influenze aziendali o pressioni per monetizzare i dati degli utenti."
   }
 } 

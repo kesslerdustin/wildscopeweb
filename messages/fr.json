@@ -107,12 +107,14 @@
     "question2": "Wildscope fonctionne-t-il hors ligne ?",
     "answer2": "Oui ! Une fois que vous avez chargé une zone, les données sur les espèces et les cartes détaillées de Wildscope fonctionnent complètement hors ligne. C'est parfait pour les aventures en régions éloignées où la connectivité Internet est limitée ou inexistante.",
     "question3": "Sur quelles plateformes Wildscope est-il disponible ?",
-    "answer3": "Wildscope est disponible pour les appareils iOS (iPhone/iPad) et Android via l'App Store et le Google Play Store.",
-    "question4": "Wildscope est-il gratuit ?",
-    "answer4": "Wildscope propose une version gratuite avec des fonctionnalités de base et un abonnement premium qui débloque des fonctionnalités avancées. Consultez l'application pour les détails de prix actuels.",
+    "answer3": "Wildscope est disponible à la fois pour les appareils iOS (iPhone/iPad) et Android via l'App Store et le Google Play Store.",
+    "question4": "L'utilisation de Wildscope est-elle gratuite ?",
+    "answer4": "Wildscope propose une version gratuite avec des fonctionnalités de base et un abonnement premium qui débloque des fonctionnalités avancées. Consultez l'application pour les détails actuels des tarifs.",
     "question5": "Quelle est la précision de l'identification des espèces ?",
-    "answer5": "Wildscope utilise des données de localisation combinées à la technologie d'IA actuelle pour détecter les espèces, mais il est important de noter que l'IA peut faire des erreurs. Bien que nous visions la précision, il peut toujours y avoir des identifications erronées. Nous travaillons continuellement à améliorer le système au fil du temps grâce à des mises à jour et des affinements de nos algorithmes.",
+    "answer5": "Wildscope utilise des données de localisation combinées à la technologie IA actuelle pour détecter les espèces, mais il est important de noter que l'IA peut faire des erreurs. Bien que nous nous efforcions d'être précis, il peut toujours y avoir des erreurs d'identification. Nous travaillons continuellement à améliorer le système au fil du temps grâce à des mises à jour et des améliorations de nos algorithmes.",
     "question6": "Puis-je contribuer à la base de données de Wildscope ?",
-    "answer6": "Absolument ! Wildscope est conçu en pensant aux contributions communautaires. Vos observations de la faune sauvage sont combinées avec nos données communautaires existantes pour améliorer l'expérience de l'application pour tous. Ce savoir partagé crée une base de données plus riche qui profite à tous les utilisateurs de Wildscope."
+    "answer6": "Absolument ! Wildscope est conçu en pensant aux contributions de la communauté. Vos observations d'animaux sauvages sont combinées avec nos données communautaires existantes pour améliorer l'expérience de l'application pour tous. Cette connaissance partagée crée une base de données plus riche qui profite à tous les utilisateurs de Wildscope.",
+    "question7": "Wildscope est-il développé par une entreprise ?",
+    "answer7": "Non, Wildscope est un projet hobby d'une seule personne. Il est développé et maintenu par un seul développeur passionné pendant son temps libre. Cela signifie que les mises à jour peuvent prendre plus de temps, mais cela garantit également que l'application reste fidèle à sa vision originale d'être un outil simple et efficace pour les passionnés de la faune, sans influence d'entreprise ni pression pour monétiser les données des utilisateurs."
   }
 } 

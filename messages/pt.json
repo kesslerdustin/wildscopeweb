@@ -111,8 +111,10 @@
     "question4": "O Wildscope é gratuito para usar?",
     "answer4": "O Wildscope oferece uma versão gratuita com recursos básicos e uma assinatura premium que desbloqueia recursos avançados. Verifique o aplicativo para detalhes atuais de preços.",
     "question5": "Quão precisa é a identificação de espécies?",
-    "answer5": "O Wildscope usa dados de localização combinados com a tecnologia de IA atual para detectar espécies, mas é importante notar que a IA pode cometer erros. Embora nos esforcemos pela precisão, sempre pode haver identificações incorretas. Trabalhamos continuamente para melhorar o sistema ao longo do tempo por meio de atualizações e refinamentos de nossos algoritmos.",
+    "answer5": "O Wildscope usa dados de localização combinados com a tecnologia de IA atual para detectar espécies, mas é importante notar que a IA pode cometer erros. Embora nos esforcemos pela precisão, sempre pode haver identificações incorretas. Trabalhamos continuamente para melhorar o sistema ao longo do tempo por meio de atualizações e refinamentos em nossos algoritmos.",
     "question6": "Posso contribuir para o banco de dados do Wildscope?",
-    "answer6": "Absolutamente! O Wildscope foi construído pensando nas contribuições da comunidade. Suas observações de vida selvagem são combinadas com nossos dados comunitários existentes para melhorar a experiência do aplicativo para todos. Esse conhecimento compartilhado cria um banco de dados mais rico que beneficia todos os usuários do Wildscope."
+    "answer6": "Absolutamente! O Wildscope é construído pensando nas contribuições da comunidade. Seus avistamentos de vida selvagem e observações são combinados com nossos dados comunitários existentes para melhorar a experiência do aplicativo para todos. Este conhecimento compartilhado cria um banco de dados mais rico que beneficia todos os usuários do Wildscope.",
+    "question7": "O Wildscope é desenvolvido por uma empresa?",
+    "answer7": "Não, o Wildscope é um projeto hobby de uma só pessoa. É desenvolvido e mantido por um único desenvolvedor apaixonado em seu tempo livre. Isso significa que as atualizações podem demorar mais, mas também garante que o aplicativo permaneça fiel à sua visão original de ser uma ferramenta simples e eficiente para entusiastas da vida selvagem, sem influência corporativa ou pressão para monetizar dados dos usuários."
   }
 } 

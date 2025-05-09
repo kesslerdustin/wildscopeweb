@@ -100,21 +100,23 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
             animate="visible"
             variants={fadeIn}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-800 drop-shadow-md">
-              {t('title')}
-            </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-900 drop-shadow-md">
-              {t('subtitle')}
-            </p>
-            <motion.button 
-              className="bg-white text-emerald-600 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105"
-              onClick={scrollToDownload}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {t('cta')}
-            </motion.button>
-            <p className="mt-3 text-sm font-semibold text-gray-900 drop-shadow-md">{t('cta_subtext')}</p>
+            <div className="bg-white/60 backdrop-blur-sm p-6 rounded-lg shadow-lg inline-block mx-auto">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-800">
+                {t('title')}
+              </h1>
+              <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-800">
+                {t('subtitle')}
+              </p>
+              <motion.button 
+                className="bg-emerald-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-emerald-700 transition-all duration-300 hover:scale-105"
+                onClick={scrollToDownload}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {t('cta')}
+              </motion.button>
+              <p className="mt-3 text-sm font-semibold text-gray-700">{t('cta_subtext')}</p>
+            </div>
           </motion.div>
         </section>
 
@@ -283,12 +285,8 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   className="bg-gray-50 p-6 rounded-lg shadow"
                   variants={fadeIn}
                 >
-                  <h3 className="text-xl font-semibold mb-3 text-emerald-600">Is Wildscope developed by a company?</h3>
-                  <p className="text-gray-600">
-                    No, Wildscope is a one-man hobby project. It's developed and maintained by a single passionate developer in their spare time. 
-                    This means updates might take longer, but it also ensures that the app stays true to its original vision of being 
-                    a simple, efficient tool for wildlife enthusiasts without corporate influence or pressure to monetize user data.
-                  </p>
+                  <h3 className="text-xl font-semibold mb-3 text-emerald-600">{tFaq('question7')}</h3>
+                  <p className="text-gray-600">{tFaq('answer7')}</p>
                 </motion.div>
               </div>
             </div>
