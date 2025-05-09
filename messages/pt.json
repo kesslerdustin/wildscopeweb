@@ -51,12 +51,39 @@
     "decline": "Recusar"
   },
   "ImpressumPage": {
-    "title": "Aviso legal",
-    "content_placeholder": "[Impressum content will be added here. Please provide the necessary legal information.]"
+    "title": "Aviso Legal",
+    "section1_title": "Informações de acordo com § 5 TMG (lei alemã)",
+    "address": "Dustin Keßler<br />Kurt Schumacher Straße 93<br />46539 Dinslaken<br />Alemanha",
+    "contact_title": "Contato",
+    "contact_email": "E-mail: ",
+    "responsibility_title": "Responsável pelo conteúdo de acordo com § 55 parágrafo 2 RStV (lei alemã)",
+    "disclaimer_title": "Isenção de responsabilidade",
+    "disclaimer_text": "O conteúdo do nosso site foi criado com o maior cuidado. No entanto, não podemos garantir a precisão, integridade e atualidade do conteúdo. Como provedor de serviços, somos responsáveis pelo nosso próprio conteúdo nestas páginas de acordo com as leis gerais nos termos do § 7 parágrafo 1 TMG (lei alemã). De acordo com os §§ 8 a 10 TMG (lei alemã), como provedor de serviços, não somos obrigados a monitorar informações transmitidas ou armazenadas por terceiros, nem a investigar circunstâncias que indiquem uma atividade ilegal."
   },
   "PrivacyPage": {
-    "title": "Política de privacidade",
-    "content_placeholder": "[Privacy Policy content will be added here. Please detail your data handling practices.]"
+    "title": "Política de Privacidade",
+    "overview_title": "1. Proteção de dados em resumo",
+    "general_info_title": "Informações gerais",
+    "general_info_text": "As seguintes notas fornecem uma visão geral simples do que acontece com seus dados pessoais quando você visita este site. Dados pessoais são todos os dados com os quais você pode ser identificado pessoalmente. Para informações detalhadas sobre proteção de dados, consulte nossa política de privacidade listada abaixo.",
+    "data_collection_title": "Coleta de dados neste site",
+    "responsible_question": "Quem é responsável pela coleta de dados neste site?",
+    "responsible_answer": "O processamento de dados neste site é realizado pelo operador do site. Os dados de contato podem ser encontrados no aviso legal deste site.",
+    "how_we_collect_title": "Como coletamos seus dados?",
+    "how_we_collect_text1": "Por um lado, seus dados são coletados quando você nos fornece. Isso pode ser, por exemplo, dados que você insere em um formulário de contato.",
+    "how_we_collect_text2": "Outros dados são coletados automaticamente ou com o seu consentimento quando você visita o site pelos nossos sistemas de TI. Estes são principalmente dados técnicos (por exemplo, navegador da Internet, sistema operacional ou horário de visualização da página). Esses dados são coletados automaticamente assim que você acessa este site.",
+    "data_usage_title": "Para que usamos seus dados?",
+    "data_usage_text": "Parte dos dados é coletada para garantir o fornecimento sem erros do site. Outros dados podem ser usados para analisar seu comportamento de usuário.",
+    "your_rights_title": "Quais direitos você tem em relação aos seus dados?",
+    "your_rights_text": "Você tem o direito de receber gratuitamente informações sobre a origem, o destinatário e a finalidade dos seus dados pessoais armazenados a qualquer momento. Você também tem o direito de solicitar a correção ou exclusão desses dados. Se você deu consentimento para o processamento de dados, você pode revogar esse consentimento a qualquer momento para o futuro. Você também tem o direito, em determinadas circunstâncias, de solicitar a restrição do processamento de seus dados pessoais.",
+    "general_info_mandatory_title": "2. Informações gerais e informações obrigatórias",
+    "data_protection_title": "Proteção de dados",
+    "data_protection_text1": "Os operadores destas páginas levam muito a sério a proteção dos seus dados pessoais. Tratamos seus dados pessoais confidencialmente e de acordo com os regulamentos legais de proteção de dados e com esta política de privacidade.",
+    "data_protection_text2": "Quando você usa este site, vários dados pessoais são coletados. Dados pessoais são dados com os quais você pode ser identificado pessoalmente. Esta política de privacidade explica quais dados coletamos e para que fins os utilizamos. Também explica como e com que finalidade isso acontece.",
+    "responsible_party_title": "Nota sobre a entidade responsável",
+    "responsible_party_text": "A entidade responsável pelo processamento de dados neste site é:",
+    "responsible_party_address": "Dustin Keßler<br />Kurt Schumacher Straße 93<br />46539 Dinslaken<br />Alemanha",
+    "responsible_party_email": "E-mail: duselkay@gmail.com",
+    "responsible_party_definition": "A entidade responsável é a pessoa física ou jurídica que, sozinha ou em conjunto com outras, determina as finalidades e os meios de processamento de dados pessoais (por exemplo, nomes, endereços de e-mail, etc.)."
   },
   "ContactPage": {
     "title": "Contato",
@@ -73,5 +100,19 @@
     "loading": "Carregando...",
     "comingSoon": "Em breve"
   },
-  "FAQ": "FAQ"
+  "FAQ": {
+    "title": "Perguntas Frequentes",
+    "question1": "Como o Wildscope é diferente do iNaturalist?",
+    "answer1": "Enquanto o iNaturalist se concentra principalmente na identificação de espécies e ciência cidadã, o Wildscope oferece uma experiência ao ar livre mais abrangente com recursos adicionais como ferramentas de navegação, capacidades offline, aventuras de texto e questionários. O Wildscope também inclui um companheiro com IA que entende seu ambiente e pode fornecer orientação personalizada, tornando-o adequado tanto para entusiastas casuais da natureza quanto para aventureiros experientes.",
+    "question2": "O Wildscope funciona offline?",
+    "answer2": "Sim! Uma vez que você carregou uma área, os dados de espécies e mapas detalhados do Wildscope funcionam completamente offline. Isso é perfeito para aventuras remotas onde a conectividade com a internet é limitada ou inexistente.",
+    "question3": "Em quais plataformas o Wildscope está disponível?",
+    "answer3": "O Wildscope está disponível para dispositivos iOS (iPhone/iPad) e Android através da App Store e Google Play Store.",
+    "question4": "O Wildscope é gratuito para usar?",
+    "answer4": "O Wildscope oferece uma versão gratuita com recursos básicos e uma assinatura premium que desbloqueia recursos avançados. Verifique o aplicativo para detalhes atuais de preços.",
+    "question5": "Quão precisa é a identificação de espécies?",
+    "answer5": "O Wildscope usa dados de localização combinados com a tecnologia de IA atual para detectar espécies, mas é importante notar que a IA pode cometer erros. Embora nos esforcemos pela precisão, sempre pode haver identificações incorretas. Trabalhamos continuamente para melhorar o sistema ao longo do tempo por meio de atualizações e refinamentos de nossos algoritmos.",
+    "question6": "Posso contribuir para o banco de dados do Wildscope?",
+    "answer6": "Absolutamente! O Wildscope foi construído pensando nas contribuições da comunidade. Suas observações de vida selvagem são combinadas com nossos dados comunitários existentes para melhorar a experiência do aplicativo para todos. Esse conhecimento compartilhado cria um banco de dados mais rico que beneficia todos os usuários do Wildscope."
+  }
 } 

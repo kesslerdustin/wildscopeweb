@@ -51,12 +51,39 @@
     "decline": "Decline"
   },
   "ImpressumPage": {
-    "title": "Impressum",
-    "content_placeholder": "[Impressum content will be added here. Please provide the necessary legal information.]"
+    "title": "Legal Notice",
+    "section1_title": "Information according to § 5 TMG (German law)",
+    "address": "Dustin Keßler<br />Kurt Schumacher Straße 93<br />46539 Dinslaken<br />Germany",
+    "contact_title": "Contact",
+    "contact_email": "Email: ",
+    "responsibility_title": "Responsible for content according to § 55 para. 2 RStV (German law)",
+    "disclaimer_title": "Disclaimer",
+    "disclaimer_text": "The contents of our site have been created with the utmost care. However, we cannot guarantee the accuracy, completeness, and timeliness of the content. As a service provider, we are responsible for our own content on these pages according to general laws pursuant to § 7 para. 1 TMG (German law). According to §§ 8 to 10 TMG (German law), as a service provider, we are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity."
   },
   "PrivacyPage": {
-    "title": "Privacy Policy (Datenschutz)",
-    "content_placeholder": "[Privacy Policy content will be added here. Please detail your data handling practices.]"
+    "title": "Privacy Policy",
+    "overview_title": "1. Data Protection at a Glance",
+    "general_info_title": "General Information",
+    "general_info_text": "The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is all data that can be used to identify you personally. For detailed information on data protection, please refer to our privacy policy listed below.",
+    "data_collection_title": "Data Collection on This Website",
+    "responsible_question": "Who is responsible for data collection on this website?",
+    "responsible_answer": "Data processing on this website is carried out by the website operator. The contact details can be found in the legal notice of this website.",
+    "how_we_collect_title": "How do we collect your data?",
+    "how_we_collect_text1": "On the one hand, your data is collected when you provide it to us. This may be, for example, data that you enter in a contact form.",
+    "how_we_collect_text2": "Other data is collected automatically or with your consent when you visit the website by our IT systems. These are mainly technical data (e.g., internet browser, operating system, or time of page view). This data is collected automatically as soon as you enter this website.",
+    "data_usage_title": "What do we use your data for?",
+    "data_usage_text": "Some of the data is collected to ensure error-free provision of the website. Other data may be used to analyze your user behavior.",
+    "your_rights_title": "What rights do you have regarding your data?",
+    "your_rights_text": "You have the right to receive information about the origin, recipient, and purpose of your stored personal data free of charge at any time. You also have the right to request the correction or deletion of this data. If you have given consent to data processing, you can revoke this consent at any time for the future. You also have the right, under certain circumstances, to request the restriction of the processing of your personal data.",
+    "general_info_mandatory_title": "2. General Information and Mandatory Information",
+    "data_protection_title": "Data Protection",
+    "data_protection_text1": "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the legal data protection regulations as well as this privacy policy.",
+    "data_protection_text2": "When you use this website, various personal data is collected. Personal data is data that can be used to identify you personally. This privacy policy explains what data we collect and what we use it for. It also explains how and for what purpose this happens.",
+    "responsible_party_title": "Note on the responsible party",
+    "responsible_party_text": "The responsible party for data processing on this website is:",
+    "responsible_party_address": "Dustin Keßler<br />Kurt Schumacher Straße 93<br />46539 Dinslaken<br />Germany",
+    "responsible_party_email": "Email: duselkay@gmail.com",
+    "responsible_party_definition": "The responsible party is the natural or legal person who alone or jointly with others determines the purposes and means of the processing of personal data (e.g., names, email addresses, etc.)."
   },
   "ContactPage": {
     "title": "Contact Us",
@@ -73,5 +100,19 @@
     "loading": "Loading...",
     "comingSoon": "Coming Soon"
   },
-  "FAQ": "FAQ"
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "question1": "How is Wildscope different from iNaturalist?",
+    "answer1": "While iNaturalist focuses primarily on species identification and citizen science, Wildscope offers a more comprehensive outdoors experience with additional features like navigation tools, offline capabilities, text adventures, and quizzes. Wildscope also includes a built-in AI companion that understands your surroundings and can provide personalized guidance, making it suitable for both casual nature enthusiasts and serious adventurers.",
+    "question2": "Does Wildscope work offline?",
+    "answer2": "Yes! Once you've loaded an area, Wildscope's species data and detailed maps work completely offline. This is perfect for remote adventures where internet connectivity is limited or nonexistent.",
+    "question3": "What platforms is Wildscope available on?",
+    "answer3": "Wildscope is available for both iOS (iPhone/iPad) and Android devices through the App Store and Google Play Store.",
+    "question4": "Is Wildscope free to use?",
+    "answer4": "Wildscope offers a free version with core features and a premium subscription that unlocks advanced features. Check the app for current pricing details.",
+    "question5": "How accurate is the species identification?",
+    "answer5": "Wildscope uses location data combined with current AI technology to detect species, but it's important to note that AI can make errors. While we strive for accuracy, there can always be misidentifications. We continuously work to improve the system over time through updates and refinements to our algorithms.",
+    "question6": "Can I contribute to Wildscope's database?",
+    "answer6": "Absolutely! Wildscope is built with community input in mind. Your wildlife sightings and observations are combined with our existing community data to enhance the app experience for everyone. This shared knowledge creates a richer database that benefits all Wildscope users."
+  }
 } 

@@ -51,12 +51,39 @@
     "decline": "拒否する"
   },
   "ImpressumPage": {
-    "title": "法的通知",
-    "content_placeholder": "[Impressum content will be added here. Please provide the necessary legal information.]"
+    "title": "発行者情報",
+    "section1_title": "§ 5 TMG（ドイツ法）に基づく情報",
+    "address": "Dustin Keßler<br />Kurt Schumacher Straße 93<br />46539 Dinslaken<br />ドイツ",
+    "contact_title": "連絡先",
+    "contact_email": "メール: ",
+    "responsibility_title": "§ 55 第2項 RStV（ドイツ法）に基づくコンテンツ責任者",
+    "disclaimer_title": "免責事項",
+    "disclaimer_text": "当サイトのコンテンツは細心の注意を払って作成されています。ただし、内容の正確性、完全性、最新性については保証できません。サービス提供者として、§ 7 第1項 TMG（ドイツ法）に基づく一般法に従い、当サイトの自社コンテンツについて責任を負います。§§ 8～10 TMG（ドイツ法）によれば、サービス提供者として、第三者によって送信または保存された情報を監視したり、違法活動を示す状況を調査したりする義務はありません。"
   },
   "PrivacyPage": {
     "title": "プライバシーポリシー",
-    "content_placeholder": "[Privacy Policy content will be added here. Please detail your data handling practices.]"
+    "overview_title": "1. データ保護の概要",
+    "general_info_title": "一般情報",
+    "general_info_text": "以下の注意事項は、このサイトを訪問した際の個人データの扱いについて簡単な概要を提供します。個人データとは、個人を特定できるすべてのデータです。データ保護に関する詳細情報については、以下に記載のプライバシーポリシーをご参照ください。",
+    "data_collection_title": "このサイトでのデータ収集",
+    "responsible_question": "このサイトでのデータ収集責任者は誰ですか？",
+    "responsible_answer": "このサイトでのデータ処理はサイト運営者によって行われます。連絡先情報は当サイトの発行者情報で確認できます。",
+    "how_we_collect_title": "どのようにデータを収集しますか？",
+    "how_we_collect_text1": "一方では、お客様がデータを提供することによってデータを収集します。例えば、お問い合わせフォームに入力するデータなどが該当します。",
+    "how_we_collect_text2": "他方では、サイト訪問時に当社のITシステムによって自動的に、またはお客様の同意を得てデータが収集されます。これは主に技術データ（インターネットブラウザ、オペレーティングシステム、ページ閲覧時間など）です。これらのデータは、このサイトにアクセスした時点で自動的に収集されます。",
+    "data_usage_title": "データの利用目的は何ですか？",
+    "data_usage_text": "データの一部は、サイトのエラーのない提供を確保するために収集されます。その他のデータは、ユーザーの行動を分析するために使用される場合があります。",
+    "your_rights_title": "お客様のデータに関する権利は何ですか？",
+    "your_rights_text": "お客様は、保存されている個人データの出所、受信者、目的に関する情報をいつでも無料で受け取る権利があります。また、これらのデータの修正または削除を要求する権利もあります。データ処理に同意した場合、将来的にこの同意を撤回することができます。また、特定の状況下では、個人データの処理の制限を要求する権利もあります。",
+    "general_info_mandatory_title": "2. 一般情報と義務情報",
+    "data_protection_title": "データ保護",
+    "data_protection_text1": "当サイトの運営者は、お客様の個人データの保護を非常に重視しています。私たちは、法的なデータ保護規制およびこのプライバシーポリシーに従って、お客様の個人データを機密として扱います。",
+    "data_protection_text2": "このサイトを使用すると、様々な個人データが収集されます。個人データとは、お客様を個人的に特定できるデータです。このプライバシーポリシーでは、どのようなデータを収集し、どのような目的で使用するかを説明しています。また、それがどのように、どのような目的で行われるかも説明しています。",
+    "responsible_party_title": "責任者に関する注記",
+    "responsible_party_text": "このサイトでのデータ処理責任者は以下の通りです：",
+    "responsible_party_address": "Dustin Keßler<br />Kurt Schumacher Straße 93<br />46539 Dinslaken<br />ドイツ",
+    "responsible_party_email": "メール: duselkay@gmail.com",
+    "responsible_party_definition": "責任者とは、単独または他者と共同で、個人データ（名前、メールアドレスなど）の処理の目的と手段を決定する自然人または法人を指します。"
   },
   "ContactPage": {
     "title": "お問い合わせ",
@@ -73,5 +100,19 @@
     "loading": "読み込み中...",
     "comingSoon": "近日公開"
   },
-  "FAQ": "FAQ"
+  "FAQ": {
+    "title": "よくある質問",
+    "question1": "WildscopeはiNaturalistとどう違いますか？",
+    "answer1": "iNaturalistが主に種の識別と市民科学に焦点を当てているのに対し、Wildscopeはナビゲーションツール、オフライン機能、テキストアドベンチャー、クイズなどの追加機能を備えたより包括的なアウトドア体験を提供しています。Wildscopeには、周囲の環境を理解し、パーソナライズされたガイダンスを提供できる組み込みAIコンパニオンも含まれており、カジュアルな自然愛好家から経験豊富な冒険家まで適しています。",
+    "question2": "Wildscopeはオフラインで動作しますか？",
+    "answer2": "はい！エリアを一度読み込むと、Wildscopeの種データと詳細な地図は完全にオフラインで機能します。これはインターネット接続が限られているか存在しない遠隔地での冒険に最適です。",
+    "question3": "Wildscopeはどのプラットフォームで利用できますか？",
+    "answer3": "WildscopeはiOS（iPhone/iPad）およびAndroidデバイス向けにApp StoreとGoogle Play Storeから入手できます。",
+    "question4": "Wildscopeは無料で使えますか？",
+    "answer4": "Wildscopeは基本機能を備えた無料版と、高度な機能をアンロックするプレミアムサブスクリプションを提供しています。最新の価格詳細についてはアプリをご確認ください。",
+    "question5": "種の識別はどれくらい正確ですか？",
+    "answer5": "Wildscopeは位置データと現在のAI技術を組み合わせて種を検出していますが、AIが誤りを犯す可能性があることを認識することが重要です。私たちは精度を追求していますが、常に誤認識が発生する可能性があります。アルゴリズムの更新と改良を通じて、システムを継続的に改善するよう努めています。",
+    "question6": "Wildscopeのデータベースに貢献できますか？",
+    "answer6": "もちろんです！Wildscopeはコミュニティの貢献を念頭に置いて構築されています。あなたの野生生物の観察は既存のコミュニティデータと組み合わされ、すべてのユーザーのためにアプリ体験を向上させます。この共有知識は、すべてのWildscopeユーザーに利益をもたらすより豊かなデータベースを作成します。"
+  }
 } 
