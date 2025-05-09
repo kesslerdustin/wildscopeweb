@@ -24,14 +24,14 @@ export default function HomeContent({ locale }: HomeContentProps) {
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600 text-white py-20 md:py-32 relative">
+        <section className="bg-white text-gray-800 py-20 md:py-32 relative">
           <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
             <Image
               src="/images/header.png"
               alt="Header background"
               fill
               priority
-              className="object-cover opacity-30"
+              className="object-cover"
             />
           </div>
           <div className="container mx-auto px-6 text-center relative z-10">
@@ -41,7 +41,7 @@ export default function HomeContent({ locale }: HomeContentProps) {
             <p className="text-lg md:text-xl mb-8">
               {t('subtitle')}
             </p>
-            <button className="bg-white text-emerald-600 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition-colors duration-300">
+            <button className="bg-emerald-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300">
               {t('cta')}
             </button>
           </div>
