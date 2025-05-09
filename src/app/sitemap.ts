@@ -9,22 +9,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       path: '', // homepage
       changeFrequency: 'weekly' as const,
-      priority: 1.0
+      priority: 1.0,
+      lastModified: new Date().toISOString()
     },
     {
       path: '/contact',
       changeFrequency: 'monthly' as const,
-      priority: 0.8
+      priority: 0.8,
+      lastModified: new Date().toISOString()
     },
     {
       path: '/datenschutz',
       changeFrequency: 'yearly' as const,
-      priority: 0.5
+      priority: 0.5,
+      lastModified: new Date().toISOString()
     },
     {
       path: '/impressum',
       changeFrequency: 'yearly' as const,
-      priority: 0.5
+      priority: 0.5,
+      lastModified: new Date().toISOString()
     },
     // Additional pages can be added here
   ];
@@ -33,11 +37,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries = locales.flatMap(locale => {
     return routes.map(route => {
       const path = route.path ? `/${locale}${route.path}` : `/${locale}`;
+      
+      // Generate alternate language URLs for this page
+      const alternateLanguages = locales
+        .filter(loc => loc !== locale)
+        .reduce((acc, lang) => {
+          const altPath = route.path ? `/${lang}${route.path}` : `/${lang}`;
+          acc[lang] = `${baseUrl}${altPath}`;
+          return acc;
+        }, {} as Record<string, string>);
+      
       return {
         url: `${baseUrl}${path}`,
-        lastModified: new Date(),
+        lastModified: route.lastModified,
         changeFrequency: route.changeFrequency,
         priority: route.priority,
+        alternates: {
+          languages: alternateLanguages,
+          canonical: `${baseUrl}${path}`
+        }
       };
     });
   });

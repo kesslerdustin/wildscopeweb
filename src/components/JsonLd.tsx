@@ -3,7 +3,7 @@
 import { useParams } from 'next/navigation';
 
 interface JsonLdProps {
-  type: 'Organization' | 'WebSite' | 'LocalBusiness' | 'BreadcrumbList' | 'FAQPage' | 'Product' | 'Review';
+  type: 'Organization' | 'WebSite' | 'LocalBusiness' | 'BreadcrumbList' | 'FAQPage' | 'Product' | 'Review' | 'Article';
   data: any;
 }
 
@@ -35,31 +35,105 @@ export function OrganizationJsonLd() {
   const translations = {
     en: {
       name: 'Wildscope',
-      description: 'Wildscope offers exciting outdoor adventures and wildlife experiences around the world.',
+      description: 'Wildscope offers AI-powered wildlife identification and outdoor exploration tools for nature enthusiasts around the world.',
+      slogan: 'Connect with nature through technology'
     },
     de: {
       name: 'Wildscope',
-      description: 'Wildscope bietet spannende Outdoor-Abenteuer und Naturerlebnisse weltweit an.',
+      description: 'Wildscope bietet KI-gestützte Wildtieridentifikation und Outdoor-Erkundungswerkzeuge für Naturliebhaber weltweit.',
+      slogan: 'Verbinde dich mit der Natur durch Technologie'
     },
     fr: {
       name: 'Wildscope',
-      description: 'Wildscope propose des aventures en plein air passionnantes et des expériences de la faune dans le monde entier.',
+      description: 'Wildscope propose des outils d\'identification de la faune et d\'exploration en plein air alimentés par l\'IA pour les amoureux de la nature du monde entier.',
+      slogan: 'Connectez-vous avec la nature grâce à la technologie'
     },
     it: {
       name: 'Wildscope',
-      description: 'Wildscope offre emozionanti avventure all\'aria aperta ed esperienze di fauna selvatica in tutto il mondo.',
+      description: 'Wildscope offre strumenti di identificazione della fauna selvatica e di esplorazione all\'aria aperta basati sull\'intelligenza artificiale per gli amanti della natura di tutto il mondo.',
+      slogan: 'Connettiti con la natura attraverso la tecnologia'
     },
     es: {
       name: 'Wildscope',
-      description: 'Wildscope ofrece emocionantes aventuras al aire libre y experiencias con la vida silvestre en todo el mundo.',
+      description: 'Wildscope ofrece herramientas de identificación de fauna silvestre y exploración al aire libre con tecnología de IA para entusiastas de la naturaleza en todo el mundo.',
+      slogan: 'Conéctate con la naturaleza a través de la tecnología'
     },
     pt: {
       name: 'Wildscope',
-      description: 'Wildscope oferece aventuras ao ar livre emocionantes e experiências com a vida selvagem em todo o mundo.',
+      description: 'Wildscope oferece ferramentas de identificação de vida selvagem e exploração ao ar livre com tecnologia de IA para entusiastas da natureza em todo o mundo.',
+      slogan: 'Conecte-se com a natureza através da tecnologia'
     },
     ja: {
       name: 'Wildscope',
-      description: 'Wildscopeは、世界中でのエキサイティングなアウトドアアドベンチャーと野生動物体験を提供します。',
+      description: 'Wildscopeは、世界中の自然愛好家のためにAI搭載の野生動物識別とアウトドア探検ツールを提供します。',
+      slogan: 'テクノロジーを通じて自然とつながる'
+    }
+  };
+  
+  const t = translations[locale as keyof typeof translations] || translations.en;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com';
+  
+  const data = {
+    name: t.name,
+    description: t.description,
+    slogan: t.slogan,
+    url: baseUrl,
+    logo: `${baseUrl}/images/logo.png`,
+    sameAs: [
+      'https://facebook.com/wildscope',
+      'https://instagram.com/wildscope',
+      'https://twitter.com/wildscope'
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'DE',
+      addressLocality: 'Dinslaken',
+      postalCode: '46539',
+      streetAddress: 'Kurt Schumacher Straße 93'
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      email: 'contact@wildscope.com'
+    }
+  };
+  
+  return <JsonLd type="Organization" data={data} />;
+}
+
+export function WebsiteJsonLd() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com';
+  const params = useParams();
+  const locale = params.locale as string;
+  
+  const translations = {
+    en: {
+      name: 'Wildscope - Wildlife Tracking & Outdoor Adventure App',
+      description: 'Discover wildlife, explore nature, and track animals with our AI-powered outdoor companion app'
+    },
+    de: {
+      name: 'Wildscope - Wildlife-Tracking & Outdoor-Abenteuer-App',
+      description: 'Entdecke Wildtiere, erkunde die Natur und beobachte Tiere mit unserer KI-gestützten Outdoor-Begleiter-App'
+    },
+    fr: {
+      name: 'Wildscope - Application de Suivi de la Faune et d\'Aventure en Plein Air',
+      description: 'Découvrez la faune, explorez la nature et suivez les animaux avec notre application de compagnon extérieur alimentée par l\'IA'
+    },
+    it: {
+      name: 'Wildscope - App di Tracciamento della Fauna Selvatica e Avventura all\'Aperto',
+      description: 'Scopri la fauna selvatica, esplora la natura e monitora gli animali con la nostra app di compagno outdoor alimentata dall\'IA'
+    },
+    es: {
+      name: 'Wildscope - Aplicación de Seguimiento de Vida Silvestre y Aventuras al Aire Libre',
+      description: 'Descubre la vida silvestre, explora la naturaleza y rastrea animales con nuestra aplicación de compañero al aire libre potenciada por IA'
+    },
+    pt: {
+      name: 'Wildscope - Aplicativo de Rastreamento de Vida Selvagem e Aventura ao Ar Livre',
+      description: 'Descubra a vida selvagem, explore a natureza e rastreie animais com nosso aplicativo de companheiro ao ar livre com tecnologia de IA'
+    },
+    ja: {
+      name: 'Wildscope - 野生動物追跡＆アウトドアアドベンチャーアプリ',
+      description: '私たちのAI搭載アウトドアコンパニオンアプリで野生動物を発見し、自然を探索し、動物を追跡しましょう'
     }
   };
   
@@ -68,24 +142,9 @@ export function OrganizationJsonLd() {
   const data = {
     name: t.name,
     description: t.description,
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com',
-    logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com'}/images/logo.png`,
-    sameAs: [
-      'https://facebook.com/wildscope',
-      'https://instagram.com/wildscope',
-      'https://twitter.com/wildscope'
-    ]
-  };
-  
-  return <JsonLd type="Organization" data={data} />;
-}
-
-export function WebsiteJsonLd() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com';
-  
-  const data = {
-    name: 'Wildscope',
     url: baseUrl,
+    inLanguage: locale,
+    copyrightYear: new Date().getFullYear(),
     potentialAction: {
       '@type': 'SearchAction',
       'target': {
@@ -242,4 +301,55 @@ export function ReviewJsonLd() {
       }}
     />
   );
+}
+
+export function ArticleJsonLd() {
+  const params = useParams();
+  const locale = params.locale as string;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com';
+  
+  const translations = {
+    en: {
+      headline: "The Ultimate Wildlife Identification & Nature Exploration App",
+      description: "Learn how Wildscope's AI-powered features help you identify plants, track animals, and discover wildlife in your outdoor adventures.",
+      articleBody: "Wildscope transforms how you connect with nature. Whether you're hiking mountain trails, exploring local parks, or discovering wildlife from home, our advanced AI technology helps you identify plants, track animals, and learn about ecosystems in meaningful ways. From casual nature walks to remote wilderness expeditions, Wildscope combines powerful AI identification technology, comprehensive offline exploration tools, and a global community of nature enthusiasts to enhance your outdoor adventures."
+    },
+    de: {
+      headline: "Die ultimative App zur Wildtierbestimmung & Naturerkundung",
+      description: "Erfahren Sie, wie Wildscopes KI-gestützte Funktionen Ihnen helfen, Pflanzen zu identifizieren, Tiere zu beobachten und Wildtiere bei Ihren Outdoor-Abenteuern zu entdecken.",
+      articleBody: "Wildscope verändert, wie Sie sich mit der Natur verbinden. Ob Sie auf Bergpfaden wandern, lokale Parks erkunden oder Wildtiere von zu Hause aus entdecken – unsere fortschrittliche KI-Technologie hilft Ihnen, Pflanzen zu identifizieren, Tiere zu beobachten und Ökosysteme auf bedeutungsvolle Weise kennenzulernen. Von gemütlichen Naturwanderungen bis hin zu abgelegenen Wildnisexpeditionen kombiniert Wildscope leistungsstarke KI-Identifikationstechnologie, umfassende Offline-Erkundungswerkzeuge und eine globale Gemeinschaft von Naturbegeisterten, um Ihre Outdoor-Abenteuer zu bereichern."
+    }
+  };
+  
+  const t = translations[locale as keyof typeof translations] || translations.en;
+  
+  const data = {
+    headline: t.headline,
+    description: t.description,
+    articleBody: t.articleBody,
+    image: [
+      `${baseUrl}/images/og-image.png`,
+      `${baseUrl}/images/darklite_${locale}.png`
+    ],
+    datePublished: "2023-01-15T08:00:00+08:00",
+    dateModified: new Date().toISOString(),
+    author: {
+      "@type": "Person",
+      name: "Wildscope Team"
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Wildscope",
+      logo: {
+        "@type": "ImageObject",
+        url: `${baseUrl}/images/logo.png`
+      }
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${baseUrl}/${locale}`
+    }
+  };
+  
+  return <JsonLd type="Article" data={data} />;
 } 

@@ -10,6 +10,7 @@ import Image from 'next/image';
 import ImageModal from '@/components/ImageModal';
 import { motion } from 'framer-motion';
 import { Database, Cloud, Camera, Map, Shield, Clock } from 'lucide-react';
+import { ArticleJsonLd } from '@/components/JsonLd';
 
 type WildscopeHomeProps = {
   locale: string;
@@ -81,6 +82,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <ArticleJsonLd />
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
@@ -132,7 +134,27 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">{tAbout('title')}</h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-gray-600 mb-6">{tAbout('paragraph1')}</p>
-              <p className="text-lg text-gray-600">{tAbout('paragraph2')}</p>
+              <p className="text-lg text-gray-600 mb-8">{tAbout('paragraph2')}</p>
+              
+              {/* Add darklite image with rounded edges */}
+              <div className="w-full flex justify-center">
+                <div className="overflow-hidden rounded-xl shadow-lg max-w-2xl">
+                  <Image 
+                    src={`/images/darklite_${locale}.png`}
+                    alt={`${tAbout('title')} - Wildscope app interface showing wildlife identification features`}
+                    width={800}
+                    height={450}
+                    className="w-full h-auto"
+                    priority
+                    onError={(e) => {
+                      // Fallback to English if localized image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.onerror = null; // Prevent infinite loop
+                      target.src = `/images/darklite_en.png`;
+                    }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </motion.section>
@@ -163,13 +185,19 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   <div className="flex flex-col items-center">
                     {featureIcons[i-1]}
                   </div>
-                  <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img${i}.png`)}>
+                  <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img${i}_${locale}.png`)}>
                     <Image 
-                      src={`/images/img${i}.png`}
+                      src={`/images/img${i}_${locale}.png`}
                       alt={tFeatures(`feature${i}_title`)}
                       width={400}
                       height={300}
                       className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
+                      onError={(e) => {
+                        // Fallback to English if localized image fails to load
+                        const target = e.target as HTMLImageElement;
+                        target.onerror = null; // Prevent infinite loop
+                        target.src = `/images/img${i}_en.png`;
+                      }}
                     />
                   </div>
                   <h3 className="text-xl font-semibold mb-3 text-emerald-600">{tFeatures(`feature${i}_title`)}</h3>

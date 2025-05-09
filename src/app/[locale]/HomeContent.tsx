@@ -62,39 +62,57 @@ export default function HomeContent({ locale }: HomeContentProps) {
             <h2 id="features-heading" className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">{tFeatures('title')}</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage('/images/img1.png')}>
+                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img1_${locale}.png`)}>
                   <Image 
-                    src="/images/img1.png" 
+                    src={`/images/img1_${locale}.png`}
                     alt={`${tFeatures('feature1_title')} - Wildlife tracking tools`}
                     width={400}
                     height={300}
                     className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
+                    onError={(e) => {
+                      // Fallback to English if localized image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.onerror = null; // Prevent infinite loop
+                      target.src = `/images/img1_en.png`;
+                    }}
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-emerald-600 dark:text-emerald-400">{tFeatures('feature1_title')}</h3>
                 <p className="text-gray-600 dark:text-gray-300">{tFeatures('feature1_desc')}</p>
               </div>
               <div className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage('/images/img2.png')}>
+                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img2_${locale}.png`)}>
                   <Image 
-                    src="/images/img2.png" 
+                    src={`/images/img2_${locale}.png`}
                     alt={`${tFeatures('feature2_title')} - AI wildlife identification`}
                     width={400}
                     height={300}
                     className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
+                    onError={(e) => {
+                      // Fallback to English if localized image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.onerror = null; // Prevent infinite loop
+                      target.src = `/images/img2_en.png`;
+                    }}
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-emerald-600 dark:text-emerald-400">{tFeatures('feature2_title')}</h3>
                 <p className="text-gray-600 dark:text-gray-300">{tFeatures('feature2_desc')}</p>
               </div>
               <div className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage('/images/img3.png')}>
+                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img3_${locale}.png`)}>
                   <Image 
-                    src="/images/img3.png" 
+                    src={`/images/img3_${locale}.png`}
                     alt={`${tFeatures('feature3_title')} - Outdoor adventure community`}
                     width={400}
                     height={300}
                     className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
+                    onError={(e) => {
+                      // Fallback to English if localized image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.onerror = null; // Prevent infinite loop
+                      target.src = `/images/img3_en.png`;
+                    }}
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-emerald-600 dark:text-emerald-400">{tFeatures('feature3_title')}</h3>

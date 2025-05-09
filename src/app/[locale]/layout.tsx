@@ -29,14 +29,41 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     ja: 'Wildscopeは、AI搭載の野生動物識別およびアウトドアアドベンチャーコンパニオンです。種の認識、オフラインハイキングマップ、インタラクティブな追跡ツールで自然を探索しましょう。'
   };
 
+  const keywords = {
+    en: 'wildlife tracking, animal identification, nature app, outdoor adventure, AI species recognition, hiking companion, offline maps',
+    de: 'Wildtier-Tracking, Tieridentifikation, Natur-App, Outdoor-Abenteuer, KI-Artenerkennung, Wanderbegleiter, Offline-Karten',
+    fr: 'suivi de la faune, identification des animaux, application nature, aventure en plein air, reconnaissance des espèces IA, compagnon de randonnée, cartes hors ligne',
+    it: 'tracciamento fauna selvatica, identificazione animali, app natura, avventura all\'aperto, riconoscimento specie IA, compagno escursionistico, mappe offline',
+    es: 'seguimiento de vida silvestre, identificación de animales, aplicación de naturaleza, aventura al aire libre, reconocimiento de especies con IA, compañero de senderismo, mapas sin conexión',
+    pt: 'rastreamento de vida selvagem, identificação de animais, app de natureza, aventura ao ar livre, reconhecimento de espécies com IA, companheiro de caminhada, mapas offline',
+    ja: '野生動物追跡、動物識別、自然アプリ、アウトドアアドベンチャー、AI種認識、ハイキング仲間、オフラインマップ'
+  };
+
   return {
     title: titles[locale as keyof typeof titles] || titles.en,
     description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
+    keywords: keywords[locale as keyof typeof keywords] || keywords.en,
+    applicationName: 'Wildscope',
+    authors: [{ name: 'Wildscope Team', url: baseUrl }],
+    generator: 'Next.js',
+    creator: 'Wildscope',
+    publisher: 'Wildscope',
+    formatDetection: {
+      telephone: false,
+      email: false,
+      address: false
+    },
+    metadataBase: new URL(baseUrl),
     alternates: {
       canonical: `${baseUrl}/${locale}`,
       languages: Object.fromEntries(
         locales.map(loc => [loc, `${baseUrl}/${loc}`])
       )
+    },
+    viewport: {
+      width: 'device-width',
+      initialScale: 1,
+      maximumScale: 5
     },
     openGraph: {
       title: titles[locale as keyof typeof titles] || titles.en,
@@ -61,6 +88,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       images: [`${baseUrl}/images/og-image.png`],
       creator: '@wildscope'
     },
+    category: 'outdoor,travel,nature,wildlife,adventure'
   };
 }
 
