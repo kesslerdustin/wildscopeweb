@@ -92,9 +92,9 @@
     "country": "Alemania"
   },
   "NotFound": {
-    "title": "Página no encontrada",
-    "message": "La página que estás buscando no existe o ha sido movida.",
-    "goHome": "Ir a la página de inicio"
+    "title": "Página No Encontrada",
+    "description": "Lo sentimos, la página que estás buscando no existe o ha sido movida.",
+    "backHome": "Volver a la Página Principal"
   },
   "General": {
     "loading": "Cargando...",

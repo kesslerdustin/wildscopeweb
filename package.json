@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ping-search-engines": "node scripts/ping-search-engines.js"
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",

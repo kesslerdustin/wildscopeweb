@@ -92,9 +92,9 @@
     "country": "Germania"
   },
   "NotFound": {
-    "title": "Pagina non trovata",
-    "message": "La pagina che stai cercando non esiste o è stata spostata.",
-    "goHome": "Vai alla home page"
+    "title": "Pagina Non Trovata",
+    "description": "Ci dispiace, la pagina che stai cercando non esiste o è stata spostata.",
+    "backHome": "Torna alla Pagina Principale"
   },
   "General": {
     "loading": "Caricamento in corso...",

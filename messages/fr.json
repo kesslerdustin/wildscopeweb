@@ -92,9 +92,9 @@
     "country": "Allemagne"
   },
   "NotFound": {
-    "title": "Page non trouvée",
-    "message": "La page que vous recherchez n'existe pas ou a été déplacée.",
-    "goHome": "Aller à la page d'accueil"
+    "title": "Page Non Trouvée",
+    "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
+    "backHome": "Retour à la Page d'Accueil"
   },
   "General": {
     "loading": "Chargement...",
