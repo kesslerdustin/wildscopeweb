@@ -59,14 +59,10 @@
     "content_placeholder": "[Hier wird der Inhalt der Datenschutzrichtlinie hinzugefügt. Bitte beschreiben Sie Ihre Datenverarbeitungspraktiken.]"
   },
   "ContactPage": {
-    "title": "Kontaktiere uns",
-    "form_name": "Name",
-    "form_email": "E-Mail",
-    "form_message": "Nachricht",
-    "form_submit": "Nachricht senden",
-    "content_placeholder": "[Kontaktinformationen oder Formular werden hier angezeigt. Im Moment ist dies ein Platzhalter.]",
-    "contact_directly": "Direkt per E-Mail kontaktieren",
-    "contact_form_title": "Oder nutzen Sie das Kontaktformular"
+    "title": "Kontakt",
+    "contact_intro": "Nehmen Sie gerne Kontakt mit uns auf für Fragen, Feedback oder Anfragen.",
+    "contact_person": "Kontaktperson",
+    "country": "Deutschland"
   },
   "NotFound": {
     "title": "Seite nicht gefunden",

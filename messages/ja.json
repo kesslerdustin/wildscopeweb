@@ -1,10 +1,10 @@
 {
   "Navigation": {
-    "home": "Home",
-    "impressum": "Impressum",
-    "privacy": "Privacy Policy",
-    "contact": "Contact",
-    "language": "Language"
+    "home": "ホーム",
+    "impressum": "法的通知",
+    "privacy": "プライバシーポリシー",
+    "contact": "お問い合わせ",
+    "language": "言語"
   },
   "Hero": {
     "title": "Welcome to Wildscope!",
@@ -40,42 +40,38 @@
     "button": "Download Wildscope Now"
   },
   "Footer": {
-    "copyright": "© {year} Wildscope. All rights reserved.",
-    "impressum": "Impressum",
-    "privacy": "Privacy Policy",
-    "contact": "Contact"
+    "copyright": "© {year} Wildscope. 無断複写・転載を禁じます。",
+    "impressum": "法的通知",
+    "privacy": "プライバシーポリシー",
+    "contact": "お問い合わせ"
   },
   "CookieBanner": {
-    "message": "This website uses cookies to ensure you get the best experience on our website.",
-    "accept": "Accept",
-    "decline": "Decline"
+    "message": "このウェブサイトでは、当サイトでの最高の体験を確保するためにクッキーを使用しています。",
+    "accept": "承諾する",
+    "decline": "拒否する"
   },
   "ImpressumPage": {
-    "title": "Impressum",
+    "title": "法的通知",
     "content_placeholder": "[Impressum content will be added here. Please provide the necessary legal information.]"
   },
   "PrivacyPage": {
-    "title": "Privacy Policy (Datenschutz)",
+    "title": "プライバシーポリシー",
     "content_placeholder": "[Privacy Policy content will be added here. Please detail your data handling practices.]"
   },
   "ContactPage": {
-    "title": "Contact Us",
-    "form_name": "Name",
-    "form_email": "Email",
-    "form_message": "Message",
-    "form_submit": "Send Message",
-    "content_placeholder": "[Contact information or form will be here. For now, this is a placeholder.]",
-    "contact_directly": "Contact directly via email",
-    "contact_form_title": "Or use the contact form"
+    "title": "お問い合わせ",
+    "contact_intro": "ご質問、ご意見、お問い合わせがございましたら、お気軽にご連絡ください。",
+    "contact_person": "連絡先",
+    "country": "ドイツ"
   },
   "NotFound": {
-    "title": "Page Not Found",
-    "message": "The page you are looking for does not exist or has been moved.",
-    "goHome": "Go to Homepage"
+    "title": "ページが見つかりません",
+    "message": "お探しのページは存在しないか、移動されました。",
+    "goHome": "ホームページへ戻る"
   },
   "General": {
-    "loading": "Loading...",
-    "comingSoon": "Coming Soon"
+    "loading": "読み込み中...",
+    "comingSoon": "近日公開"
   },
   "FAQ": "FAQ"
 } 

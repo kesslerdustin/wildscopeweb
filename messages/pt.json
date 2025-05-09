@@ -1,10 +1,10 @@
 {
   "Navigation": {
-    "home": "Home",
-    "impressum": "Impressum",
-    "privacy": "Privacy Policy",
-    "contact": "Contact",
-    "language": "Language"
+    "home": "Início",
+    "impressum": "Aviso legal",
+    "privacy": "Política de privacidade",
+    "contact": "Contato",
+    "language": "Idioma"
   },
   "Hero": {
     "title": "Welcome to Wildscope!",
@@ -40,42 +40,38 @@
     "button": "Download Wildscope Now"
   },
   "Footer": {
-    "copyright": "© {year} Wildscope. All rights reserved.",
-    "impressum": "Impressum",
-    "privacy": "Privacy Policy",
-    "contact": "Contact"
+    "copyright": "© {year} Wildscope. Todos os direitos reservados.",
+    "impressum": "Aviso legal",
+    "privacy": "Política de privacidade",
+    "contact": "Contato"
   },
   "CookieBanner": {
-    "message": "This website uses cookies to ensure you get the best experience on our website.",
-    "accept": "Accept",
-    "decline": "Decline"
+    "message": "Este site usa cookies para garantir que você tenha a melhor experiência em nosso site.",
+    "accept": "Aceitar",
+    "decline": "Recusar"
   },
   "ImpressumPage": {
-    "title": "Impressum",
+    "title": "Aviso legal",
     "content_placeholder": "[Impressum content will be added here. Please provide the necessary legal information.]"
   },
   "PrivacyPage": {
-    "title": "Privacy Policy (Datenschutz)",
+    "title": "Política de privacidade",
     "content_placeholder": "[Privacy Policy content will be added here. Please detail your data handling practices.]"
   },
   "ContactPage": {
-    "title": "Contact Us",
-    "form_name": "Name",
-    "form_email": "Email",
-    "form_message": "Message",
-    "form_submit": "Send Message",
-    "content_placeholder": "[Contact information or form will be here. For now, this is a placeholder.]",
-    "contact_directly": "Contact directly via email",
-    "contact_form_title": "Or use the contact form"
+    "title": "Contato",
+    "contact_intro": "Não hesite em entrar em contato para quaisquer perguntas, feedback ou consultas.",
+    "contact_person": "Pessoa de contato",
+    "country": "Alemanha"
   },
   "NotFound": {
-    "title": "Page Not Found",
-    "message": "The page you are looking for does not exist or has been moved.",
-    "goHome": "Go to Homepage"
+    "title": "Página não encontrada",
+    "message": "A página que você está procurando não existe ou foi movida.",
+    "goHome": "Ir para a página inicial"
   },
   "General": {
-    "loading": "Loading...",
-    "comingSoon": "Coming Soon"
+    "loading": "Carregando...",
+    "comingSoon": "Em breve"
   },
   "FAQ": "FAQ"
 } 

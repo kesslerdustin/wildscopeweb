@@ -60,13 +60,9 @@
   },
   "ContactPage": {
     "title": "Contact Us",
-    "form_name": "Name",
-    "form_email": "Email",
-    "form_message": "Message",
-    "form_submit": "Send Message",
-    "content_placeholder": "[Contact information or form will be here. For now, this is a placeholder.]",
-    "contact_directly": "Contact directly via email",
-    "contact_form_title": "Or use the contact form"
+    "contact_intro": "Feel free to get in touch with us for any questions, feedback, or inquiries.",
+    "contact_person": "Contact Person",
+    "country": "Germany"
   },
   "NotFound": {
     "title": "Page Not Found",
