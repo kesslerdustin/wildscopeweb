@@ -6,38 +6,42 @@
     "contact": "Contato",
     "language": "Idioma"
   },
+  "Meta": {
+    "title": "App de Rastreamento de Fauna Selvagem & Exploração da Natureza | Wildscope",
+    "description": "Descubra a vida selvagem, explore a natureza e rastreie animais com o aplicativo companheiro outdoor Wildscope com IA. Funciona offline para aventuras na natureza em qualquer lugar."
+  },
   "Hero": {
-    "title": "Welcome to Wildscope!",
-    "subtitle": "Your ultimate adventure companion. Discover, explore, and share.",
-    "cta": "Get Started",
-    "cta_subtext": "Available on iOS & Android"
+    "title": "Explore, Identifique & Rastreie a Fauna Selvagem com Wildscope",
+    "subtitle": "Seu companheiro de natureza com IA para identificar plantas, rastrear animais e descobrir a vida selvagem - online ou offline.",
+    "cta": "Inicie Sua Aventura Natural",
+    "cta_subtext": "Download Gratuito para iOS & Android"
   },
   "About": {
-    "title": "What Is Wildscope?",
-    "paragraph1": "Wildscope is your interactive companion for discovering nature. Whether you're hiking in the woods, walking your dog through a city park, or exploring the Amazon from your couch, Wildscope helps you connect with the environment in new, meaningful ways.",
-    "paragraph2": "From casual walks to adventurous journeys, Wildscope offers a unique blend of AI technology, offline exploration tools, and a global community of nature lovers."
+    "title": "O Aplicativo Definitivo de Identificação de Fauna Selvagem & Exploração da Natureza",
+    "paragraph1": "Wildscope transforma como você se conecta com a natureza. Seja fazendo trilhas em montanhas, explorando parques locais ou descobrindo a vida selvagem de casa, nossa tecnologia avançada de IA ajuda você a identificar plantas, rastrear animais e aprender sobre ecossistemas de maneiras significativas.",
+    "paragraph2": "De caminhadas casuais na natureza a expedições em áreas selvagens remotas, Wildscope combina poderosa tecnologia de identificação por IA, ferramentas completas de exploração offline e uma comunidade global de entusiastas da natureza para melhorar suas aventuras ao ar livre."
   },
   "Features": {
-    "title": "Amazing Features",
-    "feature1_title": "Essential Exploration Tools",
-    "feature1_desc": "Navigate with confidence using our custom waypoint compass, decode signals with the built-in Morse tool, and access the comprehensive Kntos-library—everything you need for adventure, all in one place.",
-    "feature2_title": "Track Wildlife",
-    "feature2_desc": "Discover Flora, Fauna, and Fungi in your surroundings with our advanced tracking system. Log your wildlife sightings, access detailed species information including location-specific data, high-quality images, interactive habitat maps, and contribute to citizen science projects worldwide.",
-    "feature3_title": "Connect & Share",
-    "feature3_desc": "Join a vibrant community of nature lovers and explorers. Find exciting discoveries from fellow adventurers, visit their marked locations, like and comment on their findings, or share your own unique experiences to inspire others.",
-    "feature4_title": "Local & Global Exploration Modes",
-    "feature4_desc": "Discover nature in your current location or explore distant biomes and ecosystems from home. Once an area is loaded, species data and detailed maps work completely offline, helping you navigate even without internet access—perfect for remote adventures.",
-    "feature5_title": "Quizzes & Text Adventures",
-    "feature5_desc": "Make learning enjoyable with our collection of basic nature quizzes and dynamically generated ones using local data. Test your survival skills through immersive text adventures in pregenerated scenarios, or unleash your creativity by designing your own wilderness challenges.",
-    "feature6_title": "Wildscope Coach",
-    "feature6_desc": "Chat with your AI-powered companion who understands your surroundings. Share images for instant identification, ask questions about nearby species and landmarks, and receive personalized guidance for your outdoor adventures—it's like having a naturalist expert in your pocket."
+    "title": "Recursos de Rastreamento de Fauna Selvagem & Exploração da Natureza",
+    "feature1_title": "Ferramentas Avançadas de Navegação na Natureza",
+    "feature1_desc": "Navegue com confiança em qualquer terreno com nossa bússola de waypoints habilitada para GPS, decodifique sinais na natureza com ferramentas integradas e acesse nossa biblioteca abrangente de conhecimentos outdoor—ferramentas essenciais para exploração natural, tudo em um aplicativo.",
+    "feature2_title": "Identificação de Fauna & Flora com IA",
+    "feature2_desc": "Identifique instantaneamente flora, fauna e fungos com nosso sistema avançado de reconhecimento por IA. Documente avistamentos de vida selvagem, acesse informações detalhadas de espécies com dados específicos de localização, imagens de alta resolução, mapas interativos de habitat e contribua para a pesquisa global de biodiversidade.",
+    "feature3_title": "Comunidade de Entusiastas da Natureza",
+    "feature3_desc": "Conecte-se com observadores apaixonados de vida selvagem e exploradores da natureza em todo o mundo. Descubra notáveis avistamentos de vida selvagem de outros aventureiros, visite locais documentados, compartilhe observações e inspire outros com suas experiências únicas na natureza.",
+    "feature4_title": "Exploração da Natureza & Rastreamento de Fauna Offline",
+    "feature4_desc": "Explore habitats naturais em sua área ou descubra ecossistemas distantes de casa. Baixe dados regionais para usar identificação de espécies e mapas detalhados completamente offline—perfeito para aventuras em áreas selvagens remotas sem serviço celular.",
+    "feature5_title": "Aprendizado Interativo sobre Natureza & Desafios na Natureza",
+    "feature5_desc": "Aprimore seu conhecimento sobre a natureza com questionários de biodiversidade e atividades de aprendizado baseadas em localização. Teste suas habilidades de sobrevivência através de cenários imersivos na natureza, ou crie desafios naturais personalizados para compartilhar com amigos e família.",
+    "feature6_title": "Guia Pessoal de IA para Fauna Selvagem & Natureza",
+    "feature6_desc": "Consulte seu especialista em natureza com IA que entende seu ambiente. Envie imagens para identificação instantânea de espécies, faça perguntas sobre plantas e animais próximos e receba orientação personalizada para suas aventuras ao ar livre—como ter um naturalista profissional no seu bolso."
   },
   "CallToAction": {
-    "title": "Ready to Start Your Adventure?",
-    "subtitle": "Download Wildscope and start exploring — whether you're deep in nature or on your living room couch.",
-    "appstore": "App Store",
-    "playstore": "Google Play",
-    "button": "Download Wildscope Now"
+    "title": "Pronto para Descobrir a Fauna Selvagem & Explorar a Natureza?",
+    "subtitle": "Baixe o Wildscope e comece a identificar plantas, rastrear vida selvagem e explorar habitats naturais—seja em áreas selvagens remotas ou no seu parque local.",
+    "appstore": "Baixar na App Store",
+    "playstore": "Obter no Google Play",
+    "button": "Baixar o Explorador Natural Wildscope"
   },
   "Footer": {
     "copyright": "© {year} Wildscope. Todos os direitos reservados.",
@@ -101,20 +105,20 @@
     "comingSoon": "Em breve"
   },
   "FAQ": {
-    "title": "Perguntas Frequentes",
-    "question1": "Como o Wildscope é diferente do iNaturalist?",
-    "answer1": "Enquanto o iNaturalist se concentra principalmente na identificação de espécies e ciência cidadã, o Wildscope oferece uma experiência ao ar livre mais abrangente com recursos adicionais como ferramentas de navegação, capacidades offline, aventuras de texto e questionários. O Wildscope também inclui um companheiro com IA que entende seu ambiente e pode fornecer orientação personalizada, tornando-o adequado tanto para entusiastas casuais da natureza quanto para aventureiros experientes.",
-    "question2": "O Wildscope funciona offline?",
-    "answer2": "Sim! Uma vez que você carregou uma área, os dados de espécies e mapas detalhados do Wildscope funcionam completamente offline. Isso é perfeito para aventuras remotas onde a conectividade com a internet é limitada ou inexistente.",
-    "question3": "Em quais plataformas o Wildscope está disponível?",
-    "answer3": "O Wildscope está disponível para dispositivos iOS (iPhone/iPad) e Android através da App Store e Google Play Store.",
-    "question4": "O Wildscope é gratuito para usar?",
-    "answer4": "O Wildscope oferece uma versão gratuita com recursos básicos e uma assinatura premium que desbloqueia recursos avançados. Verifique o aplicativo para detalhes atuais de preços.",
-    "question5": "Quão precisa é a identificação de espécies?",
-    "answer5": "O Wildscope usa dados de localização combinados com a tecnologia de IA atual para detectar espécies, mas é importante notar que a IA pode cometer erros. Embora nos esforcemos pela precisão, sempre pode haver identificações incorretas. Trabalhamos continuamente para melhorar o sistema ao longo do tempo por meio de atualizações e refinamentos em nossos algoritmos.",
-    "question6": "Posso contribuir para o banco de dados do Wildscope?",
-    "answer6": "Absolutamente! O Wildscope é construído pensando nas contribuições da comunidade. Seus avistamentos de vida selvagem e observações são combinados com nossos dados comunitários existentes para melhorar a experiência do aplicativo para todos. Este conhecimento compartilhado cria um banco de dados mais rico que beneficia todos os usuários do Wildscope.",
-    "question7": "O Wildscope é desenvolvido por uma empresa?",
-    "answer7": "Não, o Wildscope é um projeto hobby de uma só pessoa. É desenvolvido e mantido por um único desenvolvedor apaixonado em seu tempo livre. Isso significa que as atualizações podem demorar mais, mas também garante que o aplicativo permaneça fiel à sua visão original de ser uma ferramenta simples e eficiente para entusiastas da vida selvagem, sem influência corporativa ou pressão para monetizar dados dos usuários."
+    "title": "Perguntas Frequentes sobre Rastreamento de Fauna Selvagem",
+    "question1": "Como o Wildscope se compara a outros aplicativos de identificação da natureza como o iNaturalist?",
+    "answer1": "Enquanto o iNaturalist se concentra principalmente na identificação de espécies e ciência cidadã, o Wildscope oferece uma experiência outdoor completa com recursos adicionais especificamente projetados para entusiastas da natureza. Nosso aplicativo inclui identificação offline de fauna selvagem, ferramentas de navegação GPS para exploração em áreas selvagens, aprendizado interativo através de questionários sobre natureza e um companheiro de IA que entende seu ambiente para fornecer orientação personalizada—tornando-o perfeito tanto para amantes casuais da natureza quanto para rastreadores sérios de fauna selvagem.",
+    "question2": "Posso identificar plantas e animais offline com o Wildscope?",
+    "answer2": "Sim! Uma vez que você baixou os dados de uma área, a identificação de fauna selvagem, o reconhecimento de plantas e os mapas detalhados de trilhas do Wildscope funcionam completamente offline. Isso torna o aplicativo ideal para aventuras em áreas selvagens remotas onde a conectividade com a Internet está indisponível—garantindo que você possa identificar espécies e navegar com confiança em qualquer lugar na natureza.",
+    "question3": "Quais dispositivos suportam o aplicativo de exploração da natureza Wildscope?",
+    "answer3": "Os recursos de rastreamento de fauna selvagem e identificação da natureza do Wildscope estão disponíveis tanto para dispositivos iOS (iPhone/iPad) quanto Android através da App Store e Google Play Store, tornando-o acessível para praticamente todos os usuários de smartphones.",
+    "question4": "O aplicativo de identificação de fauna selvagem Wildscope é gratuito?",
+    "answer4": "O Wildscope oferece uma versão gratuita com recursos essenciais de identificação de fauna selvagem e exploração da natureza. Nossa assinatura premium desbloqueia capacidades avançadas como reconhecimento offline de espécies, mapas detalhados de habitat e rotas de exploração personalizadas. Confira o aplicativo para ver as opções de assinatura atuais.",
+    "question5": "Quão precisa é a identificação de plantas e animais do Wildscope?",
+    "answer5": "O Wildscope combina dados de localização com tecnologia avançada de IA para identificar fauna selvagem e plantas com alta precisão. Enquanto nosso sistema de reconhecimento melhora continuamente, a precisão da identificação varia por espécie, qualidade da imagem e ângulo de visão. Estamos constantemente aprimorando nossos algoritmos através de atualizações regulares para fornecer identificação cada vez mais precisa de fauna selvagem e plantas em todos os ambientes.",
+    "question6": "Posso contribuir para o banco de dados de fauna selvagem do Wildscope?",
+    "answer6": "Absolutamente! O Wildscope prospera com contribuições da comunidade. Suas observações de fauna selvagem e identificações de plantas são adicionadas com segurança ao nosso banco de dados de ecossistema, melhorando a precisão do aplicativo para todos. Esta abordagem colaborativa cria um recurso abrangente de identificação de fauna selvagem que beneficia todos os entusiastas da natureza.",
+    "question7": "O Wildscope é desenvolvido por uma grande empresa de tecnologia?",
+    "answer7": "Não, o Wildscope é um projeto independente desenvolvido por um entusiasta da natureza dedicado. O aplicativo é projetado e mantido por um único desenvolvedor apaixonado que prioriza precisão e experiência do usuário acima de monetização. Esta abordagem independente garante que o Wildscope permaneça fiel à sua missão principal: ajudar as pessoas a se conectarem com e compreenderem a natureza sem comprometer a privacidade ou experiência do usuário."
   }
 } 

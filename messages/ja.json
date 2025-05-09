@@ -6,38 +6,42 @@
     "contact": "お問い合わせ",
     "language": "言語"
   },
+  "Meta": {
+    "title": "野生動物追跡＆自然探索アプリ | Wildscope",
+    "description": "WildscopeのAI搭載アウトドアコンパニオンアプリで野生動物を発見し、自然を探索し、動物を追跡しましょう。どこでも野生での冒険のためにオフラインで動作します。"
+  },
   "Hero": {
-    "title": "Welcome to Wildscope!",
-    "subtitle": "Your ultimate adventure companion. Discover, explore, and share.",
-    "cta": "Get Started",
-    "cta_subtext": "Available on iOS & Android"
+    "title": "Wildscopeで野生動物を探索、識別＆追跡する",
+    "subtitle": "植物を識別し、動物を追跡し、野生動物を発見するためのAI搭載自然コンパニオン - オンラインまたはオフライン。",
+    "cta": "自然冒険を始める",
+    "cta_subtext": "iOS＆Android向け無料ダウンロード"
   },
   "About": {
-    "title": "What Is Wildscope?",
-    "paragraph1": "Wildscope is your interactive companion for discovering nature. Whether you're hiking in the woods, walking your dog through a city park, or exploring the Amazon from your couch, Wildscope helps you connect with the environment in new, meaningful ways.",
-    "paragraph2": "From casual walks to adventurous journeys, Wildscope offers a unique blend of AI technology, offline exploration tools, and a global community of nature lovers."
+    "title": "究極の野生動物識別＆自然探索アプリ",
+    "paragraph1": "Wildscopeは自然とのつながり方を変革します。山道をハイキングしていても、地元の公園を探索していても、自宅から野生動物を発見していても、当社の高度なAI技術が植物の識別、動物の追跡、そして意味のある方法でエコシステムについて学ぶのを支援します。",
+    "paragraph2": "カジュアルな自然散策から遠隔地の野生探検まで、Wildscopeは強力なAI識別技術、包括的なオフライン探索ツール、そして世界中の自然愛好家のコミュニティを組み合わせてあなたのアウトドア冒険を強化します。"
   },
   "Features": {
-    "title": "Amazing Features",
-    "feature1_title": "Essential Exploration Tools",
-    "feature1_desc": "Navigate with confidence using our custom waypoint compass, decode signals with the built-in Morse tool, and access the comprehensive Kntos-library—everything you need for adventure, all in one place.",
-    "feature2_title": "Track Wildlife",
-    "feature2_desc": "Discover Flora, Fauna, and Fungi in your surroundings with our advanced tracking system. Log your wildlife sightings, access detailed species information including location-specific data, high-quality images, interactive habitat maps, and contribute to citizen science projects worldwide.",
-    "feature3_title": "Connect & Share",
-    "feature3_desc": "Join a vibrant community of nature lovers and explorers. Find exciting discoveries from fellow adventurers, visit their marked locations, like and comment on their findings, or share your own unique experiences to inspire others.",
-    "feature4_title": "Local & Global Exploration Modes",
-    "feature4_desc": "Discover nature in your current location or explore distant biomes and ecosystems from home. Once an area is loaded, species data and detailed maps work completely offline, helping you navigate even without internet access—perfect for remote adventures.",
-    "feature5_title": "Quizzes & Text Adventures",
-    "feature5_desc": "Make learning enjoyable with our collection of basic nature quizzes and dynamically generated ones using local data. Test your survival skills through immersive text adventures in pregenerated scenarios, or unleash your creativity by designing your own wilderness challenges.",
-    "feature6_title": "Wildscope Coach",
-    "feature6_desc": "Chat with your AI-powered companion who understands your surroundings. Share images for instant identification, ask questions about nearby species and landmarks, and receive personalized guidance for your outdoor adventures—it's like having a naturalist expert in your pocket."
+    "title": "野生動物追跡＆自然探索機能",
+    "feature1_title": "高度な野生地ナビゲーションツール",
+    "feature1_desc": "GPS対応のウェイポイントコンパスで自信を持ってどんな地形でもナビゲートし、内蔵ツールで野生のシグナルを解読し、包括的なアウトドア知識ライブラリにアクセス—自然探索に必須のツールが全て一つのアプリケーションに。",
+    "feature2_title": "AI搭載の野生動物＆植物識別",
+    "feature2_desc": "当社の高度なAI認識システムで植物、動物、菌類を即座に識別。野生動物の目撃を記録し、位置特有のデータ、高解像度画像、インタラクティブな生息地マップを含む詳細な種情報にアクセスし、世界的な生物多様性研究に貢献。",
+    "feature3_title": "自然愛好家コミュニティ",
+    "feature3_desc": "世界中の熱心な野生動物観察者や自然探索者とつながる。他の冒険家からの驚くべき野生動物の目撃を発見し、記録された場所を訪れ、観察を共有し、あなたのユニークな自然体験で他の人々にインスピレーションを与える。",
+    "feature4_title": "オフライン自然探索＆野生動物追跡",
+    "feature4_desc": "お住まいの地域の自然生息地を探索するか、自宅から遠くのエコシステムを発見。地域データをダウンロードして種識別と詳細マップを完全にオフラインで使用—携帯サービスのない遠隔地の野生冒険に最適。",
+    "feature5_title": "インタラクティブな自然学習＆野生チャレンジ",
+    "feature5_desc": "生物多様性クイズと位置ベースの学習アクティビティで自然知識を強化。没入型の野生シナリオを通じてサバイバルスキルをテストするか、友人や家族と共有するためのカスタム自然チャレンジを作成。",
+    "feature6_title": "パーソナルAI野生動物＆自然ガイド",
+    "feature6_desc": "あなたの周囲を理解するAI自然専門家に相談。画像をアップロードして即座に種を識別し、近くの植物や動物について質問し、アウトドア冒険のためのカスタマイズされたガイダンスを受け取る—ポケットに専門の自然研究者を持っているよう。"
   },
   "CallToAction": {
-    "title": "Ready to Start Your Adventure?",
-    "subtitle": "Download Wildscope and start exploring — whether you're deep in nature or on your living room couch.",
-    "appstore": "App Store",
-    "playstore": "Google Play",
-    "button": "Download Wildscope Now"
+    "title": "野生動物を発見＆自然を探索する準備はできましたか？",
+    "subtitle": "Wildscopeをダウンロードして植物の識別、野生動物の追跡、自然生息地の探索を始めましょう—遠隔地の野生でも地元の公園でも。",
+    "appstore": "App Storeでダウンロード",
+    "playstore": "Google Playで入手",
+    "button": "Wildscope自然探索者をダウンロード"
   },
   "Footer": {
     "copyright": "© {year} Wildscope. 無断複写・転載を禁じます。",
@@ -101,20 +105,20 @@
     "comingSoon": "近日公開"
   },
   "FAQ": {
-    "title": "よくある質問",
-    "question1": "WildscopeはiNaturalistとどう違いますか？",
-    "answer1": "iNaturalistが主に種の識別と市民科学に焦点を当てているのに対し、Wildscopeはナビゲーションツール、オフライン機能、テキストアドベンチャー、クイズなどの追加機能を備えたより包括的なアウトドア体験を提供します。Wildscopeには、周囲の環境を理解し、パーソナライズされたガイダンスを提供できる内蔵AI同伴者も含まれており、カジュアルな自然愛好家から本格的な冒険家まで適しています。",
-    "question2": "Wildscopeはオフラインで動作しますか？",
-    "answer2": "はい！エリアを一度ロードすると、Wildscopeの種データと詳細な地図は完全にオフラインで機能します。これはインターネット接続が限られているか存在しない遠隔地での冒険に最適です。",
-    "question3": "Wildscopeはどのプラットフォームで利用できますか？",
-    "answer3": "WildscopeはApp StoreとGoogle Play Storeを通じて、iOS（iPhone/iPad）とAndroidデバイスの両方で利用できます。",
-    "question4": "Wildscopeは無料で使えますか？",
-    "answer4": "Wildscopeは基本機能を備えた無料版と、高度な機能をロック解除するプレミアムサブスクリプションを提供しています。現在の価格詳細についてはアプリをご確認ください。",
-    "question5": "種の識別はどれくらい正確ですか？",
-    "answer5": "Wildscopeは位置データと現在のAI技術を組み合わせて種を検出しますが、AIがエラーを起こす可能性があることに注意することが重要です。私たちは正確さを追求していますが、誤認識が常に発生する可能性があります。私たちは更新やアルゴリズムの改良を通じて、時間をかけてシステムを継続的に改善しています。",
-    "question6": "Wildscopeのデータベースに貢献できますか？",
-    "answer6": "もちろんです！Wildscopeはコミュニティの貢献を念頭に置いて構築されています。あなたの野生動物の目撃情報や観察結果は、既存のコミュニティデータと組み合わされ、すべての人のためにアプリ体験を向上させます。この共有知識は、すべてのWildscopeユーザーに利益をもたらすより豊かなデータベースを作成します。",
-    "question7": "Wildscopeは企業によって開発されていますか？",
-    "answer7": "いいえ、Wildscopeは一人の趣味プロジェクトです。情熱的な開発者一人が空き時間に開発・維持しています。これは更新に時間がかかる可能性がありますが、アプリが企業の影響やユーザーデータを収益化するプレッシャーなしに、野生動物愛好家のためのシンプルで効率的なツールであるという元々のビジョンに忠実であることも保証します。"
+    "title": "野生動物追跡に関するよくある質問",
+    "question1": "WildscopeはiNaturalistなどの他の自然識別アプリとどう違いますか？",
+    "answer1": "iNaturalistが主に種の識別と市民科学に焦点を当てている一方、Wildscopeは自然愛好家のために特別に設計された追加機能を備えた完全なアウトドア体験を提供します。当社のアプリにはオフライン野生動物識別、野生地探索用のGPSナビゲーションツール、自然クイズを通じたインタラクティブな学習、そしてあなたの環境を理解してパーソナライズされたガイダンスを提供するAIコンパニオンが含まれています—カジュアルな自然愛好家から真剣な野生動物追跡者まで最適です。",
+    "question2": "Wildscopeでオフラインで植物や動物を識別できますか？",
+    "answer2": "はい！エリアのデータをダウンロードすると、Wildscopeの野生動物識別、植物認識、詳細なトレイルマップが完全にオフラインで機能します。これにより、インターネット接続が利用できない遠隔地の野生冒険に最適なアプリとなり、自然のどこでも自信を持って種を識別しナビゲートできることを保証します。",
+    "question3": "どのデバイスがWildscope自然探索アプリをサポートしていますか？",
+    "answer3": "Wildscopeの野生動物追跡と自然識別機能は、App StoreとGoogle Play Storeを通じてiOS（iPhone/iPad）とAndroidデバイスの両方で利用可能で、実質的にすべてのスマートフォンユーザーにアクセス可能です。",
+    "question4": "Wildscope野生動物識別アプリは無料で使えますか？",
+    "answer4": "Wildscopeは基本的な野生動物識別と自然探索機能を備えた無料版を提供しています。プレミアムサブスクリプションでは、オフライン種認識、詳細な生息地マップ、カスタム探索ルートなどの高度な機能がアンロックされます。現在のサブスクリプションオプションについてはアプリをご確認ください。",
+    "question5": "Wildscopeの植物と動物の識別はどれくらい正確ですか？",
+    "answer5": "Wildscopeは位置データと高度なAI技術を組み合わせて、高精度で野生動物と植物を識別します。認識システムは継続的に改善されていますが、識別精度は種類、画像品質、視角によって異なります。定期的な更新を通じてアルゴリズムを常に強化し、あらゆる環境でますます正確な野生動物と植物の識別を提供しています。",
+    "question6": "Wildscopeの野生動物データベースに貢献できますか？",
+    "answer6": "もちろんです！Wildscopeはコミュニティの貢献で成り立っています。あなたの野生動物の観察と植物の識別は当社のエコシステムデータベースに安全に追加され、すべての人のためにアプリの精度を向上させます。この協力的なアプローチにより、すべての自然愛好家に利益をもたらす包括的な野生動物識別リソースが作成されます。",
+    "question7": "Wildscopeは大手テクノロジー企業によって開発されていますか？",
+    "answer7": "いいえ、Wildscopeは献身的な自然愛好家によって開発された独立プロジェクトです。このアプリは、収益化よりも精度とユーザー体験を重視する情熱的な単独の開発者によって設計・維持されています。この独立したアプローチにより、Wildscopeはその核心的使命を忠実に守ることができます：ユーザーのプライバシーや体験を損なうことなく、人々が自然とつながり理解するのを支援すること。"
   }
 } 

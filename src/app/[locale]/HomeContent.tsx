@@ -35,7 +35,7 @@ export default function HomeContent({ locale }: HomeContentProps) {
             />
           </div>
           <div className="container mx-auto px-6 text-center relative z-10">
-            <div className="backdrop-blur-md p-8 rounded-lg inline-block mx-auto">
+            <div className="p-8 rounded-lg inline-block mx-auto">
               <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">
                 {t('title')}
               </h1>
