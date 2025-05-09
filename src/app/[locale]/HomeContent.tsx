@@ -81,9 +81,9 @@ export default function HomeContent({ locale }: HomeContentProps) {
                 <p className="text-gray-600 dark:text-gray-300">{tFeatures('feature1_desc')}</p>
               </div>
               <div className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img2_${locale}.png`)}>
+                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img3_${locale}.png`)}>
                   <Image 
-                    src={`/images/img2_${locale}.png`}
+                    src={`/images/img3_${locale}.png`}
                     alt={`${tFeatures('feature2_title')} - AI wildlife identification`}
                     width={400}
                     height={300}
@@ -92,7 +92,7 @@ export default function HomeContent({ locale }: HomeContentProps) {
                       // Fallback to English if localized image fails to load
                       const target = e.target as HTMLImageElement;
                       target.onerror = null; // Prevent infinite loop
-                      target.src = `/images/img2_en.png`;
+                      target.src = `/images/img3_en.png`;
                     }}
                   />
                 </div>
@@ -100,9 +100,9 @@ export default function HomeContent({ locale }: HomeContentProps) {
                 <p className="text-gray-600 dark:text-gray-300">{tFeatures('feature2_desc')}</p>
               </div>
               <div className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img3_${locale}.png`)}>
+                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img2_${locale}.png`)}>
                   <Image 
-                    src={`/images/img3_${locale}.png`}
+                    src={`/images/img2_${locale}.png`}
                     alt={`${tFeatures('feature3_title')} - Outdoor adventure community`}
                     width={400}
                     height={300}
@@ -111,7 +111,7 @@ export default function HomeContent({ locale }: HomeContentProps) {
                       // Fallback to English if localized image fails to load
                       const target = e.target as HTMLImageElement;
                       target.onerror = null; // Prevent infinite loop
-                      target.src = `/images/img3_en.png`;
+                      target.src = `/images/img2_en.png`;
                     }}
                   />
                 </div>

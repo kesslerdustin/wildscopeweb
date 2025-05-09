@@ -53,6 +53,13 @@ export default function HomeContent({ locale }: HomeContentProps) {
     <Clock className="w-10 h-10 text-emerald-500 mb-4" key="clock" />
   ];
 
+  // Function to map img numbers to swap img2 and img3
+  const getImageNumber = (index: number) => {
+    if (index === 2) return 3;
+    if (index === 3) return 2;
+    return index;
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -74,7 +81,7 @@ export default function HomeContent({ locale }: HomeContentProps) {
             animate="visible"
             variants={fadeIn}
           >
-            <div className="backdrop-blur-md p-8 rounded-lg inline-block mx-auto">
+            <div className="p-8 rounded-lg inline-block mx-auto">
               <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">
                 {t('title')}
               </h1>
@@ -136,9 +143,9 @@ export default function HomeContent({ locale }: HomeContentProps) {
                   <div className="flex flex-col items-center">
                     {featureIcons[i-1]}
                   </div>
-                  <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img${i}.png`)}>
+                  <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img${getImageNumber(i)}.png`)}>
                     <Image 
-                      src={`/images/img${i}.png`}
+                      src={`/images/img${getImageNumber(i)}.png`}
                       alt={tFeatures(`feature${i}_title`)}
                       width={400}
                       height={300}
