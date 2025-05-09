@@ -24,26 +24,28 @@ export default function HomeContent({ locale }: HomeContentProps) {
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-white text-gray-800 py-20 md:py-32 relative">
+        <section className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600 text-white py-20 md:py-32 relative">
           <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
             <Image
               src="/images/header.png"
               alt="Header background"
               fill
               priority
-              className="object-cover"
+              className="object-cover opacity-40"
             />
           </div>
           <div className="container mx-auto px-6 text-center relative z-10">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              {t('title')}
-            </h1>
-            <p className="text-lg md:text-xl mb-8">
-              {t('subtitle')}
-            </p>
-            <button className="bg-emerald-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300">
-              {t('cta')}
-            </button>
+            <div className="backdrop-blur-md p-8 rounded-lg inline-block mx-auto">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">
+                {t('title')}
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-white drop-shadow-md">
+                {t('subtitle')}
+              </p>
+              <button className="bg-emerald-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300">
+                {t('cta')}
+              </button>
+            </div>
           </div>
         </section>
 

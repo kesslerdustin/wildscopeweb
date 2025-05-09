@@ -65,7 +65,7 @@ export default function HomeContent({ locale }: HomeContentProps) {
               alt="Header background"
               fill
               priority
-              className="object-cover opacity-30"
+              className="object-cover opacity-40"
             />
           </div>
           <motion.div 
@@ -74,11 +74,11 @@ export default function HomeContent({ locale }: HomeContentProps) {
             animate="visible"
             variants={fadeIn}
           >
-            <div className="bg-white/60 backdrop-blur-sm p-6 rounded-lg shadow-lg inline-block mx-auto">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-800">
+            <div className="backdrop-blur-md p-8 rounded-lg inline-block mx-auto">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">
                 {t('title')}
               </h1>
-              <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-800">
+              <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-white drop-shadow-md">
                 {t('subtitle')}
               </p>
               <motion.button 
@@ -88,7 +88,7 @@ export default function HomeContent({ locale }: HomeContentProps) {
               >
                 {t('cta')}
               </motion.button>
-              <p className="mt-3 text-sm font-semibold text-gray-700">{t('cta_subtext')}</p>
+              <p className="mt-3 text-sm font-semibold text-white/90 drop-shadow-md">{t('cta_subtext')}</p>
             </div>
           </motion.div>
         </section>
