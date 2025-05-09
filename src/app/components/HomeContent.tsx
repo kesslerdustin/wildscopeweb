@@ -74,10 +74,10 @@ export default function HomeContent({ locale }: HomeContentProps) {
             animate="visible"
             variants={fadeIn}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-800 drop-shadow-md">
               {t('title')}
             </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-900 drop-shadow-md">
               {t('subtitle')}
             </p>
             <motion.button 
@@ -87,7 +87,7 @@ export default function HomeContent({ locale }: HomeContentProps) {
             >
               {t('cta')}
             </motion.button>
-            <p className="mt-3 text-sm font-light">{t('cta_subtext')}</p>
+            <p className="mt-3 text-sm font-semibold text-gray-900 drop-shadow-md">{t('cta_subtext')}</p>
           </motion.div>
         </section>
 

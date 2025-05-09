@@ -11,7 +11,7 @@ export default function Header() {
   const locale = useLocale();
 
   return (
-    <header className="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+    <header className="bg-gray-50 dark:bg-gray-700 shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link href={`/${locale}`} className="text-2xl font-bold text-emerald-600 dark:text-emerald-400 hover:opacity-80 transition-opacity flex items-center">
           <Image 
