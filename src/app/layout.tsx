@@ -9,14 +9,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com'),
   title: {
-    template: '%s | Wildscope',
-    default: 'Wildscope - Your Next Adventure!'
+    template: '%s | Wildscope - Wildlife Tracking & Outdoor Adventure App',
+    default: 'Wildscope - Wildlife Tracking & Outdoor Adventure App'
   },
-  description: "Discover Wildscope - Your Next Adventure!",
+  description: "Discover Wildscope - Your comprehensive wildlife identification and outdoor adventure companion. Explore nature with AI-powered species recognition, offline maps, and interactive tracking tools.",
   applicationName: 'Wildscope',
   authors: [{ name: 'Wildscope Team' }],
   creator: 'Wildscope',
   publisher: 'Wildscope',
+  keywords: ['wildlife tracking', 'outdoor adventure app', 'nature exploration', 'species identification', 'offline hiking maps', 'AI wildlife recognition', 'outdoor companion', 'adventure tool', 'nature discovery'],
   robots: {
     index: true,
     follow: true,

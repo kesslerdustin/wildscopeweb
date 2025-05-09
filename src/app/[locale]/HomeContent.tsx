@@ -7,6 +7,7 @@ import Footer from '@/components/Layout/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import Image from 'next/image';
 import ImageModal from '@/components/ImageModal';
+import { OrganizationJsonLd, WebsiteJsonLd, FAQJsonLd, ReviewJsonLd } from '@/components/JsonLd';
 
 type HomeContentProps = {
   locale: string;
@@ -21,6 +22,12 @@ export default function HomeContent({ locale }: HomeContentProps) {
 
   return (
     <div className="flex flex-col min-h-screen">
+      {/* Structured Data for SEO */}
+      <OrganizationJsonLd />
+      <WebsiteJsonLd />
+      <FAQJsonLd />
+      <ReviewJsonLd />
+      
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
@@ -28,7 +35,7 @@ export default function HomeContent({ locale }: HomeContentProps) {
           <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
             <Image
               src="/images/header.png"
-              alt="Header background"
+              alt="Wildlife tracking and outdoor adventure in pristine nature landscape"
               fill
               priority
               className="object-cover opacity-40"
@@ -50,15 +57,15 @@ export default function HomeContent({ locale }: HomeContentProps) {
         </section>
 
         {/* Features Section */}
-        <section className="py-16 md:py-24 bg-gray-100 dark:bg-gray-800">
+        <section className="py-16 md:py-24 bg-gray-100 dark:bg-gray-800" id="features" aria-labelledby="features-heading">
           <div className="container mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">{tFeatures('title')}</h2>
+            <h2 id="features-heading" className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">{tFeatures('title')}</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage('/images/img1.png')}>
                   <Image 
                     src="/images/img1.png" 
-                    alt={tFeatures('feature1_title')}
+                    alt={`${tFeatures('feature1_title')} - Wildlife tracking tools`}
                     width={400}
                     height={300}
                     className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
@@ -71,7 +78,7 @@ export default function HomeContent({ locale }: HomeContentProps) {
                 <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage('/images/img2.png')}>
                   <Image 
                     src="/images/img2.png" 
-                    alt={tFeatures('feature2_title')}
+                    alt={`${tFeatures('feature2_title')} - AI wildlife identification`}
                     width={400}
                     height={300}
                     className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
@@ -84,7 +91,7 @@ export default function HomeContent({ locale }: HomeContentProps) {
                 <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage('/images/img3.png')}>
                   <Image 
                     src="/images/img3.png" 
-                    alt={tFeatures('feature3_title')}
+                    alt={`${tFeatures('feature3_title')} - Outdoor adventure community`}
                     width={400}
                     height={300}
                     className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
@@ -98,9 +105,9 @@ export default function HomeContent({ locale }: HomeContentProps) {
         </section>
 
         {/* Call to Action Section */}
-        <section className="py-20 bg-emerald-600 text-white">
+        <section className="py-20 bg-emerald-600 text-white" id="download" aria-labelledby="cta-heading">
           <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">{tCta('title')}</h2>
+            <h2 id="cta-heading" className="text-3xl md:text-4xl font-bold mb-6">{tCta('title')}</h2>
             <button className="bg-white text-emerald-700 font-semibold py-3 px-10 rounded-lg shadow-lg hover:bg-gray-100 transition-colors duration-300 text-lg">
               {tCta('button')}
             </button>

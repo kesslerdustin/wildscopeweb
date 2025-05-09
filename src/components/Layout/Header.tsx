@@ -16,14 +16,14 @@ export default function Header() {
         <Link href={`/${locale}`} className="text-2xl font-bold text-emerald-600 hover:opacity-80 transition-opacity flex items-center">
           <Image 
             src="/images/icon.png" 
-            alt="Wildscope icon" 
+            alt="Wildscope Wildlife Tracking App Icon" 
             width={32} 
             height={32} 
             className="rounded-full mr-2"
           />
           <Image 
             src="/images/logo.png" 
-            alt="Wildscope logo" 
+            alt="Wildscope - Wildlife Tracking & Outdoor Adventure App Logo" 
             width={160} 
             height={40} 
             className="h-8 w-auto"

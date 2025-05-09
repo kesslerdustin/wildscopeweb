@@ -6,21 +6,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
   
   // Define all routes/pages that should be included in the sitemap
   const routes = [
-    '', // homepage
-    '/contact',
-    '/datenschutz',
-    '/impressum',
+    {
+      path: '', // homepage
+      changeFrequency: 'weekly' as const,
+      priority: 1.0
+    },
+    {
+      path: '/contact',
+      changeFrequency: 'monthly' as const,
+      priority: 0.8
+    },
+    {
+      path: '/datenschutz',
+      changeFrequency: 'yearly' as const,
+      priority: 0.5
+    },
+    {
+      path: '/impressum',
+      changeFrequency: 'yearly' as const,
+      priority: 0.5
+    },
+    // Additional pages can be added here
   ];
   
   // Create sitemap entries for each locale and route
   const sitemapEntries = locales.flatMap(locale => {
     return routes.map(route => {
-      const path = route ? `/${locale}${route}` : `/${locale}`;
+      const path = route.path ? `/${locale}${route.path}` : `/${locale}`;
       return {
         url: `${baseUrl}${path}`,
         lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: route === '' ? 1.0 : 0.8,
+        changeFrequency: route.changeFrequency,
+        priority: route.priority,
       };
     });
   });

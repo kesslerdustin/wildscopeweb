@@ -10,23 +10,23 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   
   // Define title and description by locale
   const titles = {
-    en: 'Wildscope - Discover Your Next Adventure',
-    de: 'Wildscope - Entdecke Dein nächstes Abenteuer',
-    fr: 'Wildscope - Découvrez Votre Prochaine Aventure',
-    it: 'Wildscope - Scopri La Tua Prossima Avventura',
-    es: 'Wildscope - Descubre Tu Próxima Aventura',
-    pt: 'Wildscope - Descubra Sua Próxima Aventura',
-    ja: 'Wildscope - 次の冒険を発見しよう'
+    en: 'Wildscope - Wildlife Tracking & Outdoor Adventure App',
+    de: 'Wildscope - Wildlife-Tracking & Outdoor-Abenteuer-App',
+    fr: 'Wildscope - Application de Suivi de la Faune et d\'Aventure en Plein Air',
+    it: 'Wildscope - App di Tracciamento della Fauna Selvatica e Avventura all\'Aperto',
+    es: 'Wildscope - Aplicación de Seguimiento de Vida Silvestre y Aventuras al Aire Libre',
+    pt: 'Wildscope - Aplicativo de Rastreamento de Vida Selvagem e Aventura ao Ar Livre',
+    ja: 'Wildscope - 野生動物追跡＆アウトドアアドベンチャーアプリ'
   };
 
   const descriptions = {
-    en: 'Wildscope offers exciting outdoor adventures and wildlife experiences around the world.',
-    de: 'Wildscope bietet spannende Outdoor-Abenteuer und Naturerlebnisse weltweit an.',
-    fr: 'Wildscope propose des aventures en plein air passionnantes et des expériences de la faune dans le monde entier.',
-    it: 'Wildscope offre emozionanti avventure all\'aria aperta ed esperienze di fauna selvatica in tutto il mondo.',
-    es: 'Wildscope ofrece emocionantes aventuras al aire libre y experiencias con la vida silvestre en todo el mundo.',
-    pt: 'Wildscope oferece aventuras ao ar livre emocionantes e experiências com a vida selvagem em todo o mundo.',
-    ja: 'Wildscopeは、世界中でのエキサイティングなアウトドアアドベンチャーと野生動物体験を提供します。'
+    en: 'Wildscope is your AI-powered wildlife identification and outdoor adventure companion. Explore nature with species recognition, offline hiking maps, and interactive tracking tools.',
+    de: 'Wildscope ist Ihr KI-gestützter Begleiter für Wildtierbestimmung und Outdoor-Abenteuer. Erkunden Sie die Natur mit Artenbestimmung, Offline-Wanderkarten und interaktiven Tracking-Tools.',
+    fr: 'Wildscope est votre compagnon d\'identification de la faune et d\'aventure en plein air alimenté par l\'IA. Explorez la nature avec la reconnaissance des espèces, des cartes de randonnée hors ligne et des outils de suivi interactifs.',
+    it: 'Wildscope è il tuo compagno di identificazione della fauna selvatica e avventura all\'aperto alimentato dall\'intelligenza artificiale. Esplora la natura con il riconoscimento delle specie, mappe escursionistiche offline e strumenti di tracciamento interattivi.',
+    es: 'Wildscope es su compañero de identificación de vida silvestre y aventura al aire libre impulsado por IA. Explore la naturaleza con reconocimiento de especies, mapas de senderismo sin conexión y herramientas de seguimiento interactivas.',
+    pt: 'Wildscope é seu companheiro de identificação de vida selvagem e aventura ao ar livre com tecnologia de IA. Explore a natureza com reconhecimento de espécies, mapas de caminhada offline e ferramentas interativas de rastreamento.',
+    ja: 'Wildscopeは、AI搭載の野生動物識別およびアウトドアアドベンチャーコンパニオンです。種の認識、オフラインハイキングマップ、インタラクティブな追跡ツールで自然を探索しましょう。'
   };
 
   return {
@@ -45,11 +45,21 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       siteName: 'Wildscope',
       locale: locale,
       type: 'website',
+      images: [
+        {
+          url: `${baseUrl}/images/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: 'Wildscope - Wildlife Tracking & Outdoor Adventure App'
+        }
+      ]
     },
     twitter: {
       card: 'summary_large_image',
       title: titles[locale as keyof typeof titles] || titles.en,
       description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
+      images: [`${baseUrl}/images/og-image.png`],
+      creator: '@wildscope'
     },
   };
 }
