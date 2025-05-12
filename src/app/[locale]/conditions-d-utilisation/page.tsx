@@ -17,59 +17,60 @@ export default function ConditionsDUtilisationPage({params: {locale}}: Props) {
       <main className="flex-grow container mx-auto px-6 py-12">
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800 dark:text-white">{t('title')}</h1>
         <div className="prose dark:prose-invert max-w-none bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
-          <h2>{t('introduction_title')}</h2>
+          <p className="text-sm text-gray-600 mb-6">{t('updated')}</p>
+          
+          <h2>{t('general_title')}</h2>
           <p>
-            {t('introduction_text')}
+            {t('general_text')}
           </p>
           
-          <h2>{t('acceptance_title')}</h2>
+          <h2>{t('features_title')}</h2>
           <p>
-            {t('acceptance_text')}
+            {t('features_text')}
           </p>
           
-          <h2>{t('modification_title')}</h2>
+          <h2>{t('account_title')}</h2>
           <p>
-            {t('modification_text')}
+            {t('account_text1')}
+          </p>
+          <h3 className="text-lg font-semibold">{t('prohibited_subtitle')}</h3>
+          <p>
+            {t('prohibited_text')}
           </p>
           
-          <h2>{t('service_description_title')}</h2>
+          <h2>{t('data_title')}</h2>
           <p>
-            {t('service_description_text')}
+            {t('data_text')}
           </p>
           
-          <h2>{t('user_conduct_title')}</h2>
+          <h2>{t('premium_title')}</h2>
           <p>
-            {t('user_conduct_text')}
-          </p>
-          
-          <h2>{t('user_content_title')}</h2>
-          <p>
-            {t('user_content_text')}
-          </p>
-          
-          <h2>{t('intellectual_property_title')}</h2>
-          <p>
-            {t('intellectual_property_text')}
+            {t('premium_text')}
           </p>
           
           <h2>{t('disclaimer_title')}</h2>
+          <h3 className="text-lg font-semibold">{t('disclaimer_subtitle')}</h3>
           <p>
             {t('disclaimer_text')}
           </p>
           
-          <h2>{t('limitation_liability_title')}</h2>
+          <h2>{t('content_title')}</h2>
+          <h3 className="text-lg font-semibold">{t('uploads_subtitle')}</h3>
           <p>
-            {t('limitation_liability_text')}
+            {t('uploads_text')}
+          </p>
+          <h3 className="text-lg font-semibold">{t('app_content_subtitle')}</h3>
+          <p>
+            {t('app_content_text')}
           </p>
           
-          <h2>{t('governing_law_title')}</h2>
+          <h2>{t('changes_title')}</h2>
           <p>
-            {t('governing_law_text')}
+            {t('changes_text')}
           </p>
           
-          <h2>{t('contact_title')}</h2>
-          <p>
-            {t('contact_text')}
+          <p className="mt-8 text-sm text-gray-600">
+            {t('contact_info')}
           </p>
         </div>
       </main>
