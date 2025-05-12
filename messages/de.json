@@ -38,11 +38,12 @@
     "feature6_desc": "Konsultiere deinen KI-Naturexperten, der deine Umgebung versteht. Lade Bilder für sofortige Artenidentifikation hoch, stelle Fragen zu nahegelegenen Pflanzen und Tieren und erhalte maßgeschneiderte Anleitungen für deine Outdoor-Abenteuer – wie einen professionellen Naturforscher in der Tasche."
   },
   "CallToAction": {
-    "title": "Bereit, Wildtiere zu entdecken & die Natur zu erforschen?",
-    "subtitle": "Lade Wildscope herunter und beginne Pflanzen zu identifizieren, Wildtiere zu beobachten und natürliche Lebensräume zu erkunden – ob in der abgelegenen Wildnis oder in deinem lokalen Park.",
+    "title": "Bereit, Wildtiere zu entdecken & die Natur zu erkunden?",
+    "subtitle": "Laden Sie Wildscope herunter und beginnen Sie mit der Identifizierung von Pflanzen, der Verfolgung von Wildtieren und der Erkundung natürlicher Lebensräume — egal ob in abgelegener Wildnis oder in Ihrem lokalen Park.",
     "appstore": "Im App Store laden",
     "playstore": "Bei Google Play holen",
-    "button": "Wildscope Naturerkunder herunterladen"
+    "button": "Wildscope Naturerkunder herunterladen",
+    "playstoreLink": "https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
   },
   "Footer": {
     "copyright": "© {year} Wildscope. Alle Rechte vorbehalten.",

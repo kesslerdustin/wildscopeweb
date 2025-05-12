@@ -38,11 +38,12 @@
     "feature6_desc": "Consult your AI nature expert that understands your surroundings. Upload images for instant species identification, ask questions about nearby plants and animals, and receive customized guidance for your outdoor adventures—like having a professional naturalist in your pocket."
   },
   "CallToAction": {
-    "title": "Ready to Discover Wildlife & Explore Nature?",
-    "subtitle": "Download Wildscope and start identifying plants, tracking wildlife, and exploring natural habitats—whether in remote wilderness or your local park.",
+    "title": "Ready to discover wildlife & explore nature?",
+    "subtitle": "Download Wildscope and start identifying plants, tracking wildlife, and exploring natural habitats — whether in remote wilderness or your local park.",
     "appstore": "Download on App Store",
     "playstore": "Get it on Google Play",
-    "button": "Download Wildscope Nature Explorer"
+    "button": "Download Wildscope Explorer",
+    "playstoreLink": "https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
   },
   "Footer": {
     "copyright": "© {year} Wildscope. All rights reserved.",

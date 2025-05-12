@@ -42,7 +42,8 @@
     "subtitle": "Wildscopeをダウンロードして植物の識別、野生動物の追跡、自然生息地の探索を始めましょう—遠隔地の野生でも地元の公園でも。",
     "appstore": "App Storeでダウンロード",
     "playstore": "Google Playで入手",
-    "button": "Wildscope自然探索者をダウンロード"
+    "button": "Wildscope自然探索者をダウンロード",
+    "playstoreLink": "https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
   },
   "Footer": {
     "copyright": "© {year} Wildscope. 無断複写・転載を禁じます。",

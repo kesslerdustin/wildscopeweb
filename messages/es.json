@@ -38,11 +38,12 @@
     "feature6_desc": "Consulta a tu experto en naturaleza con IA que comprende tu entorno. Sube imágenes para identificación instantánea de especies, haz preguntas sobre plantas y animales cercanos, y recibe orientación personalizada para tus aventuras al aire libre—como tener un naturalista profesional en tu bolsillo."
   },
   "CallToAction": {
-    "title": "¿Listo para Descubrir la Fauna Silvestre & Explorar la Naturaleza?",
-    "subtitle": "Descarga Wildscope y comienza a identificar plantas, rastrear vida silvestre y explorar hábitats naturales—ya sea en áreas silvestres remotas o en tu parque local.",
+    "title": "¿Listo para descubrir la vida silvestre y explorar la naturaleza?",
+    "subtitle": "Descarga Wildscope y comienza a identificar plantas, rastrear vida silvestre y explorar hábitats naturales, ya sea en áreas remotas o en tu parque local.",
     "appstore": "Descargar en App Store",
     "playstore": "Obtener en Google Play",
-    "button": "Descarga el Explorador Natural Wildscope"
+    "button": "Descargar Wildscope Explorador",
+    "playstoreLink": "https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
   },
   "Footer": {
     "copyright": "© {year} Wildscope. Todos los derechos reservados.",

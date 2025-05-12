@@ -42,7 +42,8 @@
     "subtitle": "Baixe o Wildscope e comece a identificar plantas, rastrear vida selvagem e explorar habitats naturais—seja em áreas selvagens remotas ou no seu parque local.",
     "appstore": "Baixar na App Store",
     "playstore": "Obter no Google Play",
-    "button": "Baixar o Explorador da Natureza Wildscope"
+    "button": "Baixar o Explorador da Natureza Wildscope",
+    "playstoreLink": "https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
   },
   "Footer": {
     "copyright": "© {year} Wildscope. Todos os direitos reservados.",
