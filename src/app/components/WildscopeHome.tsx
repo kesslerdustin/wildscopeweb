@@ -239,7 +239,10 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                 </svg>
                 {tCta('appstore')}
               </motion.button>
-              <motion.button 
+              <motion.a 
+                href={tCta('playstoreLink')}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-black text-white font-semibold py-3 px-8 rounded-lg hover:bg-gray-900 transition-colors duration-300 flex items-center justify-center"
                 onClick={trackPlayStoreClick}
                 whileHover={{ scale: 1.05 }}
@@ -252,7 +255,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   <path d="M13.53 19.446l-9.966-5.732-.188-.117-.118.13.118.116.118.13.187.117 9.85 5.732.187.117.117-.13-.117-.116.118-.13-.188-.117-.118.13z" />
                 </svg>
                 {tCta('playstore')}
-              </motion.button>
+              </motion.a>
             </div>
           </div>
         </motion.section>
