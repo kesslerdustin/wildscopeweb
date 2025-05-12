@@ -17,57 +17,32 @@ export default function NutzungsbedingungenPage({params: {locale}}: Props) {
       <main className="flex-grow container mx-auto px-6 py-12">
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800 dark:text-white">{t('title')}</h1>
         <div className="prose dark:prose-invert max-w-none bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
-          <p className="text-sm text-gray-600 mb-6">{t('updated')}</p>
+          <h2>{t('overview_title')}</h2>
+          <p className="text-sm text-gray-600 mb-6">{t('last_updated')}</p>
           
           <h2>{t('general_title')}</h2>
-          <p>
-            {t('general_text')}
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: t('general_info') }} />
           
           <h2>{t('features_title')}</h2>
-          <p>
-            {t('features_text')}
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: t('features_info') }} />
           
           <h2>{t('account_title')}</h2>
-          <p>
-            {t('account_text1')}
-          </p>
-          <h3 className="text-lg font-semibold">{t('prohibited_subtitle')}</h3>
-          <p>
-            {t('prohibited_text')}
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: t('account_info') }} />
           
-          <h2>{t('data_title')}</h2>
-          <p>
-            {t('data_text')}
-          </p>
+          <h2>{t('data_management_title')}</h2>
+          <p dangerouslySetInnerHTML={{ __html: t('data_management_info') }} />
           
           <h2>{t('premium_title')}</h2>
-          <p>
-            {t('premium_text')}
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: t('premium_info') }} />
           
           <h2>{t('disclaimer_title')}</h2>
-          <h3 className="text-lg font-semibold">{t('disclaimer_subtitle')}</h3>
-          <p>
-            {t('disclaimer_text')}
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: t('disclaimer_info') }} />
           
-          <h2>{t('content_title')}</h2>
-          <h3 className="text-lg font-semibold">{t('uploads_subtitle')}</h3>
-          <p>
-            {t('uploads_text')}
-          </p>
-          <h3 className="text-lg font-semibold">{t('app_content_subtitle')}</h3>
-          <p>
-            {t('app_content_text')}
-          </p>
+          <h2>{t('content_rights_title')}</h2>
+          <p dangerouslySetInnerHTML={{ __html: t('content_rights_info') }} />
           
           <h2>{t('changes_title')}</h2>
-          <p>
-            {t('changes_text')}
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: t('changes_info') }} />
           
           <p className="mt-8 text-sm text-gray-600">
             {t('contact_info')}
