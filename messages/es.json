@@ -1,10 +1,11 @@
 {
   "Navigation": {
     "home": "Inicio",
-    "impressum": "Aviso legal",
-    "privacy": "Política de privacidad",
+    "impressum": "Aviso Legal",
+    "privacy": "Política de Privacidad",
     "contact": "Contacto",
-    "language": "Idioma"
+    "language": "Idioma",
+    "terms": "Términos de Uso"
   },
   "Meta": {
     "title": "App de Seguimiento de Fauna Silvestre & Exploración Natural | Wildscope",
@@ -45,7 +46,7 @@
   },
   "Footer": {
     "copyright": "© {year} Wildscope. Todos los derechos reservados.",
-    "impressum": "Aviso legal",
+    "impressum": "Aviso Legal",
     "privacy": "Política de privacidad",
     "contact": "Contacto"
   },
@@ -88,6 +89,31 @@
     "responsible_party_address": "Dustin Keßler<br />Kurt Schumacher Straße 93<br />46539 Dinslaken<br />Alemania",
     "responsible_party_email": "Correo electrónico: duselkay@gmail.com",
     "responsible_party_definition": "La parte responsable es la persona física o jurídica que, sola o conjuntamente con otras, determina los fines y medios del procesamiento de datos personales (por ejemplo, nombres, direcciones de correo electrónico, etc.)."
+  },
+  "TermsPage": {
+    "title": "Términos de Uso",
+    "introduction_title": "1. Introducción",
+    "introduction_text": "Bienvenido a Wildscope. Al acceder y utilizar este sitio web y aplicación, acepta estar sujeto a estos Términos de Uso, todas las leyes y reglamentos aplicables, y acepta que es responsable del cumplimiento de las leyes locales aplicables.",
+    "acceptance_title": "2. Aceptación de los Términos",
+    "acceptance_text": "Al utilizar nuestro sitio web y servicios, usted reconoce que ha leído, entendido y acepta estar sujeto a estos Términos de Uso. Si no está de acuerdo con alguna parte de estos términos, no puede utilizar nuestros servicios.",
+    "modification_title": "3. Modificación de los Términos",
+    "modification_text": "Wildscope se reserva el derecho de modificar estos Términos de Uso en cualquier momento. Proporcionaremos un aviso de los cambios actualizando la fecha en la parte inferior de esta página. Su uso continuado del sitio web después de dichas modificaciones constituirá su reconocimiento de los Términos de Uso modificados.",
+    "service_description_title": "4. Descripción del Servicio",
+    "service_description_text": "Wildscope proporciona herramientas para la identificación de vida silvestre, seguimiento y exploración de la naturaleza a través de nuestro sitio web y aplicación móvil. El servicio utiliza tecnología de IA para ayudar a los usuarios a identificar plantas y animales y proporciona información sobre entornos naturales.",
+    "user_conduct_title": "5. Conducta del Usuario",
+    "user_conduct_text": "Usted acepta no utilizar Wildscope para ningún propósito ilegal o de cualquier manera que pueda dañar, deshabilitar, sobrecargar o perjudicar el servicio. Acepta no intentar obtener acceso no autorizado a cualquier parte del servicio, otras cuentas, o sistemas informáticos o redes conectadas al servicio.",
+    "user_content_title": "6. Contenido del Usuario",
+    "user_content_text": "Al enviar contenido a Wildscope, nos otorga una licencia mundial, no exclusiva, libre de regalías para usar, reproducir, modificar, adaptar, publicar y mostrar dicho contenido en relación con el servicio. Usted representa y garantiza que posee o tiene los permisos necesarios para usar y autorizarnos a usar su contenido.",
+    "intellectual_property_title": "7. Propiedad Intelectual",
+    "intellectual_property_text": "El nombre Wildscope, el logotipo, el diseño del sitio web, el diseño de la aplicación y el contenido (excluyendo el contenido enviado por el usuario) son propiedad de o están licenciados a Wildscope y están protegidos por leyes de derechos de autor, marcas registradas y otras leyes de propiedad intelectual.",
+    "disclaimer_title": "8. Exención de Garantías",
+    "disclaimer_text": "Wildscope se proporciona 'tal cual' sin ninguna garantía, expresa o implícita. No garantizamos la precisión de las identificaciones de vida silvestre o la información sobre la naturaleza proporcionada a través de nuestro servicio.",
+    "limitation_liability_title": "9. Limitación de Responsabilidad",
+    "limitation_liability_text": "En ningún caso Wildscope, sus operadores o proveedores serán responsables por cualquier daño (incluyendo, sin limitación, daños por pérdida de datos o beneficios, o debido a la interrupción del negocio) que surja del uso o la imposibilidad de usar los materiales en el sitio web o aplicación de Wildscope.",
+    "governing_law_title": "10. Ley Aplicable",
+    "governing_law_text": "Estos Términos se regirán e interpretarán de acuerdo con las leyes de Alemania, sin tener en cuenta sus disposiciones sobre conflictos de leyes.",
+    "contact_title": "11. Información de Contacto",
+    "contact_text": "Si tiene alguna pregunta sobre estos Términos, contáctenos a través de nuestra página de contacto."
   },
   "ContactPage": {
     "title": "Contacto",

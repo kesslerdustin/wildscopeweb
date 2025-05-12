@@ -4,7 +4,8 @@
     "impressum": "Impressum",
     "privacy": "Datenschutz",
     "contact": "Kontakt",
-    "language": "Sprache"
+    "language": "Sprache",
+    "terms": "Nutzungsbedingungen"
   },
   "Meta": {
     "title": "Wildtier-Tracking & Naturerkundungs-App | Wildscope",
@@ -120,5 +121,30 @@
     "answer6": "Auf jeden Fall! Wildscope gedeiht durch Community-Beiträge. Deine Wildtierbeobachtungen und Pflanzenidentifikationen werden sicher zu unserer Ökosystem-Datenbank hinzugefügt und verbessern die Genauigkeit der App für alle. Dieser kollaborative Ansatz schafft eine umfassende Wildtieridentifikationsressource, von der alle Naturbegeisterten profitieren.",
     "question7": "Wird Wildscope von einem großen Technologieunternehmen entwickelt?",
     "answer7": "Nein, Wildscope ist ein unabhängiges Projekt, das von einem engagierten Naturbegeisterten entwickelt wurde. Die App wird von einem einzelnen leidenschaftlichen Entwickler gestaltet und gepflegt, der Genauigkeit und Benutzererfahrung über Monetarisierung stellt. Dieser unabhängige Ansatz stellt sicher, dass Wildscope seiner Kernmission treu bleibt: Menschen dabei zu helfen, sich mit der Natur zu verbinden und sie zu verstehen, ohne die Privatsphäre oder Erfahrung der Benutzer zu beeinträchtigen."
+  },
+  "TermsPage": {
+    "title": "Nutzungsbedingungen",
+    "introduction_title": "1. Einführung",
+    "introduction_text": "Willkommen bei Wildscope. Durch den Zugriff und die Nutzung dieser Website und App erklären Sie sich damit einverstanden, an diese Nutzungsbedingungen sowie alle geltenden Gesetze und Vorschriften gebunden zu sein, und stimmen zu, dass Sie für die Einhaltung aller anwendbaren lokalen Gesetze verantwortlich sind.",
+    "acceptance_title": "2. Annahme der Bedingungen",
+    "acceptance_text": "Durch die Nutzung unserer Website und Dienste bestätigen Sie, dass Sie diese Nutzungsbedingungen gelesen und verstanden haben und damit einverstanden sind. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, dürfen Sie unsere Dienste nicht nutzen.",
+    "modification_title": "3. Änderung der Bedingungen",
+    "modification_text": "Wildscope behält sich das Recht vor, diese Nutzungsbedingungen jederzeit zu ändern. Wir werden Sie über Änderungen informieren, indem wir das Datum am Ende dieser Seite aktualisieren. Ihre fortgesetzte Nutzung der Website nach solchen Änderungen stellt Ihre Bestätigung der geänderten Nutzungsbedingungen dar.",
+    "service_description_title": "4. Beschreibung des Dienstes",
+    "service_description_text": "Wildscope bietet Tools zur Identifizierung von Wildtieren, zum Tracking und zur Naturerkundung über unsere Website und mobile Anwendung. Der Dienst verwendet KI-Technologie, um Benutzern bei der Identifizierung von Pflanzen und Tieren zu helfen und Informationen über natürliche Umgebungen bereitzustellen.",
+    "user_conduct_title": "5. Nutzerverhalten",
+    "user_conduct_text": "Sie stimmen zu, Wildscope nicht für illegale Zwecke oder in einer Weise zu nutzen, die den Dienst beschädigen, deaktivieren, überlasten oder beeinträchtigen könnte. Sie stimmen zu, nicht zu versuchen, unbefugten Zugriff auf Teile des Dienstes, andere Konten oder mit dem Dienst verbundene Computer-Systeme oder Netzwerke zu erlangen.",
+    "user_content_title": "6. Nutzerinhalte",
+    "user_content_text": "Durch das Einreichen von Inhalten an Wildscope gewähren Sie uns eine weltweite, nicht-exklusive, gebührenfreie Lizenz zur Nutzung, Reproduktion, Modifikation, Anpassung, Veröffentlichung und Anzeige solcher Inhalte im Zusammenhang mit dem Dienst. Sie versichern und garantieren, dass Sie die notwendigen Rechte besitzen oder die erforderlichen Genehmigungen haben, um Ihre Inhalte zu nutzen und uns zu autorisieren, diese zu verwenden.",
+    "intellectual_property_title": "7. Geistiges Eigentum",
+    "intellectual_property_text": "Der Name Wildscope, das Logo, das Website-Design, das App-Design und die Inhalte (mit Ausnahme von Benutzer-eingereichten Inhalten) sind Eigentum von oder lizenziert an Wildscope und sind durch Urheberrecht, Markenrecht und andere Gesetze zum Schutz geistigen Eigentums geschützt.",
+    "disclaimer_title": "8. Haftungsausschluss",
+    "disclaimer_text": "Wildscope wird 'wie es ist' ohne jegliche Garantien, ausdrücklich oder impliziert, bereitgestellt. Wir garantieren nicht die Genauigkeit der Wildtieridentifikationen oder Naturinformationen, die über unseren Dienst bereitgestellt werden.",
+    "limitation_liability_title": "9. Haftungsbeschränkung",
+    "limitation_liability_text": "In keinem Fall haften Wildscope, seine Betreiber oder Lieferanten für Schäden (einschließlich, aber nicht beschränkt auf Schäden durch Datenverlust oder Gewinneinbußen oder aufgrund von Geschäftsunterbrechungen), die aus der Nutzung oder Unmöglichkeit der Nutzung der Materialien auf der Wildscope-Website oder -App entstehen.",
+    "governing_law_title": "10. Geltendes Recht",
+    "governing_law_text": "Diese Bedingungen unterliegen den Gesetzen Deutschlands und werden nach diesen ausgelegt, ohne Berücksichtigung ihrer Kollisionsnormen.",
+    "contact_title": "11. Kontaktinformationen",
+    "contact_text": "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte über unsere Kontaktseite."
   }
 } 

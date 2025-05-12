@@ -1,10 +1,11 @@
 {
   "Navigation": {
     "home": "ホーム",
-    "impressum": "法的通知",
+    "impressum": "運営者情報",
     "privacy": "プライバシーポリシー",
     "contact": "お問い合わせ",
-    "language": "言語"
+    "language": "言語",
+    "terms": "利用規約"
   },
   "Meta": {
     "title": "野生動物追跡＆自然探索アプリ | Wildscope",
@@ -45,7 +46,7 @@
   },
   "Footer": {
     "copyright": "© {year} Wildscope. 無断複写・転載を禁じます。",
-    "impressum": "法的通知",
+    "impressum": "運営者情報",
     "privacy": "プライバシーポリシー",
     "contact": "お問い合わせ"
   },
@@ -88,6 +89,31 @@
     "responsible_party_address": "Dustin Keßler<br />Kurt Schumacher Straße 93<br />46539 Dinslaken<br />ドイツ",
     "responsible_party_email": "メール: duselkay@gmail.com",
     "responsible_party_definition": "責任者とは、単独または他者と共同で、個人データ（名前、メールアドレスなど）の処理の目的と手段を決定する自然人または法人を指します。"
+  },
+  "TermsPage": {
+    "title": "利用規約",
+    "introduction_title": "1. はじめに",
+    "introduction_text": "Wildscopeへようこそ。このウェブサイトとアプリケーションにアクセスし利用することにより、あなたはこの利用規約、適用されるすべての法律と規制に拘束されることに同意し、適用される地域の法律を遵守する責任があることに同意するものとします。",
+    "acceptance_title": "2. 利用規約の同意",
+    "acceptance_text": "当社のウェブサイトとサービスを利用することにより、あなたはこの利用規約を読み、理解し、これに拘束されることに同意したことを認めるものとします。これらの条件のいずれかの部分に同意しない場合は、当社のサービスを利用することはできません。",
+    "modification_title": "3. 利用規約の変更",
+    "modification_text": "Wildscopeは、いつでもこの利用規約を変更する権利を留保します。変更の通知は、このページの下部にある日付を更新することで提供されます。変更後もウェブサイトを継続して利用することは、変更された利用規約に同意したことになります。",
+    "service_description_title": "4. サービスの説明",
+    "service_description_text": "Wildscopeは、ウェブサイトとモバイルアプリケーションを通じて、野生動物の識別、追跡、自然探索のためのツールを提供しています。このサービスはAI技術を使用して、ユーザーが植物や動物を識別するのを支援し、自然環境に関する情報を提供します。",
+    "user_conduct_title": "5. ユーザー行動",
+    "user_conduct_text": "あなたは、違法な目的や、サービスを損傷、無効化、過負荷、または妨害する可能性のある方法でWildscopeを使用しないことに同意します。また、サービスの一部、他のアカウント、またはサービスに接続されたコンピュータシステムやネットワークへの不正アクセスを試みないことに同意します。",
+    "user_content_title": "6. ユーザーコンテンツ",
+    "user_content_text": "Wildscopeにコンテンツを提出することにより、あなたは当社に対して、サービスに関連してそのようなコンテンツを使用、複製、修正、適応、公開、表示するための世界的、非独占的、ロイヤリティフリーのライセンスを付与します。あなたは、自分のコンテンツを使用し、当社に使用を許可するために必要な権利を所有しているか、必要な許可を持っていることを表明し保証します。",
+    "intellectual_property_title": "7. 知的財産",
+    "intellectual_property_text": "Wildscopeの名前、ロゴ、ウェブサイトのデザイン、アプリのデザイン、およびコンテンツ（ユーザー提出コンテンツを除く）は、Wildscopeが所有または使用許諾を受けており、著作権、商標、およびその他の知的財産法によって保護されています。",
+    "disclaimer_title": "8. 保証の免責事項",
+    "disclaimer_text": "Wildscopeは「現状のまま」提供され、明示または黙示を問わず、いかなる保証もありません。当社は、サービスを通じて提供される野生動物の識別や自然に関する情報の正確性を保証しません。",
+    "limitation_liability_title": "9. 責任の制限",
+    "limitation_liability_text": "いかなる場合も、Wildscope、その運営者、または供給者は、Wildscopeのウェブサイトまたはアプリケーション上の素材の使用または使用不能から生じる損害（データまたは利益の損失、または事業中断による損害を含むがこれに限定されない）について責任を負いません。",
+    "governing_law_title": "10. 準拠法",
+    "governing_law_text": "これらの条件は、抵触法の規定に関係なく、ドイツの法律に従って管理され解釈されるものとします。",
+    "contact_title": "11. 連絡先情報",
+    "contact_text": "これらの条件についてご質問がある場合は、お問い合わせページからご連絡ください。"
   },
   "ContactPage": {
     "title": "お問い合わせ",

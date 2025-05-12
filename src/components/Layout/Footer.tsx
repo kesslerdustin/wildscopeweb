@@ -3,12 +3,14 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
+import { getTermsPathForLocale } from '@/utils/localeHelpers';
 
 export default function Footer() {
   const t = useTranslations('Footer');
   const tNav = useTranslations('Navigation');
   const locale = useLocale();
   const currentYear = new Date().getFullYear();
+  const termsPath = getTermsPathForLocale(locale);
 
   return (
     <footer className="bg-gray-100 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-auto">
@@ -57,6 +59,11 @@ export default function Footer() {
                 <li>
                   <Link href={`/${locale}/datenschutz`} className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
                     {tNav('privacy')}
+                  </Link>
+                </li>
+                <li>
+                  <Link href={`/${locale}/${termsPath}`} className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                    {tNav('terms')}
                   </Link>
                 </li>
                 <li>
