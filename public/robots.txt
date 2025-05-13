@@ -2,5 +2,8 @@
 User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://wildscope.com/sitemap.xml 
+# Main Sitemap
+Sitemap: https://wildscope.com/sitemap.xml
+
+# Crawl Delay to avoid overloading the server
+Crawl-delay: 5 

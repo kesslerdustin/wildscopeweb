@@ -1,0 +1,55 @@
+{
+  "name": "Wildscope - Wildlife Tracking & Outdoor Adventure App",
+  "short_name": "Wildscope",
+  "description": "AI-powered wildlife identification and outdoor adventure companion app",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#047857",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshot1.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/screenshot2.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible",
+      "id": "com.duselk.theoutdoorbible"
+    }
+  ],
+  "prefer_related_applications": true,
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["outdoors", "travel", "nature", "wildlife", "entertainment", "education", "utilities"],
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  "app_store_status": "coming_soon"
+} 

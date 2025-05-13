@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English URLs -->
+  <url>
+    <loc>https://wildscope.com/</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/"/>
+  </url>
+  <url>
+    <loc>https://wildscope.com/contact</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/contact"/>
+  </url>
+  <url>
+    <loc>https://wildscope.com/privacy</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/privacy"/>
+  </url>
+  <url>
+    <loc>https://wildscope.com/impressum</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/impressum"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/impressum"/>
+  </url>
+  <url>
+    <loc>https://wildscope.com/terms</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de/nutzungsbedingungen"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/terms"/>
+  </url>
+  
+  <!-- German URLs -->
+  <url>
+    <loc>https://wildscope.com/de</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/"/>
+  </url>
+  <url>
+    <loc>https://wildscope.com/de/kontakt</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/contact"/>
+  </url>
+  <url>
+    <loc>https://wildscope.com/de/datenschutz</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/privacy"/>
+  </url>
+  <url>
+    <loc>https://wildscope.com/de/impressum</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/impressum"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/impressum"/>
+  </url>
+  <url>
+    <loc>https://wildscope.com/de/nutzungsbedingungen</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de/nutzungsbedingungen"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/terms"/>
+  </url>
+  
+  <!-- Japanese URLs -->
+  <url>
+    <loc>https://wildscope.com/ja</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/"/>
+  </url>
+  <url>
+    <loc>https://wildscope.com/ja/contact</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/contact"/>
+  </url>
+  <url>
+    <loc>https://wildscope.com/ja/privacy</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/privacy"/>
+  </url>
+  <url>
+    <loc>https://wildscope.com/ja/impressum</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/impressum"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/impressum"/>
+  </url>
+  <url>
+    <loc>https://wildscope.com/ja/terms</loc>
+    <lastmod>2024-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wildscope.com/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wildscope.com/de/nutzungsbedingungen"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wildscope.com/ja/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wildscope.com/terms"/>
+  </url>
+</urlset> 

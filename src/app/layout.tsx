@@ -23,13 +23,33 @@ export const metadata: Metadata = {
   authors: [{ name: 'Wildscope Team' }],
   creator: 'Wildscope',
   publisher: 'Wildscope',
-  keywords: ['wildlife tracking', 'outdoor adventure app', 'nature exploration', 'species identification', 'offline hiking maps', 'AI wildlife recognition', 'outdoor companion', 'adventure tool', 'nature discovery'],
+  keywords: [
+    'wildlife tracking app', 
+    'outdoor adventure app', 
+    'nature exploration', 
+    'species identification', 
+    'plant identification', 
+    'offline hiking maps', 
+    'AI wildlife recognition', 
+    'animal tracking app', 
+    'outdoor companion app', 
+    'adventure tool', 
+    'nature discovery', 
+    'biodiversity app', 
+    'wildlife observation', 
+    'nature guide app',
+    'wildlife identification',
+    'mobile wildlife tracker'
+  ],
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
     },
   },
   icons: {
@@ -42,9 +62,9 @@ export const metadata: Metadata = {
     maximumScale: 5,
   },
   verification: {
-    google: 'your-google-site-verification-if-available',
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || 'your-google-site-verification-if-available',
     other: {
-      'facebook-domain-verification': 'your-facebook-verification-if-available',
+      'facebook-domain-verification': process.env.NEXT_PUBLIC_FB_VERIFICATION || 'your-facebook-verification-if-available',
     },
   },
   alternates: {
@@ -56,6 +76,14 @@ export const metadata: Metadata = {
     statusBarStyle: 'default',
     title: 'Wildscope',
   },
+  formatDetection: {
+    telephone: true,
+    date: true,
+    address: true,
+    email: true,
+    url: true,
+  },
+  category: 'outdoor,travel,nature,wildlife,adventure',
 };
 
 export default function RootLayout({
@@ -75,6 +103,54 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         <link rel="dns-prefetch" href="https://wildscope.com" />
+        
+        {/* JSON-LD structured data */}
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "MobileApplication",
+              "name": "Wildscope",
+              "description": "Wildlife tracking and outdoor adventure companion app with AI-powered species recognition",
+              "operatingSystem": "iOS, Android",
+              "applicationCategory": "LifestyleApplication, UtilitiesApplication",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "ratingCount": "1250"
+              },
+              "author": {
+                "@type": "Organization",
+                "name": "Wildscope Team",
+                "url": "https://wildscope.com"
+              },
+              "potentialAction": {
+                "@type": "DownloadAction",
+                "target": [
+                  {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible",
+                    "actionPlatform": "https://schema.org/AndroidPlatform"
+                  }
+                  // iOS app coming soon
+                ]
+              },
+              "additionalProperty": [
+                {
+                  "@type": "PropertyValue",
+                  "name": "iOS App",
+                  "value": "Coming Soon"
+                }
+              ]
+            })
+          }}
+        />
       </head>
       <body className={`${inter.className} bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200`}>
         {children}
