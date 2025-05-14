@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { locales } from '../../i18n';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
   
   // Define all routes/pages that should be included in the sitemap
   const routes = [

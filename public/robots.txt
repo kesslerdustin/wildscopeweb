@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Main Sitemap
-Sitemap: https://wildscope.com/sitemap.xml
+Sitemap: https://www.wildscope.app/sitemap.xml
 
 # Crawl Delay to avoid overloading the server
 Crawl-delay: 5 

@@ -71,7 +71,7 @@ export function OrganizationJsonLd() {
   };
   
   const t = translations[locale as keyof typeof translations] || translations.en;
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
   
   const data = {
     name: t.name,
@@ -102,7 +102,7 @@ export function OrganizationJsonLd() {
 }
 
 export function WebsiteJsonLd() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
   const params = useParams();
   const locale = params.locale as string;
   
@@ -208,6 +208,76 @@ export function FAQJsonLd() {
         question: "Welche Orte deckt Wildscope ab?",
         answer: "Wälder, Parks, Wanderwege, Küsten, Wüsten – und sogar städtische Grünflächen. Überall, wo Natur existiert, hilft Ihnen Wildscope, sich mit ihr zu verbinden."
       }
+    ],
+    fr: [
+      {
+        question: "Ai-je besoin d'Internet pour utiliser Wildscope?",
+        answer: "Seulement pour charger de nouvelles zones et utiliser des fonctionnalités avancées comme l'identification des espèces par IA et le partage communautaire. Une fois qu'une zone est téléchargée, la plupart des fonctionnalités fonctionnent hors ligne."
+      },
+      {
+        question: "En quoi est-ce différent d'iNaturalist ou de Seek?",
+        answer: "Wildscope est conçu non seulement pour identifier les espèces, mais pour une exploration immersive - en ligne et hors ligne, occasionnelle ou aventureuse. Il est conçu pour tout le monde, pas seulement pour les scientifiques."
+      },
+      {
+        question: "Quels types d'endroits Wildscope couvre-t-il?",
+        answer: "Forêts, parcs, sentiers, côtes, déserts — et même espaces verts urbains. Partout où la nature existe, Wildscope vous aide à vous connecter avec elle."
+      }
+    ],
+    it: [
+      {
+        question: "Ho bisogno di internet per utilizzare Wildscope?",
+        answer: "Solo per caricare nuove aree e utilizzare funzionalità avanzate come l'identificazione delle specie con AI e la condivisione con la community. Una volta scaricata un'area, la maggior parte delle funzionalità funziona offline."
+      },
+      {
+        question: "In cosa differisce da iNaturalist o Seek?",
+        answer: "Wildscope è progettato non solo per identificare le specie, ma per un'esplorazione immersiva - online e offline, casual o avventurosa. È costruito per tutti, non solo per gli scienziati."
+      },
+      {
+        question: "Che tipo di luoghi copre Wildscope?",
+        answer: "Foreste, parchi, sentieri, coste, deserti - e persino spazi verdi urbani. Ovunque esista la natura, Wildscope ti aiuta a connetterti con essa."
+      }
+    ],
+    es: [
+      {
+        question: "¿Necesito internet para usar Wildscope?",
+        answer: "Solo para cargar nuevas áreas y usar funciones avanzadas como identificación de especies por IA y compartir con la comunidad. Una vez que se descarga un área, la mayoría de las funciones funcionan sin conexión."
+      },
+      {
+        question: "¿En qué se diferencia de iNaturalist o Seek?",
+        answer: "Wildscope está diseñado no solo para identificar especies, sino para una exploración inmersiva, en línea y fuera de línea, casual o aventurera. Está construido para todos, no solo para científicos."
+      },
+      {
+        question: "¿Qué tipo de lugares cubre Wildscope?",
+        answer: "Bosques, parques, senderos, costas, desiertos, e incluso espacios verdes urbanos. Dondequiera que exista la naturaleza, Wildscope te ayuda a conectarte con ella."
+      }
+    ],
+    pt: [
+      {
+        question: "Preciso de internet para usar o Wildscope?",
+        answer: "Apenas para carregar novas áreas e usar recursos avançados como identificação de espécies por IA e compartilhamento com a comunidade. Depois que uma área é baixada, a maioria dos recursos funciona offline."
+      },
+      {
+        question: "Como é diferente do iNaturalist ou Seek?",
+        answer: "O Wildscope foi projetado não apenas para identificar espécies, mas para exploração imersiva — online e offline, casual ou aventureira. É feito para todos, não apenas para cientistas."
+      },
+      {
+        question: "Que tipo de lugares o Wildscope cobre?",
+        answer: "Florestas, parques, trilhas, costas, desertos — e até espaços verdes urbanos. Onde quer que a natureza exista, o Wildscope ajuda você a se conectar com ela."
+      }
+    ],
+    ja: [
+      {
+        question: "Wildscopeを使用するのにインターネットが必要ですか？",
+        answer: "新しいエリアをロードし、AI種識別やコミュニティ共有などの高度な機能を使用する場合のみ必要です。エリアがダウンロードされると、ほとんどの機能はオフラインで動作します。"
+      },
+      {
+        question: "iNaturalistやSeekとはどう違いますか？",
+        answer: "Wildscopeは種の識別だけでなく、オンラインとオフライン、カジュアルまたは冒険的な没入型の探索のために設計されています。科学者だけでなく、誰もが使えるように作られています。"
+      },
+      {
+        question: "Wildscopeはどのような場所をカバーしていますか？",
+        answer: "森林、公園、トレイル、海岸、砂漠—そして都市の緑地でさえも。自然が存在するどこでも、Wildscopeはあなたがそれとつながるのを助けます。"
+      }
     ]
   };
 
@@ -269,7 +339,7 @@ export function ReviewJsonLd() {
       data={{
         name: 'Wildscope',
         description: 'AI-powered wildlife identification and outdoor adventure app',
-        image: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com'}/images/logo.png`,
+        image: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app'}/images/logo.png`,
         brand: {
           '@type': 'Brand',
           name: 'Wildscope'
@@ -279,7 +349,7 @@ export function ReviewJsonLd() {
           price: '0',
           priceCurrency: 'EUR',
           availability: 'https://schema.org/InStock',
-          url: process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com'
+          url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app'
         },
         aggregateRating: {
           '@type': 'AggregateRating',
@@ -306,7 +376,7 @@ export function ReviewJsonLd() {
 export function ArticleJsonLd() {
   const params = useParams();
   const locale = params.locale as string;
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
   
   const translations = {
     en: {
@@ -328,8 +398,8 @@ export function ArticleJsonLd() {
     description: t.description,
     articleBody: t.articleBody,
     image: [
-      `${baseUrl}/images/og-image.png`,
-      `${baseUrl}/images/darklite_${locale}.png`
+      `${baseUrl}/images/og/og-image-${locale}.png`,
+      `${baseUrl}/images/og/og-image.png`
     ],
     datePublished: "2023-01-15T08:00:00+08:00",
     dateModified: new Date().toISOString(),

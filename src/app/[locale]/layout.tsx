@@ -78,13 +78,13 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       type: 'website',
       images: [
         {
-          url: `${baseUrl}/images/og-image-${locale}.png`,
+          url: `${baseUrl}/images/og/og-image-${locale}.png`,
           width: 1200,
           height: 630,
           alt: titles[locale as keyof typeof titles] || titles.en
         },
         {
-          url: `${baseUrl}/images/og-image.png`, // Fallback
+          url: `${baseUrl}/images/og/og-image.png`, // Fallback
           width: 1200,
           height: 630,
           alt: 'Wildscope - Wildlife Tracking & Outdoor Adventure App'
@@ -95,7 +95,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       card: 'summary_large_image',
       title: titles[locale as keyof typeof titles] || titles.en,
       description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
-      images: [`${baseUrl}/images/og-image-${locale}.png`, `${baseUrl}/images/og-image.png`],
+      images: [`${baseUrl}/images/og/og-image-${locale}.png`, `${baseUrl}/images/og/og-image.png`],
       creator: '@wildscope',
       site: '@wildscope'
     },

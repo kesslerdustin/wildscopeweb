@@ -2,7 +2,7 @@ const https = require('https');
 const { URL } = require('url');
 
 // Website URL
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
 const sitemapUrl = `${baseUrl}/sitemap.xml`;
 
 /**
