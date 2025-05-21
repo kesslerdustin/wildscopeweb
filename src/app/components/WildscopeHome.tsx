@@ -228,25 +228,29 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">{tCta('title')}</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto">{tCta('subtitle')}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button 
-                className="bg-black text-white font-semibold py-3 px-8 rounded-lg hover:bg-gray-900 transition-colors duration-300 flex items-center justify-center"
+              <motion.a
+                href="https://apps.apple.com/us/app/wildscope/id6741471953"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={trackAppStoreClick}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M17.722 19.786c-.063.12-.143.24-.232.336-.336.36-.907.504-1.454.504-.318 0-.63-.048-.936-.156a2.416 2.416 0 01-.906-.516l-3.24-2.832-3.234 2.832c-.27.228-.576.396-.906.516a2.7 2.7 0 01-.936.156 2.19 2.19 0 01-1.458-.504 1.25 1.25 0 01-.228-.336 2.016 2.016 0 01-.192-.912V4.824c0-.324.066-.624.192-.912a1.25 1.25 0 01.228-.336c.336-.36.91-.504 1.458-.504.318 0 .63.048.936.156.33.12.636.288.906.516L12 6.576l3.24-2.832c.27-.228.576-.396.906-.516.306-.108.618-.156.936-.156.547 0 1.118.144 1.454.504.089.096.17.216.232.336.126.288.192.588.192.912v14.05c0 .324-.066.624-.192.912zm-4.446-6.924l3.432 3.001V5.421L13.276 8.4l3.438-2.988v2.496l-3.438 2.982z" />
-                </svg>
-                {tCta('appstore')}
-              </motion.button>
-              <motion.a 
-                href={tCta('playstoreLink')}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-black text-white font-semibold py-3 px-8 rounded-lg hover:bg-gray-900 transition-colors duration-300 flex items-center justify-center"
-                onClick={trackPlayStoreClick}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                <button 
+                  className="bg-black text-white font-semibold py-3 px-8 rounded-lg hover:bg-gray-900 transition-colors duration-300 flex items-center justify-center w-full"
+                >
+                  <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.722 19.786c-.063.12-.143.24-.232.336-.336.36-.907.504-1.454.504-.318 0-.63-.048-.936-.156a2.416 2.416 0 01-.906-.516l-3.24-2.832-3.234 2.832c-.27.228-.576.396-.906.516a2.7 2.7 0 01-.936.156 2.19 2.19 0 01-1.458-.504 1.25 1.25 0 01-.228-.336 2.016 2.016 0 01-.192-.912V4.824c0-.324.066-.624.192-.912a1.25 1.25 0 01.228-.336c.336-.36.91-.504 1.458-.504.318 0 .63.048.936.156.33.12.636.288.906.516L12 6.576l3.24-2.832c.27-.228.576-.396.906-.516.306-.108.618-.156.936-.156.547 0 1.118.144 1.454.504.089.096.17.216.232.336.126.288.192.588.192.912v14.05c0 .324-.066.624-.192.912zm-4.446-6.924l3.432 3.001V5.421L13.276 8.4l3.438-2.988v2.496l-3.438 2.982z" />
+                  </svg>
+                  {tCta('appstore')}
+                </button>
+              </motion.a>
+              <motion.button 
+                disabled
+                className="bg-gray-400 text-white font-semibold py-3 px-8 rounded-lg flex items-center justify-center cursor-not-allowed"
+                // onClick={trackPlayStoreClick} // Commented out or removed as it's disabled
+                // whileHover={{ scale: 1.05 }} // Commented out or removed as it's disabled
+                // whileTap={{ scale: 0.95 }} // Commented out or removed as it's disabled
               >
                 <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M3.186 4.352C2.575 5.027 2.25 6.046 2.25 7.357v9.286c0 1.311.325 2.33.936 3.005l.117.129.188-.117 8.97-5.196V9.536L3.373 4.223l-.187-.117-.117.13.117.116z" />
@@ -255,7 +259,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   <path d="M13.53 19.446l-9.966-5.732-.188-.117-.118.13.118.116.118.13.187.117 9.85 5.732.187.117.117-.13-.117-.116.118-.13-.188-.117-.118.13z" />
                 </svg>
                 {tCta('playstore')}
-              </motion.a>
+              </motion.button>
             </div>
           </div>
         </motion.section>
