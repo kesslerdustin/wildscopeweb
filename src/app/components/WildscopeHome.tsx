@@ -247,21 +247,26 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   {tCta('appstore')}
                 </button>
               </motion.a>
-              <motion.button 
-                disabled
-                className="bg-gray-400 text-white font-semibold py-3 px-8 rounded-lg flex items-center justify-center cursor-not-allowed"
-                // onClick={trackPlayStoreClick} // Commented out or removed as it's disabled
-                // whileHover={{ scale: 1.05 }} // Commented out or removed as it's disabled
-                // whileTap={{ scale: 0.95 }} // Commented out or removed as it's disabled
+              <motion.a
+                href="https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={trackPlayStoreClick}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3.186 4.352C2.575 5.027 2.25 6.046 2.25 7.357v9.286c0 1.311.325 2.33.936 3.005l.117.129.188-.117 8.97-5.196V9.536L3.373 4.223l-.187-.117-.117.13.117.116z" />
-                  <path d="M17.73 11l-3.75-2.143-9.938-5.679 9.938 5.679L17.73 11z" />
-                  <path d="M21.436 11L17.26 8.571 14 6.429v11.142l3.26-2.143 4.176-2.428V11z" />
-                  <path d="M13.53 19.446l-9.966-5.732-.188-.117-.118.13.118.116.118.13.187.117 9.85 5.732.187.117.117-.13-.117-.116.118-.13-.188-.117-.118.13z" />
-                </svg>
-                {tCta('playstore')}
-              </motion.button>
+                <button 
+                  className="bg-green-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-green-700 transition-colors duration-300 flex items-center justify-center w-full"
+                >
+                  <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.186 4.352C2.575 5.027 2.25 6.046 2.25 7.357v9.286c0 1.311.325 2.33.936 3.005l.117.129.188-.117 8.97-5.196V9.536L3.373 4.223l-.187-.117-.117.13.117.116z" />
+                    <path d="M17.73 11l-3.75-2.143-9.938-5.679 9.938 5.679L17.73 11z" />
+                    <path d="M21.436 11L17.26 8.571 14 6.429v11.142l3.26-2.143 4.176-2.428V11z" />
+                    <path d="M13.53 19.446l-9.966-5.732-.188-.117-.118.13.118.116.118.13.187.117 9.85 5.732.187.117.117-.13-.117-.116.118-.13-.188-.117-.118.13z" />
+                  </svg>
+                  {tCta('playstore')}
+                </button>
+              </motion.a>
             </div>
           </div>
         </motion.section>
