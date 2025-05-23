@@ -8,7 +8,7 @@ import CookieBanner from '@/components/CookieBanner';
 import Image from 'next/image';
 import ImageModal from '@/components/ImageModal';
 import { motion } from 'framer-motion';
-import { Database, Cloud, Camera, Map, Shield, Clock } from 'lucide-react';
+import { Compass, Brain, Users, Download, BookOpen, MessageCircle } from 'lucide-react';
 
 type HomeContentProps = {
   locale: string;
@@ -45,12 +45,12 @@ export default function HomeContent({ locale }: HomeContentProps) {
   };
 
   const featureIcons = [
-    <Database className="w-10 h-10 text-emerald-500 mb-4" key="database" />,
-    <Cloud className="w-10 h-10 text-emerald-500 mb-4" key="cloud" />,
-    <Camera className="w-10 h-10 text-emerald-500 mb-4" key="camera" />,
-    <Map className="w-10 h-10 text-emerald-500 mb-4" key="map" />,
-    <Shield className="w-10 h-10 text-emerald-500 mb-4" key="shield" />,
-    <Clock className="w-10 h-10 text-emerald-500 mb-4" key="clock" />
+    <Compass className="w-10 h-10 text-emerald-500 mb-4" key="compass" />,
+    <Brain className="w-10 h-10 text-emerald-500 mb-4" key="brain" />,
+    <Users className="w-10 h-10 text-emerald-500 mb-4" key="users" />,
+    <Download className="w-10 h-10 text-emerald-500 mb-4" key="download" />,
+    <BookOpen className="w-10 h-10 text-emerald-500 mb-4" key="bookopen" />,
+    <MessageCircle className="w-10 h-10 text-emerald-500 mb-4" key="messagecircle" />
   ];
 
   // Function to map img numbers to swap img2 and img3

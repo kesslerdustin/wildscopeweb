@@ -8,12 +8,12 @@ interface TermsPathMap {
  */
 const termsPathMap: TermsPathMap = {
   en: 'terms',
-  de: 'nutzungsbedingungen',
-  es: 'terminos-de-uso',
-  fr: 'conditions-d-utilisation',
-  it: 'termini-di-utilizzo',
-  ja: 'riyou-kiyaku',
-  pt: 'termos-de-uso'
+  de: 'terms',
+  es: 'terms',
+  fr: 'terms',
+  it: 'terms',
+  ja: 'terms',
+  pt: 'terms'
 };
 
 /**
