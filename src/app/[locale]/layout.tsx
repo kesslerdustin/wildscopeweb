@@ -109,6 +109,33 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         'max-image-preview': 'large',
         'max-snippet': -1,
       }
+    },
+    other: {
+      // App Store meta tags
+      'apple-itunes-app': 'app-id=6741471953',
+      'apple-mobile-web-app-capable': 'yes',
+      'apple-mobile-web-app-status-bar-style': 'black-translucent',
+      'apple-mobile-web-app-title': 'Wildscope',
+      // Android app links
+      'google-play-app': 'app-id=com.wildscope.app',
+      // App Links
+      'al:ios:app_store_id': '6741471953',
+      'al:ios:app_name': 'Wildscope',
+      'al:ios:url': 'wildscope://',
+      'al:android:package': 'com.wildscope.app',
+      'al:android:app_name': 'Wildscope',
+      'al:android:url': 'wildscope://',
+      'al:web:url': baseUrl,
+      // Twitter app cards
+      'twitter:app:name:iphone': 'Wildscope',
+      'twitter:app:id:iphone': '6741471953',
+      'twitter:app:url:iphone': 'wildscope://',
+      'twitter:app:name:ipad': 'Wildscope',
+      'twitter:app:id:ipad': '6741471953',
+      'twitter:app:url:ipad': 'wildscope://',
+      'twitter:app:name:googleplay': 'Wildscope',
+      'twitter:app:id:googleplay': 'com.wildscope.app',
+      'twitter:app:url:googleplay': 'wildscope://'
     }
   };
 }

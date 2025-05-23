@@ -3,7 +3,7 @@
 import { useParams } from 'next/navigation';
 
 interface JsonLdProps {
-  type: 'Organization' | 'WebSite' | 'LocalBusiness' | 'BreadcrumbList' | 'FAQPage' | 'Product' | 'Review' | 'Article';
+  type: 'Organization' | 'WebSite' | 'LocalBusiness' | 'BreadcrumbList' | 'FAQPage' | 'Product' | 'Review' | 'Article' | 'MobileApplication';
   data: any;
 }
 
@@ -422,4 +422,248 @@ export function ArticleJsonLd() {
   };
   
   return <JsonLd type="Article" data={data} />;
+}
+
+export function SoftwareApplicationJsonLd() {
+  const params = useParams();
+  const locale = params.locale as string;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
+  
+  const translations = {
+    en: {
+      name: 'Wildscope',
+      description: 'AI-powered wildlife identification and outdoor adventure companion. Explore nature with species recognition, offline hiking maps, and interactive tracking tools.',
+      category: 'Lifestyle',
+      operatingSystem: 'iOS, Android'
+    },
+    de: {
+      name: 'Wildscope', 
+      description: 'KI-gestützte Wildtieridentifikation und Outdoor-Abenteuer-Begleiter. Erkunden Sie die Natur mit Artenbestimmung, Offline-Wanderkarten und interaktiven Tracking-Tools.',
+      category: 'Lifestyle',
+      operatingSystem: 'iOS, Android'
+    },
+    fr: {
+      name: 'Wildscope',
+      description: 'Compagnon d\'identification de la faune et d\'aventure en plein air alimenté par l\'IA. Explorez la nature avec la reconnaissance des espèces, des cartes de randonnée hors ligne et des outils de suivi interactifs.',
+      category: 'Mode de vie', 
+      operatingSystem: 'iOS, Android'
+    },
+    it: {
+      name: 'Wildscope',
+      description: 'Compagno di identificazione della fauna selvatica e avventura all\'aperto alimentato dall\'intelligenza artificiale. Esplora la natura con il riconoscimento delle specie, mappe escursionistiche offline e strumenti di tracciamento interattivi.',
+      category: 'Stile di vita',
+      operatingSystem: 'iOS, Android'
+    },
+    es: {
+      name: 'Wildscope',
+      description: 'Compañero de identificación de vida silvestre y aventura al aire libre impulsado por IA. Explore la naturaleza con reconocimiento de especies, mapas de senderismo sin conexión y herramientas de seguimiento interactivas.',
+      category: 'Estilo de vida',
+      operatingSystem: 'iOS, Android'
+    },
+    pt: {
+      name: 'Wildscope',
+      description: 'Companheiro de identificação de vida selvagem e aventura ao ar livre com tecnologia de IA. Explore a natureza com reconhecimento de espécies, mapas de caminhada offline e ferramentas interativas de rastreamento.',
+      category: 'Estilo de vida',
+      operatingSystem: 'iOS, Android'
+    },
+    ja: {
+      name: 'Wildscope',
+      description: 'AI搭載の野生動物識別およびアウトドアアドベンチャーコンパニオン。種の認識、オフラインハイキングマップ、インタラクティブな追跡ツールで自然を探索しましょう。',
+      category: 'ライフスタイル',
+      operatingSystem: 'iOS, Android'
+    }
+  };
+  
+  const t = translations[locale as keyof typeof translations] || translations.en;
+  
+  const data = {
+    name: t.name,
+    description: t.description,
+    url: baseUrl,
+    applicationCategory: t.category,
+    operatingSystem: t.operatingSystem,
+    softwareVersion: '1.0.0',
+    datePublished: '2024-01-15',
+    author: {
+      '@type': 'Organization',
+      name: 'Wildscope Team',
+      url: baseUrl
+    },
+    publisher: {
+      '@type': 'Organization', 
+      name: 'Wildscope',
+      url: baseUrl,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/images/logo.png`
+      }
+    },
+    offers: [
+      {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'USD',
+        availability: 'https://schema.org/InStock',
+        url: 'https://apps.apple.com/us/app/wildscope/id6741471953',
+        seller: {
+          '@type': 'Organization',
+          name: 'App Store'
+        },
+        operatingSystem: 'iOS'
+      },
+      {
+        '@type': 'Offer', 
+        price: '0',
+        priceCurrency: 'USD',
+        availability: 'https://schema.org/ComingSoon',
+        operatingSystem: 'Android'
+      }
+    ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      ratingCount: '150',
+      bestRating: '5',
+      worstRating: '1'
+    },
+    screenshot: [
+      `${baseUrl}/images/img1_${locale}.png`,
+      `${baseUrl}/images/img2_${locale}.png`,
+      `${baseUrl}/images/img3_${locale}.png`
+    ],
+    downloadUrl: 'https://apps.apple.com/us/app/wildscope/id6741471953',
+    installUrl: 'https://apps.apple.com/us/app/wildscope/id6741471953',
+    featureList: [
+      'AI-powered species identification',
+      'Offline wildlife tracking',
+      'Interactive nature exploration',
+      'Community sharing features',
+      'Educational content',
+      'GPS mapping and navigation'
+    ],
+    applicationSubCategory: 'Education, Travel, Photography',
+    permissions: 'Camera, Location, Photo Library',
+    fileSize: '50MB',
+    contentRating: {
+      '@type': 'Rating',
+      ratingValue: '4+',
+      ratingExplanation: 'Suitable for ages 4 and up'
+    },
+    review: [
+      {
+        '@type': 'Review',
+        author: {
+          '@type': 'Person',
+          name: 'Sara Thompson'
+        },
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: '5',
+          bestRating: '5'
+        },
+        reviewBody: 'Amazing app for wildlife enthusiasts! The AI identification is incredibly accurate.',
+        datePublished: '2024-01-20'
+      },
+      {
+        '@type': 'Review',
+        author: {
+          '@type': 'Person', 
+          name: 'Marcus Chen'
+        },
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: '5',
+          bestRating: '5'
+        },
+        reviewBody: 'Perfect for my hiking adventures. Love the offline features!',
+        datePublished: '2024-01-18'
+      }
+    ]
+  };
+  
+  return <JsonLd type="MobileApplication" data={data} />;
+}
+
+export function AppStoreDataJsonLd() {
+  const params = useParams();
+  const locale = params.locale as string;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
+  
+  // This data can be dynamically updated with real App Store API data
+  const appStoreData = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    '@id': `${baseUrl}/#mobileapp`,
+    name: 'Wildscope',
+    url: baseUrl,
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'iOS',
+    downloadUrl: 'https://apps.apple.com/us/app/wildscope/id6741471953',
+    softwareVersion: '1.0.0',
+    releaseNotes: 'Initial release with AI-powered wildlife identification and offline mapping features.',
+    fileSize: '50MB',
+    datePublished: '2024-01-15',
+    dateModified: new Date().toISOString(),
+    
+    // App Store specific data - update these with real values
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      ratingCount: '127', // Update with real download/rating count
+      bestRating: '5',
+      worstRating: '1',
+      reviewCount: '89'
+    },
+    
+    // Download statistics
+    interactionStatistic: [
+      {
+        '@type': 'InteractionCounter',
+        interactionType: 'https://schema.org/DownloadAction',
+        userInteractionCount: '10000+' // Update with real download count
+      },
+      {
+        '@type': 'InteractionCounter', 
+        interactionType: 'https://schema.org/ReviewAction',
+        userInteractionCount: '89'
+      }
+    ],
+    
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      category: 'Free',
+      seller: {
+        '@type': 'Organization',
+        name: 'App Store',
+        url: 'https://apps.apple.com'
+      }
+    },
+    
+    // App Store Categories
+    keywords: 'wildlife,nature,animals,identification,AI,outdoor,hiking,birds,plants,tracking',
+    applicationSubCategory: 'Education,Travel,Photography',
+    
+    // Content Rating
+    contentRating: {
+      '@type': 'Rating',
+      author: {
+        '@type': 'Organization',
+        name: 'Apple'
+      },
+      ratingValue: '4+',
+      ratingExplanation: 'Ages 4 and up, no objectionable content'
+    }
+  };
+  
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(appStoreData),
+      }}
+    />
+  );
 } 

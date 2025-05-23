@@ -10,7 +10,7 @@ import Image from 'next/image';
 import ImageModal from '@/components/ImageModal';
 import { motion } from 'framer-motion';
 import { Compass, Brain, Users, Download, BookOpen, MessageCircle } from 'lucide-react';
-import { ArticleJsonLd } from '@/components/JsonLd';
+import { ArticleJsonLd, SoftwareApplicationJsonLd, AppStoreDataJsonLd } from '@/components/JsonLd';
 
 type WildscopeHomeProps = {
   locale: string;
@@ -90,6 +90,8 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
   return (
     <div className="flex flex-col min-h-screen">
       <ArticleJsonLd />
+      <SoftwareApplicationJsonLd />
+      <AppStoreDataJsonLd />
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
