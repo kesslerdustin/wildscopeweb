@@ -10,6 +10,7 @@ import Image from 'next/image';
 import ImageModal from '@/components/ImageModal';
 import { OrganizationJsonLd, WebsiteJsonLd, FAQJsonLd, ReviewJsonLd } from '@/components/JsonLd';
 import { motion } from 'framer-motion';
+import { Leaf, Compass, Users, WifiOff, MapPin, Award, Search, MessageSquare, Brain } from 'lucide-react';
 
 type HomeContentProps = {
   locale: string;
@@ -62,6 +63,15 @@ export default function HomeContent({ locale }: HomeContentProps) {
     });
   };
 
+  const featureIcons = [
+    <Compass className="w-10 h-10 text-emerald-500 mb-4" key="feature-icon-1" />,
+    <Search className="w-10 h-10 text-emerald-500 mb-4" key="feature-icon-2" />,
+    <Users className="w-10 h-10 text-emerald-500 mb-4" key="feature-icon-3" />,
+    <WifiOff className="w-10 h-10 text-emerald-500 mb-4" key="feature-icon-4" />,
+    <Brain className="w-10 h-10 text-emerald-500 mb-4" key="feature-icon-5" />,
+    <MessageSquare className="w-10 h-10 text-emerald-500 mb-4" key="feature-icon-6" />
+  ];
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Structured Data for SEO */}
@@ -98,71 +108,144 @@ export default function HomeContent({ locale }: HomeContentProps) {
           </div>
         </section>
 
-        {/* Features Section */}
-        <section className="py-16 md:py-24 bg-gray-100 dark:bg-gray-800" id="features" aria-labelledby="features-heading">
+        {/* About Section */}
+        <motion.section 
+          className="py-16 bg-white"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeIn}
+        >
           <div className="container mx-auto px-6">
-            <h2 id="features-heading" className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">{tFeatures('title')}</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img1_${locale}.png`)}>
-                  <Image 
-                    src={`/images/img1_${locale}.png`}
-                    alt={`${tFeatures('feature1_title')} - Wildlife tracking tools`}
-                    width={400}
-                    height={300}
-                    className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                      // Fallback to English if localized image fails to load
-                      const target = e.target as HTMLImageElement;
-                      target.onerror = null; // Prevent infinite loop
-                      target.src = `/images/img1_en.png`;
-                    }}
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-emerald-600 dark:text-emerald-400">{tFeatures('feature1_title')}</h3>
-                <p className="text-gray-600 dark:text-gray-300">{tFeatures('feature1_desc')}</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">{tAbout('title')}</h2>
+            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <Image 
+                  src="/images/about_us_image.png" // Replace with an actual image path
+                  alt={tAbout('image_alt')} // Add alt text to translations
+                  width={500}
+                  height={400}
+                  className="rounded-lg shadow-lg object-cover"
+                />
               </div>
-              <div className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img3_${locale}.png`)}>
-                  <Image 
-                    src={`/images/img3_${locale}.png`}
-                    alt={`${tFeatures('feature2_title')} - AI wildlife identification`}
-                    width={400}
-                    height={300}
-                    className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                      // Fallback to English if localized image fails to load
-                      const target = e.target as HTMLImageElement;
-                      target.onerror = null; // Prevent infinite loop
-                      target.src = `/images/img3_en.png`;
-                    }}
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-emerald-600 dark:text-emerald-400">{tFeatures('feature2_title')}</h3>
-                <p className="text-gray-600 dark:text-gray-300">{tFeatures('feature2_desc')}</p>
-              </div>
-              <div className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img2_${locale}.png`)}>
-                  <Image 
-                    src={`/images/img2_${locale}.png`}
-                    alt={`${tFeatures('feature3_title')} - Outdoor adventure community`}
-                    width={400}
-                    height={300}
-                    className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                      // Fallback to English if localized image fails to load
-                      const target = e.target as HTMLImageElement;
-                      target.onerror = null; // Prevent infinite loop
-                      target.src = `/images/img2_en.png`;
-                    }}
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-emerald-600 dark:text-emerald-400">{tFeatures('feature3_title')}</h3>
-                <p className="text-gray-600 dark:text-gray-300">{tFeatures('feature3_desc')}</p>
+              <div className="space-y-6">
+                <p className="text-lg text-gray-700">{tAbout('paragraph1')}</p>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <Leaf className="w-6 h-6 mr-3 text-emerald-500 flex-shrink-0 mt-1" />
+                    <span className="text-gray-700">{tAbout('bullet1')}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Compass className="w-6 h-6 mr-3 text-emerald-500 flex-shrink-0 mt-1" />
+                    <span className="text-gray-700">{tAbout('bullet2')}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Users className="w-6 h-6 mr-3 text-emerald-500 flex-shrink-0 mt-1" />
+                    <span className="text-gray-700">{tAbout('bullet3')}</span>
+                  </li>
+                </ul>
+                <p className="text-lg text-gray-700">{tAbout('paragraph2')}</p>
               </div>
             </div>
           </div>
+        </motion.section>
+
+        {/* Features Section */}
+        <section className="py-16 md:py-24 bg-gray-100 dark:bg-gray-800" id="features" aria-labelledby="features-heading">
+          <motion.div 
+            className="container mx-auto px-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            variants={staggerChildren}
+          >
+            <motion.h2 
+              id="features-heading" 
+              className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800 dark:text-white"
+              variants={fadeIn}
+            >
+              {tFeatures('title')}
+            </motion.h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+              {[1, 2, 3, 4, 5, 6].map((i) => (
+                <motion.div 
+                  key={`feature-${i}`}
+                  className="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center text-center transform hover:-translate-y-1"
+                  variants={fadeIn}
+                  whileHover={{ scale: 1.03 }}
+                >
+                  {featureIcons[i-1]}
+                  <h3 className="text-xl font-semibold mb-3 text-emerald-600 dark:text-emerald-400">{tFeatures(`feature${i}_title`)}</h3>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{tFeatures(`feature${i}_desc`)}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </section>
+
+        {/* Offline Capabilities (Example of how to refactor other sections) */}
+        <motion.section 
+          className="py-16 bg-white dark:bg-gray-900"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeIn}
+        >
+          <div className="container mx-auto px-6 text-center">
+            <motion.h2 
+              className="text-3xl md:text-4xl font-bold mb-6 text-gray-800 dark:text-white"
+              variants={fadeIn}
+            >
+              {tOffline('title')}
+            </motion.h2>
+            <motion.p 
+              className="text-lg text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto"
+              variants={fadeIn}
+            >
+              {tOffline('intro')}
+            </motion.p>
+            
+            <motion.div 
+              className="grid md:grid-cols-3 gap-8 mb-12"
+              variants={staggerChildren}
+            >
+              {[1, 2, 3].map((i) => (
+                <motion.div 
+                  key={`offline-cap-${i}`}
+                  className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col items-center"
+                  variants={fadeIn}
+                  whileHover={{ y: -5 }}
+                >
+                  <MapPin className="w-8 h-8 text-emerald-500 mb-3" /> {/* Example Icon */}
+                  <p className="font-semibold text-gray-700 dark:text-gray-200">{tOffline(`capability${i}`)}</p>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {tOffline('libraries_title') && (
+              <motion.div className="max-w-4xl mx-auto" variants={fadeIn}>
+                <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-white">{tOffline('libraries_title')}</h3>
+                <motion.div 
+                  className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm"
+                  variants={staggerChildren}
+                >
+                  {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+                    tOffline(`library${i}`) && (
+                      <motion.div 
+                        key={`offline-lib-${i}`} 
+                        className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg hover:bg-emerald-50 dark:hover:bg-emerald-700 transition-colors duration-200"
+                        variants={fadeIn}
+                        whileHover={{ scale: 1.05 }}
+                      >
+                        {tOffline(`library${i}`)}
+                      </motion.div>
+                    )
+                  ))}
+                </motion.div>
+              </motion.div>
+            )}
+          </div>
+        </motion.section>
 
         {/* Final CTA Section */}
         <motion.section 
