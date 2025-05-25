@@ -165,5 +165,29 @@
     "answer6": "Assolutamente! Wildscope prospera grazie ai contributi della comunità. Le tue osservazioni della fauna selvatica e identificazioni di piante vengono aggiunte in modo sicuro al nostro database dell'ecosistema, migliorando l'accuratezza dell'app per tutti. Questo approccio collaborativo crea una risorsa completa di identificazione della fauna selvatica che beneficia tutti gli appassionati della natura.",
     "question7": "Wildscope è sviluppato da una grande azienda tecnologica?",
     "answer7": "No, Wildscope è un progetto indipendente sviluppato da un appassionato di natura dedicato. L'app è progettata e mantenuta da un singolo sviluppatore appassionato che dà priorità all'accuratezza e all'esperienza utente rispetto alla monetizzazione. Questo approccio indipendente garantisce che Wildscope rimanga fedele alla sua missione principale: aiutare le persone a connettersi con e comprendere la natura senza compromettere la privacy o l'esperienza dell'utente."
+  },
+  "Audience": {
+    "title": "Per Chi è Wildscope?",
+    "intro": "Che tu sia un esploratore esperto o che tu stia appena iniziando il tuo viaggio nella natura, Wildscope è progettato per te:",
+    "audience1_title": "Escursionisti & Trekker",
+    "audience1_desc": "Naviga sentieri, identifica specie e resta al sicuro con mappe offline e strumenti di sopravvivenza.",
+    "audience2_title": "Fotografi Naturalisti & Birdwatcher",
+    "audience2_desc": "Scopri, traccia e identifica specie sfuggenti per catturare lo scatto perfetto.",
+    "audience3_title": "Famiglie & Esploratori Occasionali",
+    "audience3_desc": "Trasforma le visite al parco in emozionanti avventure di apprendimento per tutte le età.",
+    "audience4_title": "Educatori & Studenti",
+    "audience4_desc": "Un potente strumento per l'educazione all'aperto, progetti sulla biodiversità e studi naturalistici.",
+    "audience5_title": "Survivalisti & Esperti di Bushcraft",
+    "audience5_desc": "Affina le tue abilità con l'identificazione delle piante, guide per la costruzione di rifugi e risorse offline.",
+    "conclusion": "E chiunque abbia curiosità per il mondo naturale!"
+  },
+  "Testimonials": {
+    "title": "Cosa Dicono i Nostri Esploratori",
+    "testimonial1": "Wildscope ha cambiato completamente il mio modo di esplorare. Le mappe offline sono un salvavita e l'identificazione AI è incredibilmente accurata!",
+    "testimonial1_author": "Sarah L.",
+    "testimonial1_role": "Appassionata di Escursionismo",
+    "testimonial2": "Come insegnante di biologia, questa app è uno strumento fantastico per i miei studenti. Rende l'apprendimento della flora e fauna locale molto più interattivo.",
+    "testimonial2_author": "David K.",
+    "testimonial2_role": "Educatore"
   }
 } 

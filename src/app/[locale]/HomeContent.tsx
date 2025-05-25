@@ -10,7 +10,7 @@ import Image from 'next/image';
 import ImageModal from '@/components/ImageModal';
 import { OrganizationJsonLd, WebsiteJsonLd, FAQJsonLd, ReviewJsonLd } from '@/components/JsonLd';
 import { motion } from 'framer-motion';
-import { Leaf, Compass, Users, WifiOff, MapPin, Award, Search, MessageSquare, Brain } from 'lucide-react';
+import { Leaf, Compass, Users, WifiOff, MapPin, Award, Search, MessageSquare, Brain, Cloud, Zap, Share2, MessageCircle, CheckCircle, UserCheck, Mountain, Camera, Feather, GraduationCap, Quote, Check, X, ChevronDown, HelpCircle } from 'lucide-react';
 
 type HomeContentProps = {
   locale: string;
@@ -45,6 +45,7 @@ export default function HomeContent({ locale }: HomeContentProps) {
   const tCta = useTranslations('CallToAction');
   
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   // Tracking functions for app store clicks
   const trackAppStoreClick = () => {
@@ -71,6 +72,18 @@ export default function HomeContent({ locale }: HomeContentProps) {
     <Brain className="w-10 h-10 text-emerald-500 mb-4" key="feature-icon-5" />,
     <MessageSquare className="w-10 h-10 text-emerald-500 mb-4" key="feature-icon-6" />
   ];
+
+  const onlineFeatureIcons = [
+    <Cloud className="w-10 h-10 text-emerald-500 mb-4" key="online-icon-1" />,
+    <Zap className="w-10 h-10 text-emerald-500 mb-4" key="online-icon-2" />,
+    <Share2 className="w-10 h-10 text-emerald-500 mb-4" key="online-icon-3" />,
+    <MessageCircle className="w-10 h-10 text-emerald-500 mb-4" key="online-icon-4" />,
+    <CheckCircle className="w-10 h-10 text-emerald-500 mb-4" key="online-icon-5" />
+  ];
+
+  const toggleFaq = (index: number) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -244,6 +257,280 @@ export default function HomeContent({ locale }: HomeContentProps) {
                 </motion.div>
               </motion.div>
             )}
+          </div>
+        </motion.section>
+
+        {/* Online Features */}
+        <motion.section 
+          className="py-16 bg-gray-100 dark:bg-gray-800"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={staggerChildren}
+        >
+          <div className="container mx-auto px-6">
+            <motion.h2 
+              className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-800 dark:text-white"
+              variants={fadeIn}
+            >
+              {tOnline('title')}
+            </motion.h2>
+            <motion.p 
+              className="text-center text-lg text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto"
+              variants={fadeIn}
+            >
+              {tOnline('intro')}
+            </motion.p>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+              {[1, 2, 3, 4, 5].map((i) => (
+                tOnline(`feature${i}_title`) && (
+                  <motion.div 
+                    key={`online-feature-${i}`}
+                    className="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center text-center transform hover:-translate-y-1"
+                    variants={fadeIn}
+                    whileHover={{ scale: 1.03 }}
+                  >
+                    {onlineFeatureIcons[i-1]}
+                    <h3 className="text-xl font-semibold mb-3 text-emerald-600 dark:text-emerald-400">{tOnline(`feature${i}_title`)}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{tOnline(`feature${i}_desc`)}</p>
+                  </motion.div>
+                )
+              ))}
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Audience Section */}
+        <motion.section 
+          className="py-16 bg-white dark:bg-gray-900"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={fadeIn}
+        >
+          <div className="container mx-auto px-6">
+            <motion.h2 
+              className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-800 dark:text-white"
+              variants={fadeIn}
+            >
+              {tAudience('title')}
+            </motion.h2>
+            <motion.p 
+              className="text-center text-lg text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto"
+              variants={fadeIn}
+            >
+              {tAudience('intro')}
+            </motion.p>
+            
+            <motion.div 
+              className="max-w-4xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-8"
+              variants={staggerChildren}
+            >
+              {[1, 2, 3, 4, 5].map((i) => (
+                tAudience(`audience${i}`) && (
+                  <motion.div 
+                    key={`audience-${i}`}
+                    className="flex items-start space-x-4"
+                    variants={fadeIn}
+                  >
+                    <UserCheck className="w-8 h-8 text-emerald-500 flex-shrink-0 mt-1" /> {/* Example Icon, can be customized per item */}
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-1">{tAudience(`audience${i}_title`) || tAudience(`audience${i}`)}</h3>
+                      {tAudience(`audience${i}_desc`) && <p className="text-gray-600 dark:text-gray-400 text-sm">{tAudience(`audience${i}_desc`)}</p>}
+                    </div>
+                  </motion.div>
+                )
+              ))}
+            </motion.div>
+            
+            <motion.p 
+              className="text-center text-lg text-gray-700 dark:text-gray-200 italic mt-12 max-w-3xl mx-auto"
+              variants={fadeIn}
+            >
+              {tAudience('conclusion')}
+            </motion.p>
+          </div>
+        </motion.section>
+
+        {/* Testimonials */}
+        <motion.section 
+          className="py-16 bg-gray-100 dark:bg-gray-800"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={staggerChildren}
+        >
+          <div className="container mx-auto px-6">
+            <motion.h2 
+              className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white"
+              variants={fadeIn}
+            >
+              {tTestimonials('title')}
+            </motion.h2>
+            
+            <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+              {[1, 2].map((i) => (
+                tTestimonials(`testimonial${i}`) && (
+                  <motion.div 
+                    key={`testimonial-${i}`}
+                    className="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
+                    variants={fadeIn}
+                    whileHover={{ scale: 1.02 }}
+                  >
+                    <Quote className="w-8 h-8 text-emerald-500 mb-4" />
+                    <p className="text-gray-600 dark:text-gray-300 italic text-lg mb-6">{tTestimonials(`testimonial${i}`)}</p>
+                    <p className="font-semibold text-gray-800 dark:text-white text-right">— {tTestimonials(`testimonial${i}_author`)}</p>
+                    {tTestimonials(`testimonial${i}_role`) && <p className="text-sm text-gray-500 dark:text-gray-400 text-right">{tTestimonials(`testimonial${i}_role`)}</p>}
+                  </motion.div>
+                )
+              ))}
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Pricing */}
+        <motion.section 
+          className="py-16 bg-white dark:bg-gray-900"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={fadeIn}
+          id="pricing"
+        >
+          <div className="container mx-auto px-6">
+            <motion.h2 
+              className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white"
+              variants={fadeIn}
+            >
+              {tPricing('title')}
+            </motion.h2>
+            
+            <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+              {/* Free Plan Card */}
+              <motion.div 
+                className="border border-gray-200 dark:border-gray-700 rounded-xl p-8 flex flex-col h-full transform hover:scale-105 transition-transform duration-300"
+                variants={fadeIn}
+              >
+                <h3 className="text-2xl font-bold mb-2 text-gray-800 dark:text-white">{tPricing('free_title')}</h3>
+                <p className="text-gray-500 dark:text-gray-400 mb-6">{tPricing('free_subtitle')}</p>
+                <p className="text-4xl font-bold text-gray-800 dark:text-white mb-1">{tPricing('free_price')}</p>
+                <p className="text-gray-500 dark:text-gray-400 mb-8">{tPricing('free_price_suffix')}</p>
+                
+                <ul className="space-y-3 mb-8 flex-grow">
+                  {[1, 2, 3, 4, 5].map(i => (
+                    tPricing(`free_feature${i}`) && (
+                      <li className="flex items-center">
+                        <Check className="w-5 h-5 mr-2 text-green-500" />
+                        <span className="text-gray-700 dark:text-gray-300">{tPricing(`free_feature${i}`)}</span>
+                      </li>
+                    )
+                  ))}
+                  {tPricing('free_feature_limited1') && (
+                      <li className="flex items-center">
+                        <X className="w-5 h-5 mr-2 text-red-500" />
+                        <span className="text-gray-700 dark:text-gray-300">{tPricing('free_feature_limited1')}</span>
+                      </li>
+                  )}
+                </ul>
+                <button 
+                  className="w-full mt-auto bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300"
+                  disabled
+                >
+                  {tPricing('free_cta')}
+                </button>
+              </motion.div>
+
+              {/* Pro Plan Card */}
+              <motion.div 
+                className="border-2 border-emerald-500 dark:border-emerald-400 rounded-xl p-8 flex flex-col h-full relative transform hover:scale-105 transition-transform duration-300 shadow-2xl"
+                variants={fadeIn}
+              >
+                <div className="absolute top-0 right-0 -mt-4 -mr-4 bg-emerald-500 text-white text-xs font-semibold py-1 px-3 rounded-full uppercase tracking-wider">
+                  {tPricing('pro_badge')}
+                </div>
+                <Zap className="w-10 h-10 text-emerald-500 mb-4 self-start" />
+                <h3 className="text-2xl font-bold mb-2 text-emerald-600 dark:text-emerald-400">{tPricing('pro_title')}</h3>
+                <p className="text-gray-500 dark:text-gray-400 mb-6">{tPricing('pro_subtitle')}</p>
+                <p className="text-4xl font-bold text-gray-800 dark:text-white mb-1">{tPricing('pro_price')}</p>
+                <p className="text-gray-500 dark:text-gray-400 mb-8">{tPricing('pro_price_suffix')}</p>
+                
+                <ul className="space-y-3 mb-8 flex-grow">
+                  {[1, 2, 3, 4, 5, 6, 7].map(i => (
+                    tPricing(`pro_feature${i}`) && (
+                      <li className="flex items-center">
+                        <Check className="w-5 h-5 mr-2 text-green-500" />
+                        <span className="text-gray-700 dark:text-gray-300">{tPricing(`pro_feature${i}`)}</span>
+                      </li>
+                    )
+                  ))}
+                </ul>
+                <button 
+                  onClick={() => window.scrollTo({ top: document.getElementById('download-cta')?.offsetTop, behavior: 'smooth' })}
+                  className="w-full mt-auto bg-emerald-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-emerald-700 transition-colors duration-300 shadow-md hover:shadow-lg"
+                >
+                  {tPricing('pro_cta')}
+                </button>
+              </motion.div>
+            </div>
+            <motion.p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-10" variants={fadeIn}>
+              {tPricing('footnote')}
+            </motion.p>
+          </div>
+        </motion.section>
+
+        {/* FAQ */}
+        <motion.section 
+          className="py-16 bg-gray-100 dark:bg-gray-800"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={staggerChildren}
+          id="faq"
+        >
+          <div className="container mx-auto px-6">
+            <motion.h2 
+              className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white"
+              variants={fadeIn}
+            >
+              {tFaq('title')}
+            </motion.h2>
+            
+            <div className="max-w-3xl mx-auto space-y-6">
+              {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+                tFaq(`question${i}`) && (
+                  <motion.div 
+                    key={`faq-${i}`} 
+                    variants={fadeIn} 
+                    className="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden"
+                  >
+                    <button 
+                      onClick={() => toggleFaq(i)}
+                      className="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 focus:outline-none"
+                    >
+                      <div className="flex items-center">
+                        <HelpCircle className="w-6 h-6 mr-3 text-emerald-500 flex-shrink-0" />
+                        <span className="text-lg font-semibold text-gray-800 dark:text-white">{tFaq(`question${i}`)}</span>
+                      </div>
+                      <ChevronDown 
+                        className={`w-6 h-6 text-gray-500 dark:text-gray-400 transition-transform duration-300 ${openFaq === i ? 'transform rotate-180' : ''}`}
+                      />
+                    </button>
+                    {openFaq === i && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="px-6 pb-6 pt-2"
+                      >
+                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{tFaq(`answer${i}`)}</p>
+                      </motion.div>
+                    )}
+                  </motion.div>
+                )
+              ))}
+            </div>
           </div>
         </motion.section>
 
