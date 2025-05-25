@@ -12,38 +12,45 @@
     "description": "Entdecke Wildtiere, erkunde die Natur und beobachte Tiere mit Wildscopes KI-gestützter Outdoor-Begleiter-App. Funktioniert offline für Wildnisabenteuer überall."
   },
   "Hero": {
-    "title": "Erkunde, Identifiziere & Beobachte Wildtiere mit Wildscope",
-    "subtitle": "Dein KI-gestützter Naturbegleiter zum Identifizieren von Pflanzen, Beobachten von Tieren und Entdecken von Wildtieren - online oder offline.",
-    "cta": "Starte Dein Naturabenteuer",
-    "cta_subtext": "Kostenloser Download für iOS & Android"
+    "title": "Dein KI-gestützter Wildtierführer & Naturbegleiter",
+    "subtitle": "Verpasse nie wieder eine Wildtierbegegnung! Identifiziere Pflanzen sofort, beobachte Tiere wie ein Profi und erkunde die Natur mit Selbstvertrauen - auch ohne Internetverbindung.",
+    "cta": "Starte Dein Wildnis-Abenteuer Jetzt",
+    "cta_subtext": "Schließe Dich 10.000+ Naturbegeisterten an - Kostenloser Download"
   },
   "About": {
-    "title": "Die ultimative App zur Wildtierbestimmung & Naturerkundung",
-    "paragraph1": "Wildscope verändert, wie du dich mit der Natur verbindest. Ob du auf Bergpfaden wanderst, lokale Parks erkundest oder Wildtiere von zu Hause aus entdeckst - unsere fortschrittliche KI-Technologie hilft dir, Pflanzen zu identifizieren, Tiere zu beobachten und Ökosysteme auf bedeutungsvolle Weise kennenzulernen.",
-    "paragraph2": "Von gemütlichen Naturwanderungen bis hin zu abgelegenen Wildnisexpeditionen kombiniert Wildscope leistungsstarke KI-Identifikationstechnologie, umfassende Offline-Erkundungswerkzeuge und eine globale Gemeinschaft von Naturbegeisterten, um deine Outdoor-Abenteuer zu bereichern."
+    "title": "Verwandle Dein Naturerlebnis mit KI-gestütztem Wildtier-Tracking",
+    "paragraph1": "Lass dir keine faszinierenden Wildtiermomente mehr entgehen! Ob du auf Bergpfaden wanderst, lokale Parks erkundest oder Wildtiere von zu Hause aus entdeckst - unsere fortschrittliche KI-Technologie hilft dir, Pflanzen zu identifizieren, Tiere zu beobachten und Ökosysteme mit Expertengenauigkeit kennenzulernen.",
+    "paragraph2": "Von gemütlichen Naturwanderungen bis hin zu abgelegenen Wildnisexpeditionen macht Wildscope jedes Outdoor-Abenteuer unvergesslich - mit leistungsstarker KI-Identifikationstechnologie, umfassenden Offline-Erkundungswerkzeugen und einer globalen Gemeinschaft von Naturbegeisterten."
   },
   "Features": {
-    "title": "Wildtier-Tracking & Naturerkundungsfunktionen",
-    "feature1_title": "Fortschrittliche Wildnis-Navigationswerkzeuge",
-    "feature1_desc": "Navigiere selbstbewusst durch jedes Gelände mit unserem GPS-fähigen Wegpunkt-Kompass, entschlüssele Wildnissignale mit eingebauten Werkzeugen und greife auf unsere umfassende Outdoor-Wissensbibliothek zu – essentielle Werkzeuge für Naturerkundung, alles in einer Anwendung.",
-    "feature2_title": "KI-gestützte Wildtier- & Pflanzenbestimmung",
-    "feature2_desc": "Identifiziere Flora, Fauna und Pilze sofort mit unserem fortschrittlichen KI-Erkennungssystem. Dokumentiere Wildtierbeobachtungen, greife auf detaillierte Arteninformationen mit standortspezifischen Daten, hochauflösenden Bildern und interaktiven Habitatkarten zu und trage zur globalen Biodiversitätsforschung bei.",
-    "feature3_title": "Gemeinschaft für Naturbegeisterte",
-    "feature3_desc": "Verbinde dich mit leidenschaftlichen Wildtierbeobachtern und Naturerkundern weltweit. Entdecke bemerkenswerte Wildtiersichtungen von anderen Abenteurern, besuche dokumentierte Standorte, teile Beobachtungen und inspiriere andere mit deinen einzigartigen Naturerlebnissen.",
-    "feature4_title": "Offline-Naturerkundung & Wildtier-Tracking",
-    "feature4_desc": "Erkunde natürliche Lebensräume in deiner Umgebung oder entdecke ferne Ökosysteme von zu Hause aus. Lade Regionsdaten herunter, um Artenidentifikation und detaillierte Karten vollständig offline zu nutzen – perfekt für abgelegene Wildnisabenteuer ohne Mobilfunkempfang.",
-    "feature5_title": "Interaktives Naturlernen & Wildnis-Herausforderungen",
-    "feature5_desc": "Erweitere dein Naturwissen mit Biodiversitäts-Quizzes und standortbasierten Lernaktivitäten. Teste Überlebensfähigkeiten durch immersive Wildnisszenarien oder erstelle benutzerdefinierte Naturherausforderungen zum Teilen mit Freunden und Familie.",
-    "feature6_title": "Persönlicher KI-Wildtier- & Naturführer",
-    "feature6_desc": "Konsultiere deinen KI-Naturexperten, der deine Umgebung versteht. Lade Bilder für sofortige Artenidentifikation hoch, stelle Fragen zu nahegelegenen Pflanzen und Tieren und erhalte maßgeschneiderte Anleitungen für deine Outdoor-Abenteuer – wie einen professionellen Naturforscher in der Tasche."
+    "title": "Alles, was du für Wildtierentdeckung & Naturerkundung brauchst",
+    "feature1_title": "Nie wieder in der Wildnis verlaufen",
+    "feature1_desc": "Navigiere selbstbewusst durch jedes Gelände mit unserem GPS-fähigen Wegpunkt-Kompass, entschlüssele Wildnissignale mit eingebauten Werkzeugen und greife auf unsere umfassende Outdoor-Wissensbibliothek zu – alle wichtigen Werkzeuge für sichere Naturerkundung in einer App.",
+    "feature2_title": "Sofortige Wildtier- & Pflanzenerkennung",
+    "feature2_desc": "Schluss mit Rätselraten! Identifiziere Flora, Fauna und Pilze sofort mit unserem fortschrittlichen KI-Erkennungssystem. Erhalte detaillierte Arteninformationen, standortspezifische Daten, hochauflösende Bilder und interaktive Habitatkarten direkt zur Hand.",
+    "feature3_title": "Werde Teil der globalen Naturliebhaber-Community",
+    "feature3_desc": "Verbinde dich mit leidenschaftlichen Wildtierbeobachtern weltweit. Entdecke faszinierende Wildtiersichtungen von anderen Abenteurern, besuche dokumentierte Standorte, teile deine eigenen Beobachtungen und inspiriere andere mit deinen einzigartigen Naturerlebnissen.",
+    "feature4_title": "Funktioniert überall - auch ohne Internet",
+    "feature4_desc": "Lass dich von schlechtem Empfang nicht aufhalten! Lade Regionsdaten herunter, um Artenidentifikation und detaillierte Karten vollständig offline zu nutzen – perfekt für abgelegene Wildnisabenteuer, wo Mobilfunkempfang nur ein Traum ist.",
+    "feature5_title": "Entdecke Naturgeheimnisse spielerisch",
+    "feature5_desc": "Mache Lernen zum Vergnügen mit Biodiversitäts-Quizzes und standortbasierten Aktivitäten. Teste deine Überlebensfähigkeiten in immersiven Wildnisszenarien oder erstelle eigene Naturherausforderungen zum Teilen mit Freunden und Familie.",
+    "feature6_title": "Dein persönlicher Naturexperte rund um die Uhr",
+    "feature6_desc": "Wie ein professioneller Naturforscher in der Tasche! Erhalte sofortige Artenidentifikation, stelle Fragen zu nahegelegenen Pflanzen und Tieren und bekomme maßgeschneiderte Anleitungen für deine Outdoor-Abenteuer – alles gestützt durch fortschrittliche KI-Technologie."
   },
   "CallToAction": {
-    "title": "Bereit, Wildtiere zu entdecken & die Natur zu erkunden?",
-    "subtitle": "Laden Sie Wildscope herunter und beginnen Sie mit der Identifizierung von Pflanzen, der Verfolgung von Wildtieren und der Erkundung natürlicher Lebensräume — egal ob in abgelegener Wildnis oder in Ihrem lokalen Park.",
+    "title": "Verpasse keinen einzigartigen Wildtiermoment mehr!",
+    "subtitle": "Schließe dich tausenden Naturbegeisterten an, die bereits Wildtiere wie nie zuvor entdecken und identifizieren. Lade Wildscope jetzt herunter und verwandle deine Outdoor-Abenteuer!",
     "appstore": "Im App Store laden",
     "playstore": "Bei Google Play holen",
-    "button": "Wildscope Naturerkunder herunterladen",
-    "playstoreLink": "https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
+    "button": "Starte Deine Wildnis-Reise",
+    "playstoreLink": "https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible",
+    "benefits": [
+      "✓ Sofortige Pflanzen- & Tieridentifikation",
+      "✓ Funktioniert offline in abgelegenen Gebieten",
+      "✓ GPS-Navigation & Tracking",
+      "✓ KI-gestützter Naturführer",
+      "✓ Globale Wildtier-Community"
+    ]
   },
   "Footer": {
     "copyright": "© {year} Wildscope. Alle Rechte vorbehalten.",

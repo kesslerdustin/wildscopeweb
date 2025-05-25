@@ -12,38 +12,45 @@
     "description": "Découvrez la faune, explorez la nature et suivez les animaux avec l'application d'accompagnement en plein air de Wildscope alimentée par l'IA. Fonctionne hors ligne pour des aventures sauvages n'importe où."
   },
   "Hero": {
-    "title": "Explorez, Identifiez & Suivez la Faune avec Wildscope",
-    "subtitle": "Votre compagnon nature alimenté par l'IA pour identifier les plantes, suivre les animaux et découvrir la faune - en ligne ou hors ligne.",
-    "cta": "Commencez Votre Aventure Nature",
-    "cta_subtext": "Téléchargement Gratuit pour iOS & Android"
+    "title": "Votre Guide Animalier & Compagnon Nature Alimenté par l'IA",
+    "subtitle": "Ne manquez plus jamais une rencontre avec la faune ! Identifiez les plantes instantanément, suivez les animaux comme un pro et explorez la nature en toute confiance - même sans connexion internet.",
+    "cta": "Lancez Votre Aventure Sauvage Maintenant",
+    "cta_subtext": "Rejoignez 10 000+ Passionnés de Nature - Téléchargement Gratuit"
   },
   "About": {
-    "title": "L'Application Ultime d'Identification de la Faune & d'Exploration de la Nature",
-    "paragraph1": "Wildscope transforme votre façon de vous connecter à la nature. Que vous randonnez sur des sentiers de montagne, explorez des parcs locaux ou découvrez la faune depuis chez vous, notre technologie IA avancée vous aide à identifier les plantes, suivre les animaux et apprendre sur les écosystèmes de manière significative.",
-    "paragraph2": "Des promenades nature occasionnelles aux expéditions en pleine nature, Wildscope combine une puissante technologie d'identification par IA, des outils d'exploration hors ligne complets et une communauté mondiale d'amoureux de la nature pour améliorer vos aventures en plein air."
+    "title": "Transformez Votre Expérience Nature avec le Suivi de la Faune par IA",
+    "paragraph1": "Ne laissez plus échapper des moments incroyables avec la faune ! Que vous randonniez sur des sentiers de montagne, exploriez des parcs locaux ou découvriez la faune depuis chez vous, notre technologie IA avancée vous aide à identifier les plantes, suivre les animaux et apprendre sur les écosystèmes avec une précision d'expert.",
+    "paragraph2": "Des promenades nature occasionnelles aux expéditions en pleine nature, Wildscope rend chaque aventure en plein air inoubliable - avec une puissante technologie d'identification par IA, des outils d'exploration hors ligne complets et une communauté mondiale de passionnés de nature."
   },
   "Features": {
-    "title": "Fonctionnalités de Suivi de la Faune & d'Exploration de la Nature",
-    "feature1_title": "Outils Avancés de Navigation en Pleine Nature",
-    "feature1_desc": "Naviguez en toute confiance dans n'importe quel terrain avec notre boussole de points de repère GPS, décodez les signaux de la nature avec des outils intégrés et accédez à notre bibliothèque complète de connaissances en plein air—des outils essentiels pour l'exploration de la nature, tout en une seule application.",
-    "feature2_title": "Identification de la Faune & de la Flore Alimentée par l'IA",
-    "feature2_desc": "Identifiez instantanément la flore, la faune et les champignons avec notre système de reconnaissance IA avancé. Documentez les observations de la faune, accédez à des informations détaillées sur les espèces avec des données spécifiques à l'emplacement, des images haute résolution, des cartes interactives d'habitat et contribuez à la recherche mondiale sur la biodiversité.",
-    "feature3_title": "Communauté d'Amoureux de la Nature",
-    "feature3_desc": "Connectez-vous avec des observateurs passionnés de la faune et des explorateurs de la nature du monde entier. Découvrez des observations remarquables de la faune d'autres aventuriers, visitez des lieux documentés, partagez des observations et inspirez les autres avec vos expériences uniques de la nature.",
-    "feature4_title": "Exploration de la Nature & Suivi de la Faune Hors Ligne",
-    "feature4_desc": "Explorez les habitats naturels de votre région ou découvrez des écosystèmes lointains depuis chez vous. Téléchargez des données régionales pour utiliser l'identification des espèces et des cartes détaillées complètement hors ligne—parfait pour des aventures en pleine nature reculée sans service cellulaire.",
-    "feature5_title": "Apprentissage Interactif de la Nature & Défis en Pleine Nature",
-    "feature5_desc": "Améliorez vos connaissances de la nature avec des quiz sur la biodiversité et des activités d'apprentissage basées sur la localisation. Testez vos compétences de survie à travers des scénarios immersifs en pleine nature, ou créez des défis nature personnalisés à partager avec des amis et la famille.",
-    "feature6_title": "Guide Personnel IA de la Faune & de la Nature",
-    "feature6_desc": "Consultez votre expert en nature IA qui comprend votre environnement. Téléchargez des images pour une identification instantanée des espèces, posez des questions sur les plantes et les animaux à proximité, et recevez des conseils personnalisés pour vos aventures en plein air—comme avoir un naturaliste professionnel dans votre poche."
+    "title": "Tout ce dont vous avez besoin pour la Découverte de la Faune & l'Exploration de la Nature",
+    "feature1_title": "Ne vous perdez plus jamais dans la Nature",
+    "feature1_desc": "Naviguez en toute confiance dans n'importe quel terrain avec notre boussole de points de repère GPS, décodez les signaux de la nature avec des outils intégrés et accédez à notre bibliothèque complète de connaissances en plein air—tous les outils essentiels pour une exploration sûre de la nature en une seule application.",
+    "feature2_title": "Reconnaissance Instantanée de la Faune & de la Flore",
+    "feature2_desc": "Fini les interrogations ! Identifiez instantanément la flore, la faune et les champignons avec notre système de reconnaissance IA avancé. Obtenez des informations détaillées sur les espèces, des données spécifiques à l'emplacement, des images haute résolution et des cartes d'habitat interactives à portée de main.",
+    "feature3_title": "Rejoignez une Communauté Mondiale d'Amoureux de la Nature",
+    "feature3_desc": "Connectez-vous avec des observateurs passionnés de la faune du monde entier. Découvrez des observations fascinantes de la faune d'autres aventuriers, visitez des lieux documentés, partagez vos propres observations et inspirez les autres avec vos expériences uniques de la nature.",
+    "feature4_title": "Fonctionne Partout - Même Sans Internet",
+    "feature4_desc": "Ne laissez pas un mauvais signal vous arrêter ! Téléchargez des données régionales pour utiliser l'identification des espèces et des cartes détaillées complètement hors ligne—parfait pour des aventures en pleine nature reculée où le réseau mobile n'est qu'un rêve.",
+    "feature5_title": "Découvrez les Secrets de la Nature en Jouant",
+    "feature5_desc": "Rendez l'apprentissage amusant avec des quiz sur la biodiversité et des activités basées sur la localisation. Testez vos compétences de survie à travers des scénarios immersifs en pleine nature, ou créez des défis nature personnalisés à partager avec amis et famille.",
+    "feature6_title": "Votre Expert Nature Personnel 24h/24",
+    "feature6_desc": "Comme avoir un naturaliste professionnel dans votre poche ! Obtenez une identification instantanée des espèces, posez des questions sur les plantes et les animaux à proximité, et recevez des conseils personnalisés pour vos aventures en plein air—le tout alimenté par une technologie IA avancée."
   },
   "CallToAction": {
-    "title": "Prêt à découvrir la faune et explorer la nature ?",
-    "subtitle": "Téléchargez Wildscope et commencez à identifier des plantes, suivre la faune, et explorer les habitats naturels — que ce soit dans la nature sauvage ou dans votre parc local.",
+    "title": "Ne Manquez Plus Aucun Moment Incroyable avec la Faune !",
+    "subtitle": "Rejoignez des milliers de passionnés de nature qui découvrent et identifient déjà la faune comme jamais auparavant. Téléchargez Wildscope maintenant et transformez vos aventures en plein air !",
     "appstore": "Télécharger sur l'App Store",
     "playstore": "Obtenir sur Google Play",
-    "button": "Télécharger Wildscope Explorateur",
-    "playstoreLink": "https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
+    "button": "Commencez Votre Voyage Sauvage",
+    "playstoreLink": "https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible",
+    "benefits": [
+      "✓ Identification Instantanée des Plantes & Animaux",
+      "✓ Fonctionne Hors Ligne en Zones Reculées",
+      "✓ Navigation & Suivi GPS",
+      "✓ Guide Nature Alimenté par l'IA",
+      "✓ Communauté Mondiale de la Faune"
+    ]
   },
   "Footer": {
     "copyright": "© {year} Wildscope. Tous droits réservés.",
