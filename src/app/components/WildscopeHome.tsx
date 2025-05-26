@@ -161,7 +161,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   {t('appstore')}
                 </motion.a>
                 <motion.a
-                  href="https://play.google.com/store/apps/details?id=com.wildscope.app"
+                  href={t('playstoreLink')}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={trackPlayStoreClick}
@@ -326,7 +326,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                 </button>
               </motion.a>
               <motion.a
-                href="https://play.google.com/store/apps/details?id=com.wildscope.app"
+                href={t('playstoreLink')}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={trackPlayStoreClick}
