@@ -9,8 +9,31 @@ import { track } from '@vercel/analytics';
 import Image from 'next/image';
 import ImageModal from '@/components/ImageModal';
 import { motion } from 'framer-motion';
-import { Compass, Brain, Users, Download, BookOpen, MessageCircle } from 'lucide-react';
-import { ArticleJsonLd, SoftwareApplicationJsonLd, AppStoreDataJsonLd } from '@/components/JsonLd';
+import { 
+  Compass, 
+  Brain, 
+  Users, 
+  Download, 
+  BookOpen, 
+  MessageCircle,
+  Map,
+  Leaf,
+  Camera,
+  BookMarked,
+  Award,
+  Gamepad2,
+  Cloud,
+  WifiOff,
+  Check
+} from 'lucide-react';
+import { 
+  ArticleJsonLd, 
+  SoftwareApplicationJsonLd, 
+  AppStoreDataJsonLd,
+  FAQJsonLd,
+  OrganizationJsonLd,
+  WebsiteJsonLd
+} from '@/components/JsonLd';
 
 type WildscopeHomeProps = {
   locale: string;
@@ -73,11 +96,13 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
 
   const featureIcons = [
     <Compass className="w-10 h-10 text-emerald-500 mb-4" key="compass" />,
-    <Brain className="w-10 h-10 text-emerald-500 mb-4" key="brain" />,
-    <Users className="w-10 h-10 text-emerald-500 mb-4" key="users" />,
-    <Download className="w-10 h-10 text-emerald-500 mb-4" key="download" />,
-    <BookOpen className="w-10 h-10 text-emerald-500 mb-4" key="bookopen" />,
-    <MessageCircle className="w-10 h-10 text-emerald-500 mb-4" key="messagecircle" />
+    <Camera className="w-10 h-10 text-emerald-500 mb-4" key="camera" />,
+    <Map className="w-10 h-10 text-emerald-500 mb-4" key="map" />,
+    <WifiOff className="w-10 h-10 text-emerald-500 mb-4" key="offline" />,
+    <BookMarked className="w-10 h-10 text-emerald-500 mb-4" key="guide" />,
+    <Gamepad2 className="w-10 h-10 text-emerald-500 mb-4" key="quiz" />,
+    <Brain className="w-10 h-10 text-emerald-500 mb-4" key="ai" />,
+    <Cloud className="w-10 h-10 text-emerald-500 mb-4" key="cloud" />
   ];
 
   // Function to map img numbers to swap img2 and img3
@@ -99,7 +124,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
           <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
             <Image
               src="/images/header.png"
-              alt="Header background"
+              alt="Wildscope - AI Wildlife Identification and Nature Exploration App"
               fill
               priority
               className="object-cover opacity-40"
@@ -118,15 +143,59 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
               <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-white drop-shadow-md">
                 {t('subtitle')}
               </p>
-              <motion.button 
-                className="bg-emerald-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-emerald-700 transition-all duration-300 hover:scale-105"
-                onClick={scrollToDownload}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {t('cta')}
-              </motion.button>
-              <p className="mt-3 text-sm font-semibold text-white/90 drop-shadow-md">{t('cta_subtext')}</p>
+              
+              {/* Download Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <motion.a
+                  href="https://apps.apple.com/us/app/wildscope/id6741471953"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={trackAppStoreClick}
+                  className="bg-black text-white font-semibold py-4 px-8 rounded-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center group"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <svg className="w-8 h-8 mr-3 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.722 19.786c-.063.12-.143.24-.232.336-.336.36-.907.504-1.454.504-.318 0-.63-.048-.936-.156a2.416 2.416 0 01-.906-.516l-3.24-2.832-3.234 2.832c-.27.228-.576.396-.906.516a2.7 2.7 0 01-.936.156 2.19 2.19 0 01-1.458-.504 1.25 1.25 0 01-.228-.336 2.016 2.016 0 01-.192-.912V4.824c0-.324.066-.624.192-.912a1.25 1.25 0 01.228-.336c.336-.36.91-.504 1.458-.504.318 0 .63.048.936.156.33.12.636.288.906.516L12 6.576l3.24-2.832c.27-.228.576-.396.906-.516.306-.108.618-.156.936-.156.547 0 1.118.144 1.454.504.089.096.17.216.232.336.126.288.192.588.192.912v14.05c0 .324-.066.624-.192.912zm-4.446-6.924l3.432 3.001V5.421L13.276 8.4l3.438-2.988v2.496l-3.438 2.982z" />
+                  </svg>
+                  {t('appstore')}
+                </motion.a>
+                <motion.a
+                  href="https://play.google.com/store/apps/details?id=com.wildscope.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={trackPlayStoreClick}
+                  className="bg-black text-white font-semibold py-4 px-8 rounded-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center group"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <svg className="w-8 h-8 mr-3 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.186 4.352C2.575 5.027 2.25 6.046 2.25 7.357v9.286c0 1.311.325 2.33.936 3.005l.117.129.188-.117 8.97-5.196V9.536L3.373 4.223l-.187-.117-.117.13.117.116z" />
+                    <path d="M17.73 11l-3.75-2.143-9.938-5.679 9.938 5.679L17.73 11z" />
+                    <path d="M21.436 11L17.26 8.571 14 6.429v11.142l3.26-2.143 4.176-2.428V11z" />
+                    <path d="M13.53 19.446l-9.966-5.732-.188-.117-.118.13.118.116.118.13.187.117 9.85 5.732.187.117.117-.13-.117-.116.118-.13-.188-.117-.118.13z" />
+                  </svg>
+                  {t('playstore')}
+                </motion.a>
+              </div>
+
+              <p className="text-lg font-medium text-white/90 mb-8">
+                {t('download_subtext')}
+              </p>
+              
+              {/* Key Features Grid */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto bg-black/20 p-6 rounded-lg">
+                {[1, 2, 3, 4, 5, 6].map((i) => (
+                  <motion.div 
+                    key={i}
+                    className="flex items-center space-x-3 text-left"
+                    variants={fadeIn}
+                  >
+                    <Check className="w-6 h-6 text-emerald-300 flex-shrink-0" />
+                    <span className="text-white/90 text-lg">{t(`feature_${i}`)}</span>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </motion.div>
         </section>
@@ -184,7 +253,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
               {tFeatures('title')}
             </motion.h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
                 <motion.div 
                   key={i}
                   className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all"
@@ -194,23 +263,32 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   <div className="flex flex-col items-center">
                     {featureIcons[i-1]}
                   </div>
-                  <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img${getImageNumber(i)}_${locale}.png`)}>
+                  <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/feature${i}_${locale}.png`)}>
                     <Image 
-                      src={`/images/img${getImageNumber(i)}_${locale}.png`}
+                      src={`/images/feature${i}_${locale}.png`}
                       alt={tFeatures(`feature${i}_title`)}
                       width={400}
                       height={300}
                       className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
                       onError={(e) => {
-                        // Fallback to English if localized image fails to load
                         const target = e.target as HTMLImageElement;
-                        target.onerror = null; // Prevent infinite loop
-                        target.src = `/images/img${getImageNumber(i)}_en.png`;
+                        target.onerror = null;
+                        target.src = `/images/feature${i}_en.png`;
                       }}
                     />
                   </div>
                   <h3 className="text-xl font-semibold mb-3 text-emerald-600">{tFeatures(`feature${i}_title`)}</h3>
                   <p className="text-gray-600">{tFeatures(`feature${i}_desc`)}</p>
+                  <ul className="mt-4 space-y-2">
+                    {[1, 2, 3].map((subFeature) => (
+                      tFeatures(`feature${i}_point${subFeature}`) && (
+                        <li key={subFeature} className="flex items-start">
+                          <Check className="w-5 h-5 mr-2 text-emerald-500 flex-shrink-0 mt-1" />
+                          <span className="text-gray-600">{tFeatures(`feature${i}_point${subFeature}`)}</span>
+                        </li>
+                      )
+                    ))}
+                  </ul>
                 </motion.div>
               ))}
             </div>
@@ -248,24 +326,21 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                 </button>
               </motion.a>
               <motion.a
-                href="https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
+                href="https://play.google.com/store/apps/details?id=com.wildscope.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={trackPlayStoreClick}
+                className="bg-black text-white font-semibold py-4 px-8 rounded-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <button 
-                  className="bg-green-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-green-700 transition-colors duration-300 flex items-center justify-center w-full"
-                >
-                  <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3.186 4.352C2.575 5.027 2.25 6.046 2.25 7.357v9.286c0 1.311.325 2.33.936 3.005l.117.129.188-.117 8.97-5.196V9.536L3.373 4.223l-.187-.117-.117.13.117.116z" />
-                    <path d="M17.73 11l-3.75-2.143-9.938-5.679 9.938 5.679L17.73 11z" />
-                    <path d="M21.436 11L17.26 8.571 14 6.429v11.142l3.26-2.143 4.176-2.428V11z" />
-                    <path d="M13.53 19.446l-9.966-5.732-.188-.117-.118.13.118.116.118.13.187.117 9.85 5.732.187.117.117-.13-.117-.116.118-.13-.188-.117-.118.13z" />
-                  </svg>
-                  {tCta('playstore')}
-                </button>
+                <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3.186 4.352C2.575 5.027 2.25 6.046 2.25 7.357v9.286c0 1.311.325 2.33.936 3.005l.117.129.188-.117 8.97-5.196V9.536L3.373 4.223l-.187-.117-.117.13.117.116z" />
+                  <path d="M17.73 11l-3.75-2.143-9.938-5.679 9.938 5.679L17.73 11z" />
+                  <path d="M21.436 11L17.26 8.571 14 6.429v11.142l3.26-2.143 4.176-2.428V11z" />
+                  <path d="M13.53 19.446l-9.966-5.732-.188-.117-.118.13.118.116.118.13.187.117 9.85 5.732.187.117.117-.13-.117-.116.118-.13-.188-.117-.118.13z" />
+                </svg>
+                {tCta('playstore')}
               </motion.a>
             </div>
           </div>

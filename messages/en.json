@@ -8,38 +8,69 @@
     "terms": "Terms of Use"
   },
   "Meta": {
-    "title": "Wildlife Tracking & Nature Exploration App | Wildscope",
-    "description": "Discover wildlife, explore nature, and track animals with Wildscope's AI-powered outdoor companion app. Works offline for wilderness adventures anywhere."
+    "title": "Wildscope: AI Wildlife Identification & Nature Exploration App",
+    "description": "Discover and identify wildlife with AI technology, explore nature with offline maps, and track animals like a pro. Your ultimate outdoor companion for wildlife adventures."
   },
   "Hero": {
-    "title": "Your AI-Powered Wildlife Guide & Nature Companion",
-    "subtitle": "Never miss a wildlife encounter again! Identify plants instantly, track animals like a pro, and explore nature with confidence - even without internet connection.",
-    "cta": "Start Your Wild Adventure Now",
-    "cta_subtext": "Join Thousands of Nature Enthusiasts - Free Download"
+    "title": "AI-Powered Wildlife Identification & Nature Exploration",
+    "subtitle": "Identify plants and animals instantly, track wildlife with precision, and explore nature confidently - even offline. Your complete outdoor companion powered by advanced AI.",
+    "feature_1": "AI-Powered Species Recognition & Tracking",
+    "feature_2": "Offline Maps & Wildlife Database",
+    "feature_3": "Interactive Nature Quizzes & Learning",
+    "feature_4": "GPS Navigation & Compass Tools",
+    "feature_5": "Text-Based Adventure Mode",
+    "feature_6": "Global Wildlife Community",
+    "appstore": "Download on App Store",
+    "playstore": "Get it on Google Play",
+    "download_subtext": "Join 50,000+ Nature Enthusiasts"
   },
   "About": {
-    "title": "Transform Your Nature Experience with AI-Powered Wildlife Tracking",
-    "paragraph1": "Don't let amazing wildlife moments slip away! Whether you're hiking mountain trails, exploring local parks, or discovering wildlife from home, our advanced AI technology helps you identify plants, track animals, and learn about ecosystems with expert-level accuracy.",
-    "image_alt": "Diverse group of people using Wildscope app in nature",
-    "bullet1": "Instantly identify plants, animals, and fungi with your camera.",
-    "bullet2": "Access detailed offline maps and survival guides for any adventure.",
-    "bullet3": "Connect with a global community of nature enthusiasts and share discoveries.",
-    "paragraph2": "From casual nature walks to remote wilderness expeditions, Wildscope combines powerful AI identification technology, comprehensive offline exploration tools, and a global community of nature enthusiasts to make every outdoor adventure unforgettable."
+    "title": "Your Complete Wildlife Identification & Nature Guide",
+    "paragraph1": "Experience nature like never before with Wildscope's advanced AI technology. Whether you're identifying plants on a hike, tracking wildlife in remote areas, or learning about local ecosystems, our comprehensive features work seamlessly online and offline.",
+    "bullet1": "Instant AI-powered identification of plants, animals, and fungi",
+    "bullet2": "Detailed offline maps and species guides for any location",
+    "bullet3": "Interactive learning through quizzes and adventure mode",
+    "bullet4": "GPS navigation and wildlife tracking tools",
+    "bullet5": "Global community of nature enthusiasts",
+    "paragraph2": "From casual nature walks to serious wildlife tracking, Wildscope combines cutting-edge AI technology with comprehensive outdoor tools to enhance every nature experience."
   },
   "Features": {
-    "title": "Everything You Need for Wildlife Discovery & Nature Exploration",
-    "feature1_title": "Never Get Lost in the Wild",
-    "feature1_desc": "Navigate any terrain with confidence using our GPS-enabled waypoint compass, decode wilderness signals with built-in tools, and access our comprehensive outdoor knowledge library—all the essential tools for safe nature exploration in one app.",
-    "feature2_title": "Instant Wildlife & Plant Recognition",
-    "feature2_desc": "Stop wondering what you're looking at! Instantly identify flora, fauna, and fungi with our advanced AI recognition system. Get detailed species information, location-specific data, high-resolution images, and interactive habitat maps at your fingertips.",
-    "feature3_title": "Join a Global Community of Nature Lovers",
-    "feature3_desc": "Connect with passionate wildlife watchers worldwide. Discover amazing wildlife sightings from fellow adventurers, visit documented locations, share your own observations, and inspire others with your unique nature experiences.",
-    "feature4_title": "Works Anywhere - Even Without Internet",
-    "feature4_desc": "Don't let poor signal stop your exploration! Download region data to use species identification and detailed maps completely offline—perfect for remote wilderness adventures where cell service is just a dream.",
-    "feature5_title": "Learn Nature's Secrets Through Play",
-    "feature5_desc": "Make learning fun with biodiversity quizzes and location-based activities. Test your survival skills through immersive wilderness scenarios, or create custom nature challenges to share with friends and family.",
-    "feature6_title": "Your Personal Nature Expert 24/7",
-    "feature6_desc": "Like having a professional naturalist in your pocket! Get instant species identification, ask questions about nearby plants and animals, and receive customized guidance for your outdoor adventures—all powered by advanced AI technology."
+    "title": "Complete Wildlife Identification & Nature Exploration Tools",
+    "feature1_title": "Advanced Wildlife Recognition",
+    "feature1_desc": "Instantly identify thousands of species with our AI-powered recognition system. Get detailed information about animals, plants, and fungi, including behavior patterns, habitat preferences, and seasonal variations.",
+    "feature1_point1": "Real-time species identification with AI",
+    "feature1_point2": "Comprehensive wildlife database",
+    "feature1_point3": "Seasonal tracking patterns",
+    
+    "feature2_title": "Offline Maps & Navigation",
+    "feature2_desc": "Never lose your way with our comprehensive offline mapping system. Download regional maps and wildlife data for reliable navigation and species identification, even in remote areas without cell service.",
+    "feature2_point1": "Download maps for offline use",
+    "feature2_point2": "GPS tracking and waypoints",
+    "feature2_point3": "Terrain analysis tools",
+    
+    "feature3_title": "Interactive Learning",
+    "feature3_desc": "Learn about nature through engaging quizzes, challenges, and our unique text-based adventure mode. Test your knowledge, improve your outdoor skills, and discover new species in your area.",
+    "feature3_point1": "Customizable nature quizzes",
+    "feature3_point2": "Text-based adventure scenarios",
+    "feature3_point3": "Species-specific challenges",
+    
+    "feature4_title": "Complete Offline Access",
+    "feature4_desc": "Access all essential features without internet connection. Our offline mode includes species identification, detailed maps, wildlife guides, and navigation tools - perfect for remote adventures.",
+    "feature4_point1": "Full offline functionality",
+    "feature4_point2": "Downloadable regional data",
+    "feature4_point3": "Offline species guides",
+    
+    "feature5_title": "AI Nature Guide",
+    "feature5_desc": "Get personalized guidance from our AI nature expert. Ask questions about local wildlife, receive species-specific tips, and learn about ecosystems through natural conversation.",
+    "feature5_point1": "24/7 AI nature assistant",
+    "feature5_point2": "Contextual wildlife information",
+    "feature5_point3": "Personalized learning paths",
+    
+    "feature6_title": "Global Wildlife Community",
+    "feature6_desc": "Connect with nature enthusiasts worldwide. Share wildlife sightings, discover new locations, and contribute to our growing database of species observations.",
+    "feature6_point1": "Share wildlife encounters",
+    "feature6_point2": "Discover hotspots",
+    "feature6_point3": "Community challenges"
   },
   "CallToAction": {
     "title": "Don't Miss Another Amazing Wildlife Moment!",
@@ -47,7 +78,7 @@
     "appstore": "Get it on App Store",
     "playstore": "Download on Play Store",
     "button": "Start Your Wild Journey",
-    "playstoreLink": "https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible",
+    "playstoreLink": "https://play.google.com/store/apps/details?id=com.wildscope.app",
     "benefits": [
       "✓ Instant Plant & Animal Identification",
       "✓ Works Offline in Remote Areas",
