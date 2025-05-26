@@ -159,7 +159,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   {t('appstore')}
                 </motion.a>
                 <motion.a
-                  href={t('playstoreLink')}
+                  href="https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={trackPlayStoreClick}
@@ -325,7 +325,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                 </button>
               </motion.a>
               <motion.a
-                href={t('playstoreLink')}
+                href="https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={trackPlayStoreClick}
