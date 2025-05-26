@@ -97,12 +97,10 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
   const featureIcons = [
     <Compass className="w-10 h-10 text-emerald-500 mb-4" key="compass" />,
     <Camera className="w-10 h-10 text-emerald-500 mb-4" key="camera" />,
-    <Map className="w-10 h-10 text-emerald-500 mb-4" key="map" />,
+    <MessageCircle className="w-10 h-10 text-emerald-500 mb-4" key="chat" />,
     <WifiOff className="w-10 h-10 text-emerald-500 mb-4" key="offline" />,
     <BookMarked className="w-10 h-10 text-emerald-500 mb-4" key="guide" />,
-    <Gamepad2 className="w-10 h-10 text-emerald-500 mb-4" key="quiz" />,
-    <Brain className="w-10 h-10 text-emerald-500 mb-4" key="ai" />,
-    <Cloud className="w-10 h-10 text-emerald-500 mb-4" key="cloud" />
+    <Gamepad2 className="w-10 h-10 text-emerald-500 mb-4" key="quiz" />
   ];
 
   // Function to map img numbers to swap img2 and img3
@@ -253,7 +251,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
               {tFeatures('title')}
             </motion.h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+              {[1, 2, 3, 4, 5, 6].map((i) => (
                 <motion.div 
                   key={i}
                   className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all"
@@ -263,17 +261,18 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   <div className="flex flex-col items-center">
                     {featureIcons[i-1]}
                   </div>
-                  <div className="mb-6 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/feature${i}_${locale}.png`)}>
+                  <div className="mb-6 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img${i}_${locale}.png`)}>
                     <Image 
-                      src={`/images/feature${i}_${locale}.png`}
+                      src={`/images/img${i}_${locale}.png`}
                       alt={tFeatures(`feature${i}_title`)}
                       width={400}
                       height={300}
                       className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
+                      priority={i <= 3}
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.onerror = null;
-                        target.src = `/images/feature${i}_en.png`;
+                        target.src = `/images/img${i}_en.png`;
                       }}
                     />
                   </div>
