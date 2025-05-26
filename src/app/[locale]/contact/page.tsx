@@ -9,7 +9,7 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
   
   // Define title by locale
   const titles = {
@@ -43,7 +43,7 @@ export default function ContactPage({params: {locale}}: Props) {
   // Server-side function to set the locale
   unstable_setRequestLocale(locale);
   const t = useTranslations('ContactPage');
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
   
   // Breadcrumb items
   const breadcrumbItems = [

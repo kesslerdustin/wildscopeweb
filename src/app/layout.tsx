@@ -13,33 +13,47 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app'),
   title: {
-    template: '%s | Wildscope - Wildlife Tracking & Outdoor Adventure App',
-    default: 'Wildscope - Wildlife Tracking & Outdoor Adventure App'
+    template: '%s | Wildscope - AI Wildlife & Survival Guide',
+    default: 'Wildscope - AI Wildlife Identification & Outdoor Survival App'
   },
-  description: "Discover Wildscope - Your comprehensive wildlife identification and outdoor adventure companion. Explore nature with AI-powered species recognition, offline maps, and interactive tracking tools.",
+  description: "Discover Wildscope - Your AI-powered survival companion and wildlife guide. Features text-based adventures, species identification, compass navigation, offline maps, and interactive tracking tools for outdoor exploration.",
   applicationName: 'Wildscope',
   authors: [{ name: 'Wildscope Team' }],
   creator: 'Wildscope',
   publisher: 'Wildscope',
   keywords: [
-    'wildlife tracking app', 
-    'outdoor adventure app', 
-    'nature exploration', 
-    'species identification', 
-    'plant identification', 
-    'offline hiking maps', 
-    'AI wildlife recognition', 
-    'animal tracking app', 
-    'outdoor companion app', 
-    'adventure tool', 
-    'nature discovery', 
-    'biodiversity app', 
-    'wildlife observation', 
-    'nature guide app',
-    'wildlife identification',
-    'mobile wildlife tracker'
+    'wildscope',
+    'wildscope app',
+    'survival tool',
+    'survival app',
+    'compass app',
+    'species sightings',
+    'flora fauna identification',
+    'text adventure game',
+    'ai plants identification',
+    'ai text adventure',
+    'wildlife tracking app',
+    'outdoor survival guide',
+    'ai species recognition',
+    'offline hiking maps',
+    'nature exploration app',
+    'wilderness survival',
+    'outdoor navigation',
+    'plant identification ai',
+    'animal tracking app',
+    'interactive nature guide',
+    'outdoor adventure game',
+    'wildlife observation',
+    'nature discovery app',
+    'biodiversity tracker',
+    'gps compass navigation',
+    'offline survival guide',
+    'ai nature companion',
+    'wilderness exploration',
+    'species database app',
+    'outdoor safety tool'
   ],
   robots: {
     index: true,
@@ -68,7 +82,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com',
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app',
   },
   manifest: '/manifest.json',
   appleWebApp: {
@@ -83,7 +97,11 @@ export const metadata: Metadata = {
     email: true,
     url: true,
   },
-  category: 'outdoor,travel,nature,wildlife,adventure',
+  category: 'outdoor,survival,travel,nature,wildlife,adventure,games',
+  other: {
+    'apple-itunes-app': 'app-id=6741471953',
+    'google-play-app': 'app-id=com.duselk.theoutdoorbible'
+  }
 };
 
 export default function RootLayout({
@@ -94,7 +112,7 @@ export default function RootLayout({
   return (
     <html lang={defaultLocale}>
       <head>
-        <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com'} />
+        <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app'} />
         {/* Preload critical assets */}
         <link rel="preload" href="/images/logo.png" as="image" type="image/png" />
         <link rel="preload" href="/images/header.png" as="image" type="image/png" />
@@ -102,7 +120,7 @@ export default function RootLayout({
         {/* Add DNS prefetching for performance */}
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-        <link rel="dns-prefetch" href="https://wildscope.com" />
+        <link rel="dns-prefetch" href="https://www.wildscope.app" />
         
         {/* JSON-LD structured data */}
         <script 
@@ -128,7 +146,7 @@ export default function RootLayout({
               "author": {
                 "@type": "Organization",
                 "name": "Wildscope Team",
-                "url": "https://wildscope.com"
+                "url": "https://www.wildscope.app"
               },
               "potentialAction": {
                 "@type": "DownloadAction",

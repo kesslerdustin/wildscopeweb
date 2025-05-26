@@ -263,7 +263,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   <div className="flex flex-col items-center">
                     {featureIcons[i-1]}
                   </div>
-                  <div className="mb-4 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/feature${i}_${locale}.png`)}>
+                  <div className="mb-6 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/feature${i}_${locale}.png`)}>
                     <Image 
                       src={`/images/feature${i}_${locale}.png`}
                       alt={tFeatures(`feature${i}_title`)}
@@ -277,14 +277,14 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                       }}
                     />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 text-emerald-600">{tFeatures(`feature${i}_title`)}</h3>
-                  <p className="text-gray-600">{tFeatures(`feature${i}_desc`)}</p>
-                  <ul className="mt-4 space-y-2">
+                  <h3 className="text-xl font-semibold mb-4 text-emerald-600">{tFeatures(`feature${i}_title`)}</h3>
+                  <p className="text-gray-600 mb-4">{tFeatures(`feature${i}_desc`)}</p>
+                  <ul className="mt-4 space-y-3">
                     {[1, 2, 3].map((subFeature) => (
                       tFeatures(`feature${i}_point${subFeature}`) && (
-                        <li key={subFeature} className="flex items-start">
-                          <Check className="w-5 h-5 mr-2 text-emerald-500 flex-shrink-0 mt-1" />
-                          <span className="text-gray-600">{tFeatures(`feature${i}_point${subFeature}`)}</span>
+                        <li key={subFeature} className="flex items-start bg-gray-50 p-3 rounded-lg">
+                          <Check className="w-5 h-5 mr-3 text-emerald-500 flex-shrink-0 mt-1" />
+                          <span className="text-gray-700">{tFeatures(`feature${i}_point${subFeature}`)}</span>
                         </li>
                       )
                     ))}

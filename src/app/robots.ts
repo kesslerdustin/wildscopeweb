@@ -1,13 +1,22 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wildscope.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
   
   return {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
+        allow: [
+          '/',
+          '/images/',
+          '/features/',
+          '/survival-guide/',
+          '/compass/',
+          '/species-database/',
+          '/text-adventures/',
+          '/ai-identification/'
+        ],
         disallow: [
           '/api/', 
           '/admin/',
@@ -22,12 +31,21 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: 'Googlebot',
-        allow: '/',
+        allow: [
+          '/',
+          '/images/',
+          '/features/',
+          '/survival-guide/',
+          '/compass/',
+          '/species-database/',
+          '/text-adventures/',
+          '/ai-identification/'
+        ],
         disallow: ['/api/', '/admin/', '/temp/'],
       },
       {
         userAgent: 'Googlebot-Image',
-        allow: ['/images/'], // Allow image crawler to index images
+        allow: ['/images/', '/species-database/images/'],
       },
       {
         userAgent: 'Bingbot',

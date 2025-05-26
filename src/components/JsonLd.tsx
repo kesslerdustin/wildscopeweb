@@ -80,9 +80,9 @@ export function OrganizationJsonLd() {
     url: baseUrl,
     logo: `${baseUrl}/images/logo.png`,
     sameAs: [
-      'https://facebook.com/wildscope',
-      'https://instagram.com/wildscope',
-      'https://twitter.com/wildscope'
+      'https://facebook.com/wildscopeapp',
+      'https://instagram.com/wildscopeapp',
+      'https://twitter.com/wildscopeapp'
     ],
     address: {
       '@type': 'PostalAddress',
@@ -94,7 +94,7 @@ export function OrganizationJsonLd() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      email: 'contact@wildscope.com'
+      email: 'duselkay@gmail.com'
     }
   };
   
