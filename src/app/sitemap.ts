@@ -13,6 +13,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date().toISOString()
     },
     {
+      path: '/about',
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+      lastModified: new Date().toISOString()
+    },
+    {
       path: '/contact',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
@@ -26,6 +32,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       path: '/impressum',
+      changeFrequency: 'yearly' as const,
+      priority: 0.5,
+      lastModified: new Date().toISOString()
+    },
+    {
+      path: '/terms',
       changeFrequency: 'yearly' as const,
       priority: 0.5,
       lastModified: new Date().toISOString()

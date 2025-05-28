@@ -16,44 +16,53 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app'),
   title: {
     template: '%s | Wildscope - AI Wildlife & Survival Guide',
-    default: 'Wildscope - AI Wildlife Identification & Outdoor Survival App'
+    default: 'Wildscope: AI Wildlife Identification & Outdoor Survival App | Official Site'
   },
-  description: "Discover Wildscope - Your AI-powered survival companion and wildlife guide. Features text-based adventures, species identification, compass navigation, offline maps, and interactive tracking tools for outdoor exploration.",
+  description: "Official Wildscope website - Download the #1 AI-powered wildlife identification and survival app. Features text adventures, species tracking, compass navigation, offline maps, and nature exploration tools.",
   applicationName: 'Wildscope',
-  authors: [{ name: 'Wildscope Team' }],
+  authors: [{ name: 'Wildscope Team', url: 'https://www.wildscope.app' }],
   creator: 'Wildscope',
   publisher: 'Wildscope',
   keywords: [
     'wildscope',
-    'wildscope app',
-    'survival tool',
-    'survival app',
-    'compass app',
-    'species sightings',
-    'flora fauna identification',
-    'text adventure game',
-    'ai plants identification',
-    'ai text adventure',
+    'wildscope official',
+    'wildscope website',
+    'wildscope app download',
+    'wildscope mobile app',
+    'wildscope ai wildlife app',
+    'wildscope nature app',
+    'wildscope survival app',
+    'ai wildlife identification',
     'wildlife tracking app',
-    'outdoor survival guide',
-    'ai species recognition',
+    'survival tool app',
+    'compass navigation app',
+    'species identification app',
+    'text adventure survival',
     'offline hiking maps',
     'nature exploration app',
-    'wilderness survival',
-    'outdoor navigation',
+    'outdoor survival guide',
+    'ai species recognition',
     'plant identification ai',
     'animal tracking app',
+    'wilderness survival app',
+    'outdoor navigation tool',
     'interactive nature guide',
-    'outdoor adventure game',
-    'wildlife observation',
+    'wildlife observation app',
     'nature discovery app',
     'biodiversity tracker',
     'gps compass navigation',
     'offline survival guide',
     'ai nature companion',
-    'wilderness exploration',
+    'wilderness exploration app',
     'species database app',
-    'outdoor safety tool'
+    'outdoor safety tool',
+    'nature identification app',
+    'wildlife guide app',
+    'survival game app',
+    'outdoor adventure app',
+    'hiking companion app',
+    'nature education app',
+    'ecosystem tracker'
   ],
   robots: {
     index: true,
@@ -67,8 +76,16 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/images/apple-icon.png',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.png', type: 'image/png', sizes: '32x32' },
+      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/icon-512.png', type: 'image/png', sizes: '512x512' }
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+    shortcut: '/favicon.ico'
   },
   viewport: {
     width: 'device-width',
@@ -97,7 +114,7 @@ export const metadata: Metadata = {
     email: true,
     url: true,
   },
-  category: 'outdoor,survival,travel,nature,wildlife,adventure,games',
+  category: 'outdoor, travel, nature, wildlife, adventure, survival, education',
   other: {
     'apple-itunes-app': 'app-id=6741471953',
     'google-play-app': 'app-id=com.duselk.theoutdoorbible'
@@ -113,6 +130,20 @@ export default function RootLayout({
     <html lang={defaultLocale}>
       <head>
         <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app'} />
+        
+        {/* Favicon declarations for all browsers and Google */}
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        
+        {/* Additional favicon formats for better compatibility */}
+        <meta name="msapplication-TileColor" content="#10b981" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="theme-color" content="#10b981" />
+        
         {/* Preload critical assets */}
         <link rel="preload" href="/images/logo.png" as="image" type="image/png" />
         <link rel="preload" href="/images/header.png" as="image" type="image/png" />
