@@ -1,6 +1,6 @@
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
-import { locales } from '../../../i18n';
+import { locales } from '../../../i18n/request';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 

@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { defaultLocale, locales } from '../../i18n';
+import { defaultLocale, locales } from '../../i18n/request';
 
 export default function manifest(): MetadataRoute.Manifest {
   const descriptions = {

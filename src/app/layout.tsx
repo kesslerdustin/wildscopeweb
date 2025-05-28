@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { defaultLocale } from "../../i18n";
+import { defaultLocale } from "../../i18n/request";
 import { Analytics } from "@vercel/analytics/react";
 
 // Optimize font loading

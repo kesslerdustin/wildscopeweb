@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { locales } from '../../i18n';
+import { locales } from '../../i18n/request';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';

@@ -197,6 +197,35 @@
     "question7": "Is Wildscope developed by a large tech company?",
     "answer7": "No, Wildscope is an independent project developed by a dedicated nature enthusiast. The app is designed and maintained by a single passionate developer who prioritizes accuracy and user experience over monetization. This independent approach ensures that Wildscope remains true to its core mission: helping people connect with and understand nature without compromising user privacy or experience."
   },
+  "OfflineCapabilities": {
+    "title": "Offline Capabilities – Explore Without Limits",
+    "intro": "Once you've loaded an area, you can enjoy full exploration even without internet access:",
+    "capability1": "Offline Maps & Trails",
+    "capability2": "Local Species Data & Natural Landmarks",
+    "capability3": "POIs and Community-Added Highlights",
+    "libraries_title": "Knowledge Libraries:",
+    "library1": "Edible Plants",
+    "library2": "Navigation Techniques",
+    "library3": "First Aid Basics",
+    "library4": "Shelter Building",
+    "library5": "Fire & Water Guides",
+    "library6": "Compass, Morse Tool, and more",
+    "library7": "Basic Nature Quizzes"
+  },
+  "OnlineFeatures": {
+    "title": "Online Features – Enhanced by AI",
+    "intro": "Stay connected for the full experience:",
+    "feature1_title": "Wildscope Coach",
+    "feature1_desc": "Ask about your surroundings, upload images, and get personalized guidance.",
+    "feature2_title": "AI-Powered Identification",
+    "feature2_desc": "Instantly recognize species using photos and access in-depth, location-aware information.",
+    "feature3_title": "Smart Insights",
+    "feature3_desc": "Learn local history, community findings, seasonal patterns, and more.",
+    "feature4_title": "Global Community & Sharing",
+    "feature4_desc": "Share your discoveries, track rare sightings, and explore user-curated paths.",
+    "feature5_title": "Location-Based Quizzes & Text Adventures",
+    "feature5_desc": "Engage with your environment through rich, immersive experiences."
+  },
   "Audience": {
     "title": "Who is Wildscope For?",
     "intro": "Whether you're a seasoned explorer or just starting your nature journey, Wildscope is designed for you:",

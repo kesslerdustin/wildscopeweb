@@ -1,42 +1,32 @@
 import createMiddleware from 'next-intl/middleware';
-import { locales, defaultLocale } from './i18n';
-import { NextRequest, NextResponse } from 'next/server';
+import { locales, defaultLocale } from './i18n/request';
 
-export default async function middleware(request: NextRequest) {
-  // Debug information (you can remove this in production)
-  const acceptLanguage = request.headers.get('accept-language');
-  const userAgent = request.headers.get('user-agent');
-  const cfIpCountry = request.headers.get('cf-ipcountry'); // Cloudflare country header
-  const cfRegion = request.headers.get('cf-region'); // Cloudflare region header
-  
-  console.log('🔍 Locale Detection Debug:', {
-    url: request.url,
-    acceptLanguage,
-    cfIpCountry,
-    cfRegion,
-    userAgent: userAgent?.substring(0, 100) + '...'
-  });
+export default createMiddleware({
+  // A list of all locales that are supported
+  locales: locales,
 
-  // Create the next-intl middleware with enhanced detection
-  const handleI18nRouting = createMiddleware({
-    locales: locales,
-    defaultLocale: defaultLocale,
-    localePrefix: 'as-needed',
-    localeDetection: true,
-    alternateLinks: true,
-  });
+  // Used when no locale matches
+  defaultLocale: defaultLocale,
 
-  // Let next-intl handle the routing
-  const response = handleI18nRouting(request);
-  
-  // Add debug headers (remove in production)
-  response.headers.set('x-detected-accept-language', acceptLanguage || 'none');
-  response.headers.set('x-cf-country', cfIpCountry || 'unknown');
-  
-  return response;
-}
+  // Enable locale detection from Accept-Language header
+  localeDetection: true,
+
+  // Only add the locale prefix when needed (not for default locale)
+  localePrefix: 'as-needed',
+});
 
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/((?!api|_next|.*\\..*).*)']
+  matcher: [
+    // Enable a redirect to a matching locale at the root
+    '/',
+    
+    // Set a cookie to remember the previous locale for
+    // all requests that have a locale prefix
+    '/(de|en|fr|it|es|pt|ja)/:path*',
+    
+    // Enable redirects that add missing locales
+    // (e.g. `/pathnames` -> `/en/pathnames`)
+    '/((?!_next|_vercel|.*\\..*).*)'
+  ]
 }; 

@@ -3,7 +3,7 @@
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 import { useTransition } from 'react';
-import { locales } from '../../i18n';
+import { locales } from '../../i18n/request';
 import { useState, useEffect, useRef } from 'react';
 import { Globe, ChevronDown } from 'lucide-react';
 
