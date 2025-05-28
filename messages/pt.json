@@ -14,6 +14,15 @@
   "Hero": {
     "title": "Seu Guia de Vida Selvagem & Companheiro Natural Alimentado por IA",
     "subtitle": "Nunca mais perca um encontro com a vida selvagem! Identifique plantas instantaneamente, rastreie animais como um profissional e explore a natureza com confiança - mesmo sem conexão com a internet.",
+    "feature_1": "Reconhecimento e Rastreamento de Espécies por IA",
+    "feature_2": "Mapas Offline e Base de Dados de Vida Selvagem",
+    "feature_3": "Questionários Interativos de Natureza e Aprendizagem",
+    "feature_4": "Navegação GPS e Ferramentas de Bússola",
+    "feature_5": "Modo de Aventura Baseado em Texto",
+    "feature_6": "Comunidade Global de Vida Selvagem",
+    "appstore": "Baixar na App Store",
+    "playstore": "Obter no Google Play",
+    "download_subtext": "Junte-se a milhares de Entusiastas da Natureza",
     "cta": "Inicie Sua Aventura Selvagem Agora",
     "cta_subtext": "Junte-se a Milhares de Entusiastas da Natureza - Download Gratuito"
   },
@@ -27,19 +36,42 @@
     "paragraph2": "De caminhadas casuais na natureza a expedições em áreas selvagens remotas, o Wildscope torna cada aventura ao ar livre inesquecível - com poderosa tecnologia de identificação por IA, ferramentas de exploração offline abrangentes e uma comunidade global de apaixonados pela natureza."
   },
   "Features": {
-    "title": "Tudo que Você Precisa para Descobrir a Vida Selvagem & Explorar a Natureza",
-    "feature1_title": "Nunca Mais se Perca na Natureza",
-    "feature1_desc": "Navegue com confiança em qualquer terreno com nossa bússola de waypoint GPS, decodifique sinais da natureza com ferramentas integradas e acesse nossa biblioteca abrangente de conhecimentos ao ar livre—todas as ferramentas essenciais para uma exploração segura da natureza em um único aplicativo.",
-    "feature2_title": "Reconhecimento Instantâneo de Vida Selvagem & Plantas",
-    "feature2_desc": "Chega de dúvidas sobre o que você está vendo! Identifique instantaneamente flora, fauna e fungos com nosso sistema avançado de reconhecimento por IA. Obtenha informações detalhadas de espécies, dados específicos de localização, imagens de alta resolução e mapas interativos de habitat ao seu alcance.",
-    "feature3_title": "Junte-se a uma Comunidade Global de Amantes da Natureza",
-    "feature3_desc": "Conecte-se com observadores apaixonados da vida selvagem em todo o mundo. Descubra fascinantes avistamentos de vida selvagem de outros aventureiros, visite locais documentados, compartilhe suas próprias observações e inspire outros com suas experiências únicas na natureza.",
-    "feature4_title": "Funciona em Qualquer Lugar - Mesmo Sem Internet",
-    "feature4_desc": "Não deixe que um sinal fraco te impeça! Baixe dados regionais para usar identificação de espécies e mapas detalhados completamente offline—perfeito para aventuras em áreas selvagens remotas onde o sinal de celular é apenas um sonho.",
-    "feature5_title": "Descubra os Segredos da Natureza Brincando",
-    "feature5_desc": "Torne o aprendizado divertido com quizzes de biodiversidade e atividades baseadas em localização. Teste suas habilidades de sobrevivência através de cenários imersivos na natureza, ou crie desafios naturais personalizados para compartilhar com amigos e família.",
-    "feature6_title": "Seu Especialista em Natureza Pessoal 24/7",
-    "feature6_desc": "Como ter um naturalista profissional no seu bolso! Obtenha identificação instantânea de espécies, faça perguntas sobre plantas e animais próximos, e receba orientação personalizada para suas aventuras ao ar livre—tudo alimentado por tecnologia avançada de IA."
+    "title": "Ferramentas Completas de Identificação de Vida Selvagem e Exploração da Natureza",
+    "feature1_title": "Reconhecimento Avançado de Vida Selvagem",
+    "feature1_desc": "Identifique instantaneamente milhares de espécies com nosso sistema de reconhecimento alimentado por IA. Obtenha informações detalhadas sobre animais, plantas e fungos, incluindo padrões de comportamento, preferências de habitat e variações sazonais.",
+    "feature1_point1": "Identificação de espécies em tempo real com IA",
+    "feature1_point2": "Base de dados abrangente de vida selvagem",
+    "feature1_point3": "Padrões de rastreamento sazonal",
+    
+    "feature2_title": "Mapas Offline e Navegação",
+    "feature2_desc": "Nunca se perca com nosso sistema abrangente de mapeamento offline. Baixe mapas regionais e dados de vida selvagem para navegação confiável e identificação de espécies, mesmo em áreas remotas sem serviço celular.",
+    "feature2_point1": "Baixe mapas para uso offline",
+    "feature2_point2": "Rastreamento GPS e waypoints",
+    "feature2_point3": "Ferramentas de análise de terreno",
+    
+    "feature3_title": "Aprendizagem Interativa",
+    "feature3_desc": "Aprenda sobre a natureza através de questionários envolventes, desafios e nosso modo único de aventura baseado em texto. Teste seus conhecimentos, melhore suas habilidades ao ar livre e descubra novas espécies em sua área.",
+    "feature3_point1": "Questionários de natureza personalizáveis",
+    "feature3_point2": "Cenários de aventura baseados em texto",
+    "feature3_point3": "Desafios específicos de espécies",
+    
+    "feature4_title": "Acesso Completo Offline",
+    "feature4_desc": "Acesse todos os recursos essenciais sem conexão com a internet. Nosso modo offline inclui dados de espécies, mapas detalhados, guias de vida selvagem e ferramentas de navegação - perfeito para aventuras remotas.",
+    "feature4_point1": "Funcionalidade completa offline",
+    "feature4_point2": "Dados regionais baixáveis",
+    "feature4_point3": "Guias de espécies offline",
+    
+    "feature5_title": "Guia Natural com IA",
+    "feature5_desc": "Obtenha orientação personalizada do nosso especialista em natureza com IA. Faça perguntas sobre vida selvagem local, receba dicas específicas de espécies e aprenda sobre ecossistemas através de conversação natural.",
+    "feature5_point1": "Assistente de natureza IA 24/7",
+    "feature5_point2": "Informações contextuais de vida selvagem",
+    "feature5_point3": "Caminhos de aprendizagem personalizados",
+    
+    "feature6_title": "Comunidade Global de Vida Selvagem",
+    "feature6_desc": "Conecte-se com entusiastas da natureza em todo o mundo. Compartilhe avistamentos de vida selvagem, descubra novos locais e contribua para nosso banco de dados crescente de observações de espécies.",
+    "feature6_point1": "Compartilhe encontros com vida selvagem",
+    "feature6_point2": "Descubra pontos destacados",
+    "feature6_point3": "Desafios da comunidade"
   },
   "CallToAction": {
     "title": "Não Perca Mais Nenhum Momento Incrível com a Vida Selvagem!",
@@ -165,6 +197,35 @@
     "answer6": "Absolutamente! O Wildscope prospera com contribuições da comunidade. Suas observações de vida selvagem e identificações de plantas são adicionadas com segurança ao nosso banco de dados de ecossistema, melhorando a precisão do aplicativo para todos. Esta abordagem colaborativa cria um recurso abrangente de identificação de vida selvagem que beneficia todos os entusiastas da natureza.",
     "question7": "O Wildscope é desenvolvido por uma grande empresa de tecnologia?",
     "answer7": "Não, o Wildscope é um projeto independente desenvolvido por um entusiasta dedicado da natureza. O aplicativo é projetado e mantido por um único desenvolvedor apaixonado que prioriza precisão e experiência do usuário sobre monetização. Esta abordagem independente garante que o Wildscope permaneça fiel à sua missão principal: ajudar as pessoas a se conectarem e entenderem a natureza sem comprometer a privacidade ou experiência do usuário."
+  },
+  "OfflineCapabilities": {
+    "title": "Capacidades Offline – Explore Sem Limites",
+    "intro": "Uma vez que você carregou uma área, pode desfrutar de exploração completa mesmo sem acesso à internet:",
+    "capability1": "Mapas e Trilhas Offline",
+    "capability2": "Dados de Espécies Locais e Pontos de Referência Naturais",
+    "capability3": "POIs e Destaques Adicionados pela Comunidade",
+    "libraries_title": "Bibliotecas de Conhecimento:",
+    "library1": "Plantas Comestíveis",
+    "library2": "Técnicas de Navegação",
+    "library3": "Primeiros Socorros Básicos",
+    "library4": "Construção de Abrigos",
+    "library5": "Guias de Fogo e Água",
+    "library6": "Bússola, Ferramenta Morse e mais",
+    "library7": "Questionários Básicos de Natureza"
+  },
+  "OnlineFeatures": {
+    "title": "Recursos Online – Aprimorados por IA",
+    "intro": "Mantenha-se conectado para a experiência completa:",
+    "feature1_title": "Treinador Wildscope",
+    "feature1_desc": "Pergunte sobre seu ambiente, envie imagens e obtenha orientação personalizada.",
+    "feature2_title": "Identificação Alimentada por IA",
+    "feature2_desc": "Reconheça espécies instantaneamente usando fotos e acesse informações profundas e conscientes da localização.",
+    "feature3_title": "Insights Inteligentes",
+    "feature3_desc": "Aprenda história local, descobertas da comunidade, padrões sazonais e mais.",
+    "feature4_title": "Comunidade Global e Compartilhamento",
+    "feature4_desc": "Compartilhe suas descobertas, rastreie avistamentos raros e explore caminhos curados por usuários.",
+    "feature5_title": "Questionários Baseados em Localização e Aventuras de Texto",
+    "feature5_desc": "Interaja com seu ambiente através de experiências ricas e imersivas."
   },
   "Audience": {
     "title": "Para Quem é o Wildscope?",
