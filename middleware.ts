@@ -14,6 +14,9 @@ export default createMiddleware({
   // If true, the middleware will try to infer the locale from the `Accept-Language` header.
   // If false, it will always use the `defaultLocale` unless a locale is explicitly provided in the path.
   localeDetection: true,
+  
+  // Add alternate links for better SEO
+  alternateLinks: true,
 });
 
 export const config = {
