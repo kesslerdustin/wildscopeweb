@@ -1,23 +1,40 @@
 import createMiddleware from 'next-intl/middleware';
 import { locales, defaultLocale } from './i18n';
+import { NextRequest, NextResponse } from 'next/server';
 
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: locales,
-
-  // Used when no locale matches
-  defaultLocale: defaultLocale,
-
-  // Only add the locale prefix when needed (not for default locale)
-  localePrefix: 'as-needed',
-
-  // If true, the middleware will try to infer the locale from the `Accept-Language` header.
-  // If false, it will always use the `defaultLocale` unless a locale is explicitly provided in the path.
-  localeDetection: true,
+export default async function middleware(request: NextRequest) {
+  // Debug information (you can remove this in production)
+  const acceptLanguage = request.headers.get('accept-language');
+  const userAgent = request.headers.get('user-agent');
+  const cfIpCountry = request.headers.get('cf-ipcountry'); // Cloudflare country header
+  const cfRegion = request.headers.get('cf-region'); // Cloudflare region header
   
-  // Add alternate links for better SEO
-  alternateLinks: true,
-});
+  console.log('🔍 Locale Detection Debug:', {
+    url: request.url,
+    acceptLanguage,
+    cfIpCountry,
+    cfRegion,
+    userAgent: userAgent?.substring(0, 100) + '...'
+  });
+
+  // Create the next-intl middleware with enhanced detection
+  const handleI18nRouting = createMiddleware({
+    locales: locales,
+    defaultLocale: defaultLocale,
+    localePrefix: 'as-needed',
+    localeDetection: true,
+    alternateLinks: true,
+  });
+
+  // Let next-intl handle the routing
+  const response = handleI18nRouting(request);
+  
+  // Add debug headers (remove in production)
+  response.headers.set('x-detected-accept-language', acceptLanguage || 'none');
+  response.headers.set('x-cf-country', cfIpCountry || 'unknown');
+  
+  return response;
+}
 
 export const config = {
   // Match only internationalized pathnames
