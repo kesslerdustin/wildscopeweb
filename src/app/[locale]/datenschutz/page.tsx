@@ -49,6 +49,33 @@ export default function DatenschutzPage({params: {locale}}: Props) {
           <h4>{t('external_content_title')}</h4>
           <p dangerouslySetInnerHTML={{ __html: t('external_content_info') }} />
           
+          <h3>{t('youtube_api_title')}</h3>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_api_info') }} />
+          
+          <h4>{t('youtube_data_collection_title')}</h4>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_data_collection_info') }} />
+          
+          <h4>{t('youtube_data_storage_title')}</h4>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_data_storage_info') }} />
+          
+          <h4>{t('youtube_data_usage_title')}</h4>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_data_usage_info') }} />
+          
+          <h4>{t('youtube_data_sharing_title')}</h4>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_data_sharing_info') }} />
+          
+          <h4>{t('youtube_cookies_title')}</h4>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_cookies_info') }} />
+          
+          <h4>{t('youtube_data_retention_title')}</h4>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_data_retention_info') }} />
+          
+          <h4>{t('youtube_user_rights_title')}</h4>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_user_rights_info') }} />
+          
+          <h4>{t('youtube_third_party_title')}</h4>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_third_party_info') }} />
+          
           <h3>{t('data_processing_title')}</h3>
           <p dangerouslySetInnerHTML={{ __html: t('data_processing_info') }} />
           

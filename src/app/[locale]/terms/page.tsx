@@ -65,6 +65,29 @@ export default function TermsPage({params: {locale}}: Props) {
             {t('app_content_text')}
           </p>
           
+          <h2>{t('youtube_integration_title')}</h2>
+          <p>
+            {t('youtube_integration_text')}
+          </p>
+          
+          <h3 className="text-lg font-semibold">{t('youtube_acceptable_use_title')}</h3>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_acceptable_use_text') }} />
+          
+          <h3 className="text-lg font-semibold">{t('youtube_api_limitations_title')}</h3>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_api_limitations_text') }} />
+          
+          <h3 className="text-lg font-semibold">{t('youtube_user_responsibilities_title')}</h3>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_user_responsibilities_text') }} />
+          
+          <h3 className="text-lg font-semibold">{t('youtube_disclaimer_title')}</h3>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_disclaimer_text') }} />
+          
+          <h3 className="text-lg font-semibold">{t('youtube_data_processing_title')}</h3>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_data_processing_text') }} />
+          
+          <h3 className="text-lg font-semibold">{t('youtube_compliance_title')}</h3>
+          <p dangerouslySetInnerHTML={{ __html: t('youtube_compliance_text') }} />
+          
           <h2>{t('changes_title')}</h2>
           <p>
             {t('changes_text')}
