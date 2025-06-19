@@ -3,6 +3,7 @@ import {unstable_setRequestLocale} from 'next-intl/server';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 import { getPathForLocale } from '@/utils/localeHelpers';
+import FormattedContent from '@/components/FormattedContent';
 
 type Props = {
   params: {locale: string};
@@ -65,28 +66,26 @@ export default function TermsPage({params: {locale}}: Props) {
             {t('app_content_text')}
           </p>
           
-          <h2>{t('youtube_integration_title')}</h2>
-          <p>
-            {t('youtube_integration_text')}
-          </p>
+          <h2 className="text-xl font-semibold mt-8 mb-4 text-gray-800 dark:text-white">{t('youtube_integration_title')}</h2>
+          <FormattedContent content={t('youtube_integration_text')} />
           
-          <h3 className="text-lg font-semibold">{t('youtube_acceptable_use_title')}</h3>
-          <p dangerouslySetInnerHTML={{ __html: t('youtube_acceptable_use_text') }} />
+          <h3 className="text-lg font-medium mt-6 mb-3 text-gray-700 dark:text-gray-200">{t('youtube_acceptable_use_title')}</h3>
+          <FormattedContent content={t('youtube_acceptable_use_text')} />
           
-          <h3 className="text-lg font-semibold">{t('youtube_api_limitations_title')}</h3>
-          <p dangerouslySetInnerHTML={{ __html: t('youtube_api_limitations_text') }} />
+          <h3 className="text-lg font-medium mt-6 mb-3 text-gray-700 dark:text-gray-200">{t('youtube_api_limitations_title')}</h3>
+          <FormattedContent content={t('youtube_api_limitations_text')} />
           
-          <h3 className="text-lg font-semibold">{t('youtube_user_responsibilities_title')}</h3>
-          <p dangerouslySetInnerHTML={{ __html: t('youtube_user_responsibilities_text') }} />
+          <h3 className="text-lg font-medium mt-6 mb-3 text-gray-700 dark:text-gray-200">{t('youtube_user_responsibilities_title')}</h3>
+          <FormattedContent content={t('youtube_user_responsibilities_text')} />
           
-          <h3 className="text-lg font-semibold">{t('youtube_disclaimer_title')}</h3>
-          <p dangerouslySetInnerHTML={{ __html: t('youtube_disclaimer_text') }} />
+          <h3 className="text-lg font-medium mt-6 mb-3 text-gray-700 dark:text-gray-200">{t('youtube_disclaimer_title')}</h3>
+          <FormattedContent content={t('youtube_disclaimer_text')} />
           
-          <h3 className="text-lg font-semibold">{t('youtube_data_processing_title')}</h3>
-          <p dangerouslySetInnerHTML={{ __html: t('youtube_data_processing_text') }} />
+          <h3 className="text-lg font-medium mt-6 mb-3 text-gray-700 dark:text-gray-200">{t('youtube_data_processing_title')}</h3>
+          <FormattedContent content={t('youtube_data_processing_text')} />
           
-          <h3 className="text-lg font-semibold">{t('youtube_compliance_title')}</h3>
-          <p dangerouslySetInnerHTML={{ __html: t('youtube_compliance_text') }} />
+          <h3 className="text-lg font-medium mt-6 mb-3 text-gray-700 dark:text-gray-200">{t('youtube_compliance_title')}</h3>
+          <FormattedContent content={t('youtube_compliance_text')} />
           
           <h2>{t('changes_title')}</h2>
           <p>
