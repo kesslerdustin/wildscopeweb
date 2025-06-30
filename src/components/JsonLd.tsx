@@ -177,127 +177,141 @@ export function BreadcrumbJsonLd({ items }: { items: Array<{ name: string; url: 
 }
 
 export function FAQJsonLd() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
   const params = useParams();
   const locale = params.locale as string;
-  
-  const faqData = {
-    en: [
-      {
-        question: "Do I need internet to use Wildscope?",
-        answer: "Only for loading new areas and using advanced features like AI species identification and community sharing. Once an area is downloaded, most features work offline."
-      },
-      {
-        question: "How is it different from iNaturalist or Seek?",
-        answer: "Wildscope is designed not just for identifying species, but for immersive exploration — online and offline, casual or adventurous. It's built for everyone, not just scientists."
-      },
-      {
-        question: "What kind of places does Wildscope cover?",
-        answer: "Forests, parks, trails, coastlines, deserts — and even urban green spaces. Anywhere nature exists, Wildscope helps you connect with it."
-      }
-    ],
-    de: [
-      {
-        question: "Benötige ich Internet, um Wildscope zu nutzen?",
-        answer: "Nur zum Laden neuer Gebiete und für erweiterte Funktionen wie KI-Artenerkennung und Community-Sharing. Sobald ein Gebiet heruntergeladen ist, funktionieren die meisten Funktionen offline."
-      },
-      {
-        question: "Wie unterscheidet es sich von iNaturalist oder Seek?",
-        answer: "Wildscope ist nicht nur für die Identifizierung von Arten konzipiert, sondern für immersive Erkundung – online und offline, für Gelegenheitsnutzer oder Abenteurer. Es ist für jedermann entwickelt, nicht nur für Wissenschaftler."
-      },
-      {
-        question: "Welche Orte deckt Wildscope ab?",
-        answer: "Wälder, Parks, Wanderwege, Küsten, Wüsten – und sogar städtische Grünflächen. Überall, wo Natur existiert, hilft Ihnen Wildscope, sich mit ihr zu verbinden."
-      }
-    ],
-    fr: [
-      {
-        question: "Ai-je besoin d'Internet pour utiliser Wildscope?",
-        answer: "Seulement pour charger de nouvelles zones et utiliser des fonctionnalités avancées comme l'identification des espèces par IA et le partage communautaire. Une fois qu'une zone est téléchargée, la plupart des fonctionnalités fonctionnent hors ligne."
-      },
-      {
-        question: "En quoi est-ce différent d'iNaturalist ou de Seek?",
-        answer: "Wildscope est conçu non seulement pour identifier les espèces, mais pour une exploration immersive - en ligne et hors ligne, occasionnelle ou aventureuse. Il est conçu pour tout le monde, pas seulement pour les scientifiques."
-      },
-      {
-        question: "Quels types d'endroits Wildscope couvre-t-il?",
-        answer: "Forêts, parcs, sentiers, côtes, déserts — et même espaces verts urbains. Partout où la nature existe, Wildscope vous aide à vous connecter avec elle."
-      }
-    ],
-    it: [
-      {
-        question: "Ho bisogno di internet per utilizzare Wildscope?",
-        answer: "Solo per caricare nuove aree e utilizzare funzionalità avanzate come l'identificazione delle specie con AI e la condivisione con la community. Una volta scaricata un'area, la maggior parte delle funzionalità funziona offline."
-      },
-      {
-        question: "In cosa differisce da iNaturalist o Seek?",
-        answer: "Wildscope è progettato non solo per identificare le specie, ma per un'esplorazione immersiva - online e offline, casual o avventurosa. È costruito per tutti, non solo per gli scienziati."
-      },
-      {
-        question: "Che tipo di luoghi copre Wildscope?",
-        answer: "Foreste, parchi, sentieri, coste, deserti - e persino spazi verdi urbani. Ovunque esista la natura, Wildscope ti aiuta a connetterti con essa."
-      }
-    ],
-    es: [
-      {
-        question: "¿Necesito internet para usar Wildscope?",
-        answer: "Solo para cargar nuevas áreas y usar funciones avanzadas como identificación de especies por IA y compartir con la comunidad. Una vez que se descarga un área, la mayoría de las funciones funcionan sin conexión."
-      },
-      {
-        question: "¿En qué se diferencia de iNaturalist o Seek?",
-        answer: "Wildscope está diseñado no solo para identificar especies, sino para una exploración inmersiva, en línea y fuera de línea, casual o aventurera. Está construido para todos, no solo para científicos."
-      },
-      {
-        question: "¿Qué tipo de lugares cubre Wildscope?",
-        answer: "Bosques, parques, senderos, costas, desiertos, e incluso espacios verdes urbanos. Dondequiera que exista la naturaleza, Wildscope te ayuda a conectarte con ella."
-      }
-    ],
-    pt: [
-      {
-        question: "Preciso de internet para usar o Wildscope?",
-        answer: "Apenas para carregar novas áreas e usar recursos avançados como identificação de espécies por IA e compartilhamento com a comunidade. Depois que uma área é baixada, a maioria dos recursos funciona offline."
-      },
-      {
-        question: "Como é diferente do iNaturalist ou Seek?",
-        answer: "O Wildscope foi projetado não apenas para identificar espécies, mas para exploração imersiva — online e offline, casual ou aventureira. É feito para todos, não apenas para cientistas."
-      },
-      {
-        question: "Que tipo de lugares o Wildscope cobre?",
-        answer: "Florestas, parques, trilhas, costas, desertos — e até espaços verdes urbanos. Onde quer que a natureza exista, o Wildscope ajuda você a se conectar com ela."
-      }
-    ],
-    ja: [
-      {
-        question: "Wildscopeを使用するのにインターネットが必要ですか？",
-        answer: "新しいエリアをロードし、AI種識別やコミュニティ共有などの高度な機能を使用する場合のみ必要です。エリアがダウンロードされると、ほとんどの機能はオフラインで動作します。"
-      },
-      {
-        question: "iNaturalistやSeekとはどう違いますか？",
-        answer: "Wildscopeは種の識別だけでなく、オンラインとオフライン、カジュアルまたは冒険的な没入型の探索のために設計されています。科学者だけでなく、誰もが使えるように作られています。"
-      },
-      {
-        question: "Wildscopeはどのような場所をカバーしていますか？",
-        answer: "森林、公園、トレイル、海岸、砂漠—そして都市の緑地でさえも。自然が存在するどこでも、Wildscopeはあなたがそれとつながるのを助けます。"
-      }
-    ]
+
+  const translations = {
+    en: {
+      questions: [
+        {
+          question: "How does Wildscope compare to other nature identification apps?",
+          answer: "While other apps focus mainly on species identification, Wildscope offers a complete outdoor experience with AI-powered wildlife recognition, offline maps, survival tools, and interactive learning features."
+        },
+        {
+          question: "Can I identify plants and animals offline?",
+          answer: "Yes, Wildscope works offline for basic identification using downloaded species data. AI-powered identification requires internet connection."
+        },
+        {
+          question: "Is Wildscope free to use?",
+          answer: "Yes, Wildscope is free to download and use. Premium features are available for advanced capabilities."
+        }
+      ]
+    },
+    de: {
+      questions: [
+        {
+          question: "Wie unterscheidet sich Wildscope von anderen Naturbestimmungs-Apps?",
+          answer: "Während andere Apps sich hauptsächlich auf Artenbestimmung konzentrieren, bietet Wildscope ein komplettes Outdoor-Erlebnis mit KI-gestützter Wildtiererkennung, Offline-Karten, Survival-Tools und interaktiven Lernfunktionen."
+        },
+        {
+          question: "Kann ich Pflanzen und Tiere offline bestimmen?",
+          answer: "Ja, Wildscope funktioniert offline für grundlegende Bestimmungen mit heruntergeladenen Artendaten. KI-gestützte Erkennung benötigt Internetverbindung."
+        },
+        {
+          question: "Ist Wildscope kostenlos?",
+          answer: "Ja, Wildscope ist kostenlos zum Download und zur Nutzung. Premium-Funktionen sind für erweiterte Möglichkeiten verfügbar."
+        }
+      ]
+    },
+    fr: {
+      questions: [
+        {
+          question: "Comment Wildscope se compare-t-il aux autres applications d'identification de la nature ?",
+          answer: "Alors que d'autres applications se concentrent principalement sur l'identification des espèces, Wildscope offre une expérience outdoor complète avec reconnaissance de la faune par IA, cartes hors ligne, outils de survie et fonctionnalités d'apprentissage interactif."
+        },
+        {
+          question: "Puis-je identifier les plantes et les animaux hors ligne ?",
+          answer: "Oui, Wildscope fonctionne hors ligne pour l'identification de base avec des données d'espèces téléchargées. L'identification par IA nécessite une connexion internet."
+        },
+        {
+          question: "Wildscope est-il gratuit ?",
+          answer: "Oui, Wildscope est gratuit à télécharger et à utiliser. Des fonctionnalités premium sont disponibles pour des capacités avancées."
+        }
+      ]
+    },
+    it: {
+      questions: [
+        {
+          question: "Come si confronta Wildscope con altre app di identificazione della natura?",
+          answer: "Mentre altre app si concentrano principalmente sull'identificazione delle specie, Wildscope offre un'esperienza outdoor completa con riconoscimento della fauna tramite IA, mappe offline, strumenti di sopravvivenza e funzionalità di apprendimento interattivo."
+        },
+        {
+          question: "Posso identificare piante e animali offline?",
+          answer: "Sì, Wildscope funziona offline per l'identificazione di base utilizzando dati delle specie scaricati. L'identificazione tramite IA richiede una connessione internet."
+        },
+        {
+          question: "Wildscope è gratuito?",
+          answer: "Sì, Wildscope è gratuito da scaricare e utilizzare. Sono disponibili funzionalità premium per capacità avanzate."
+        }
+      ]
+    },
+    es: {
+      questions: [
+        {
+          question: "¿Cómo se compara Wildscope con otras aplicaciones de identificación de la naturaleza?",
+          answer: "Mientras que otras aplicaciones se centran principalmente en la identificación de especies, Wildscope ofrece una experiencia al aire libre completa con reconocimiento de vida silvestre mediante IA, mapas sin conexión, herramientas de supervivencia y funciones de aprendizaje interactivo."
+        },
+        {
+          question: "¿Puedo identificar plantas y animales sin conexión?",
+          answer: "Sí, Wildscope funciona sin conexión para la identificación básica usando datos de especies descargados. La identificación por IA requiere conexión a internet."
+        },
+        {
+          question: "¿Es gratuito Wildscope?",
+          answer: "Sí, Wildscope es gratuito para descargar y usar. Las funciones premium están disponibles para capacidades avanzadas."
+        }
+      ]
+    },
+    pt: {
+      questions: [
+        {
+          question: "Como o Wildscope se compara a outros aplicativos de identificação da natureza?",
+          answer: "Enquanto outros aplicativos se concentram principalmente na identificação de espécies, o Wildscope oferece uma experiência ao ar livre completa com reconhecimento de vida selvagem por IA, mapas offline, ferramentas de sobrevivência e recursos de aprendizado interativo."
+        },
+        {
+          question: "Posso identificar plantas e animais offline?",
+          answer: "Sim, o Wildscope funciona offline para identificação básica usando dados de espécies baixados. A identificação por IA requer conexão com a internet."
+        },
+        {
+          question: "O Wildscope é gratuito?",
+          answer: "Sim, o Wildscope é gratuito para baixar e usar. Recursos premium estão disponíveis para capacidades avançadas."
+        }
+      ]
+    },
+    ja: {
+      questions: [
+        {
+          question: "Wildscopeは他の自然識別アプリと比べてどうですか？",
+          answer: "他のアプリが主に種の識別に焦点を当てているのに対し、WildscopeはAIによる野生動物の認識、オフラインマップ、サバイバルツール、インタラクティブな学習機能を備えた完全なアウトドア体験を提供します。"
+        },
+        {
+          question: "オフラインで植物や動物を識別できますか？",
+          answer: "はい、ダウンロードした種データを使用して、基本的な識別をオフラインで行うことができます。AI識別にはインターネット接続が必要です。"
+        },
+        {
+          question: "Wildscopeは無料ですか？",
+          answer: "はい、Wildscopeは無料でダウンロードして使用できます。高度な機能のためのプレミアム機能も利用可能です。"
+        }
+      ]
+    }
   };
 
-  const faqs = faqData[locale as keyof typeof faqData] || faqData.en;
-  
-  return (
-    <JsonLd
-      type="FAQPage"
-      data={{
-        mainEntity: faqs.map(faq => ({
-          '@type': 'Question',
-          name: faq.question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.answer
-          }
-        }))
-      }}
-    />
-  );
+  const t = translations[locale as keyof typeof translations] || translations.en;
+
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: t.questions.map(q => ({
+      '@type': 'Question',
+      name: q.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: q.answer
+      }
+    }))
+  };
+
+  return <JsonLd type="FAQPage" data={data} />;
 }
 
 export function ReviewJsonLd() {

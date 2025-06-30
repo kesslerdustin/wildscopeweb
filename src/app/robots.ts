@@ -9,13 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: '*',
         allow: [
           '/',
-          '/images/',
-          '/features/',
-          '/survival-guide/',
-          '/compass/',
-          '/species-database/',
-          '/text-adventures/',
-          '/ai-identification/'
+          '/images/'
         ],
         disallow: [
           '/api/', 
@@ -33,13 +27,7 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: 'Googlebot',
         allow: [
           '/',
-          '/images/',
-          '/features/',
-          '/survival-guide/',
-          '/compass/',
-          '/species-database/',
-          '/text-adventures/',
-          '/ai-identification/'
+          '/images/'
         ],
         disallow: ['/api/', '/admin/', '/temp/'],
       },

@@ -243,7 +243,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                     <div className={`w-full md:w-1/3 ${featureNum % 2 === 0 ? 'md:order-last' : ''}`}>
                       <div className="relative mx-auto max-w-sm md:max-w-md rounded-2xl overflow-hidden shadow-lg cursor-pointer transform hover:scale-[1.02] transition-all duration-300 group"
                            onClick={() => setSelectedImage(`/images/img${getImageNumber(featureNum)}_${locale}.png`)}>
-                        <div className="relative aspect-[3/5] md:aspect-[2/3] h-[500px] md:h-[600px] bg-gray-50">
+                        <div className="relative aspect-[3/5] md:aspect-[2/3] h-[600px] md:h-[600px] bg-gray-50">
                           {/* Background blur for image */}
                           <div className="absolute inset-0 z-0">
                             <Image
@@ -266,7 +266,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                                 src={`/images/img${getImageNumber(featureNum)}_${locale}.png`}
                                 alt={tFeatures(`img${featureNum}_alt`)}
                                 fill
-                                className="object-contain md:scale-[1.3] scale-[1.60]"
+                                className="object-contain md:scale-[1.3] scale-[1.35]"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
                                 onError={(e) => {
                                   const target = e.target as HTMLImageElement;

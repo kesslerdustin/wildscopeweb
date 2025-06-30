@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.wildscope.app/</loc>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/header.png</image:loc>
+      <image:title>Wildscope - AI Wildlife Identification and Nature Exploration App</image:title>
+      <image:caption>Explore nature with AI-powered wildlife identification</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/logo.png</image:loc>
+      <image:title>Wildscope Logo</image:title>
+      <image:caption>Official logo of Wildscope app</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Homepage Feature Images -->
+  <url>
+    <loc>https://www.wildscope.app/</loc>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/img1_en.png</image:loc>
+      <image:title>Wildlife Identification Feature</image:title>
+      <image:caption>AI-powered wildlife identification in action</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/img2_en.png</image:loc>
+      <image:title>Offline Maps Feature</image:title>
+      <image:caption>Navigate nature with offline maps</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/img3_en.png</image:loc>
+      <image:title>Survival Tools Feature</image:title>
+      <image:caption>Essential outdoor survival tools</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/img4_en.png</image:loc>
+      <image:title>Species Database Feature</image:title>
+      <image:caption>Comprehensive wildlife species database</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/img5_en.png</image:loc>
+      <image:title>Weather Alerts Feature</image:title>
+      <image:caption>Real-time weather alerts and forecasts</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/img6_en.png</image:loc>
+      <image:title>Community Features</image:title>
+      <image:caption>Connect with nature enthusiasts</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Open Graph Images -->
+  <url>
+    <loc>https://www.wildscope.app/</loc>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/og/og-image-en.png</image:loc>
+      <image:title>Wildscope App Preview - English</image:title>
+      <image:caption>Discover nature with Wildscope</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/og/og-image-de.png</image:loc>
+      <image:title>Wildscope App Vorschau - Deutsch</image:title>
+      <image:caption>Entdecke die Natur mit Wildscope</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/og/og-image-fr.png</image:loc>
+      <image:title>Aperçu de l'application Wildscope - Français</image:title>
+      <image:caption>Découvrez la nature avec Wildscope</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/og/og-image-it.png</image:loc>
+      <image:title>Anteprima dell'app Wildscope - Italiano</image:title>
+      <image:caption>Scopri la natura con Wildscope</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/og/og-image-es.png</image:loc>
+      <image:title>Vista previa de la aplicación Wildscope - Español</image:title>
+      <image:caption>Descubre la naturaleza con Wildscope</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/og/og-image-pt.png</image:loc>
+      <image:title>Prévia do aplicativo Wildscope - Português</image:title>
+      <image:caption>Descubra a natureza com Wildscope</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wildscope.app/images/og/og-image-ja.png</image:loc>
+      <image:title>Wildscopeアプリプレビュー - 日本語</image:title>
+      <image:caption>Wildscopeで自然を探索</image:caption>
+    </image:image>
+  </url>
+</urlset> 

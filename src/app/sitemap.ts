@@ -41,46 +41,50 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly' as const,
       priority: 0.5,
       lastModified: new Date().toISOString()
-    },
-    // Additional pages can be added here
+    }
   ];
-  
-  // Create sitemap entries for each locale and route
-  const sitemapEntries = locales.flatMap(locale => {
-    return routes.map(route => {
-      // For default locale, don't add locale prefix
-      const path = locale === defaultLocale 
-        ? route.path
-        : `/${locale}${route.path}`;
-      
-      // Generate alternate language URLs for this page
-      const alternateLanguages = locales
-        .filter(loc => loc !== locale)
-        .reduce((acc, lang) => {
-          const altPath = lang === defaultLocale
-            ? route.path
-            : `/${lang}${route.path}`;
-          acc[lang] = `${baseUrl}${altPath}`;
-          return acc;
-        }, {} as Record<string, string>);
-      
-      // Set canonical URL - for default locale, use unprefixed path
-      const canonicalPath = locale === defaultLocale
-        ? route.path
-        : path;
-      
-      return {
-        url: `${baseUrl}${path}`,
+
+  // Generate URLs for all locales
+  const urls: MetadataRoute.Sitemap = [];
+
+  // Add routes for each locale
+  for (const locale of locales) {
+    for (const route of routes) {
+      urls.push({
+        url: `${baseUrl}${locale === defaultLocale ? '' : '/' + locale}${route.path}`,
         lastModified: route.lastModified,
         changeFrequency: route.changeFrequency,
-        priority: route.priority,
-        alternates: {
-          languages: alternateLanguages,
-          canonical: `${baseUrl}${canonicalPath}`
-        }
-      };
-    });
-  });
+        priority: route.priority
+      });
+    }
+  }
+
+  return urls;
+}
+
+// Add image sitemap generation
+export function generateImageSitemap(): {
+  url: string;
+  title?: string;
+  caption?: string;
+}[] {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
   
-  return sitemapEntries;
+  return [
+    {
+      url: `${baseUrl}/images/og/og-image.png`,
+      title: 'Wildscope App Preview',
+      caption: 'Preview of the Wildscope wildlife identification app'
+    },
+    {
+      url: `${baseUrl}/images/header.png`,
+      title: 'AI Species Identification',
+      caption: 'Identify wildlife using AI technology'
+    },
+    {
+      url: `${baseUrl}/images/logo.png`,
+      title: 'Wildscope Logo',
+      caption: 'The official logo for Wildscope'
+    }
+  ];
 } 

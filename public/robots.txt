@@ -5,5 +5,11 @@ Allow: /
 # Main Sitemap
 Sitemap: https://www.wildscope.app/sitemap.xml
 
+# Image Sitemap
+Sitemap: https://www.wildscope.app/image-sitemap.xml
+
+# News Sitemap
+Sitemap: https://www.wildscope.app/news-sitemap.xml
+
 # Crawl Delay to avoid overloading the server
 Crawl-delay: 5 

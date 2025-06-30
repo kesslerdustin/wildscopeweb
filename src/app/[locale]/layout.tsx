@@ -44,11 +44,6 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title: titles[locale as keyof typeof titles] || titles.en,
     description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
     keywords: keywords[locale as keyof typeof keywords] || keywords.en,
-    applicationName: 'Wildscope',
-    authors: [{ name: 'Wildscope Team', url: baseUrl }],
-    generator: 'Next.js',
-    creator: 'Wildscope',
-    publisher: 'Wildscope',
     formatDetection: {
       telephone: false,
       email: false,
@@ -94,17 +89,6 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       creator: '@wildscope',
       site: '@wildscope'
     },
-    category: 'outdoor,travel,nature,wildlife,adventure',
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      }
-    },
     other: {
       // App Store meta tags
       'apple-itunes-app': 'app-id=6741471953',
@@ -112,12 +96,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       'apple-mobile-web-app-status-bar-style': 'black-translucent',
       'apple-mobile-web-app-title': 'Wildscope',
       // Android app links
-      'google-play-app': 'app-id=com.wildscope.app',
+      'google-play-app': 'app-id=com.duselk.theoutdoorbible',
       // App Links
       'al:ios:app_store_id': '6741471953',
       'al:ios:app_name': 'Wildscope',
       'al:ios:url': 'wildscope://',
-      'al:android:package': 'com.wildscope.app',
+      'al:android:package': 'com.duselk.theoutdoorbible',
       'al:android:app_name': 'Wildscope',
       'al:android:url': 'wildscope://',
       'al:web:url': baseUrl,
@@ -129,7 +113,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       'twitter:app:id:ipad': '6741471953',
       'twitter:app:url:ipad': 'wildscope://',
       'twitter:app:name:googleplay': 'Wildscope',
-      'twitter:app:id:googleplay': 'com.wildscope.app',
+      'twitter:app:id:googleplay': 'com.duselk.theoutdoorbible',
       'twitter:app:url:googleplay': 'wildscope://'
     }
   };
@@ -142,7 +126,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: {locale: string};
 }) {
-  const messages = await getMessages({locale});
+  const messages = await getMessages({ locale });
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
 
   // Define localized titles and descriptions
@@ -162,19 +146,8 @@ export default async function LocaleLayout({
     fr: 'Wildscope combine l\'identification de la faune par IA, des outils de survie, la navigation par boussole et des aventures textuelles interactives. Explorez la nature avec la reconnaissance des espèces, des cartes hors ligne et des outils de suivi.',
     it: 'Wildscope combina identificazione della fauna con AI, strumenti di sopravvivenza, navigazione con bussola e avventure testuali interattive. Esplora la natura con riconoscimento delle specie, mappe offline e strumenti di tracciamento.',
     es: 'Wildscope combina identificación de vida silvestre con IA, herramientas de supervivencia, navegación por brújula y aventuras de texto interactivas. Explore la naturaleza con reconocimiento de especies, mapas sin conexión y herramientas de seguimiento.',
-    pt: 'Wildscope combina identificação de vida selvagem com IA, ferramentas de sobrevivência, navegação por bússola e aventuras de texto interativas. Explore a natureza com reconhecimento de espécies, mapas offline e ferramentas de rastreamento.',
+    pt: 'Wildscope combina identificação de vida selvagem com IA, ferramentas de sobrevivência, navegação por bússola e aventuras de texto interativas. Explore la natureza com reconhecimento de espécies, mapas offline e ferramentas de rastreamento.',
     ja: 'WildscopeはAI野生動物識別、サバイバルツール、コンパスナビゲーション、インタラクティブテキストアドベンチャーを組み合わせています。種の認識、オフラインマップ、追跡ツールで自然を探索しましょう。'
-  };
-
-  // For iOS app coming soon messages
-  const iosAppMessages = {
-    en: "Coming Soon",
-    de: "Demnächst verfügbar",
-    fr: "Bientôt disponible",
-    it: "Prossimamente",
-    es: "Próximamente",
-    pt: "Em breve",
-    ja: "近日公開"
   };
 
   return (
@@ -220,13 +193,6 @@ export default async function LocaleLayout({
             "Community features",
             "Safety alerts",
             "Survival techniques"
-          ],
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "iOS App",
-              "value": iosAppMessages[locale as keyof typeof iosAppMessages] || iosAppMessages.en
-            }
           ]
         })
       }} />
