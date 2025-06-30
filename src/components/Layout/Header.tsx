@@ -90,9 +90,6 @@ export default function Header() {
 
           {/* Mobile Navigation */}
           <nav className="flex md:hidden items-center space-x-4">
-            <Link href={`/${locale}/#download`} className="text-gray-600 hover:text-emerald-600 transition-colors font-semibold">
-              {t('download')}
-            </Link>
             <a 
               href="https://www.instagram.com/wildscope.app/" 
               target="_blank" 

@@ -166,6 +166,7 @@
   "OfflineCapabilities": {
     "title": "Offline Capabilities – Explore Without Limits",
     "intro": "Once you've loaded an area, you can enjoy full exploration even without internet access:",
+    "capabilities_title": "Main capabilities:",
     "capability1": "Offline Maps & Trails",
     "capability2": "Local Species Data & Natural Landmarks",
     "capability3": "POIs and Community-Added Highlights",

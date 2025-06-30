@@ -150,9 +150,10 @@
     "answer7": "No, Wildscope es un proyecto independiente desarrollado por un entusiasta de la naturaleza dedicado. La aplicación está diseñada y mantenida por un solo desarrollador apasionado que prioriza la precisión y la experiencia del usuario sobre la monetización. Este enfoque independiente asegura que Wildscope permanezca fiel a su misión principal: ayudar a las personas a conectarse con y entender la naturaleza sin comprometer la privacidad o la experiencia del usuario."
   },
   "OfflineCapabilities": {
-    "title": "Capacidades Sin Conexión – Explora Sin Límites",
-    "intro": "Una vez que hayas cargado un área, puedes disfrutar de exploración completa incluso sin acceso a internet:",
-    "capability1": "Mapas y Senderos Sin Conexión",
+    "title": "Capacidades sin conexión – Explora sin límites",
+    "intro": "Una vez que hayas cargado un área, puedes disfrutar de una exploración completa incluso sin acceso a internet:",
+    "capabilities_title": "Capacidades principales:",
+    "capability1": "Mapas y senderos sin conexión",
     "capability2": "Datos de Especies Locales y Puntos de Referencia Naturales",
     "capability3": "PDI y Destacados Añadidos por la Comunidad",
     "libraries_title": "Bibliotecas de Conocimiento:",

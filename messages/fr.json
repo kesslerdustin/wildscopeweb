@@ -208,5 +208,11 @@
     "pro_feature7": "Support prioritaire",
     "pro_cta": "Passez Pro & Explorez Plus",
     "footnote": "Les prix peuvent varier selon la région. Abonnements gérés via l'App Store/Google Play."
+  },
+  "OfflineCapabilities": {
+    "title": "Capacités hors ligne – Explorez sans limites",
+    "intro": "Une fois que vous avez chargé une zone, vous pouvez profiter d'une exploration complète même sans accès Internet :",
+    "capabilities_title": "Capacités principales :",
+    "capability1": "Cartes et sentiers hors ligne"
   }
 } 

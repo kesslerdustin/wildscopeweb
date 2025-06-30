@@ -189,7 +189,8 @@
   },
   "OfflineCapabilities": {
     "title": "Offline-Funktionen – Erkunden ohne Grenzen",
-    "intro": "Sobald Sie einen Bereich geladen haben, können Sie auch ohne Internetverbindung voll erkunden:",
+    "intro": "Sobald du einen Bereich geladen hast, kannst du auch ohne Internetverbindung voll erkunden:",
+    "capabilities_title": "Hauptfunktionen:",
     "capability1": "Offline-Karten & Wanderwege",
     "capability2": "Lokale Artendaten & Naturdenkmäler",
     "capability3": "POIs und von der Community hinzugefügte Highlights",
