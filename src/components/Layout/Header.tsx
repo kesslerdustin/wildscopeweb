@@ -90,15 +90,6 @@ export default function Header() {
 
           {/* Mobile Navigation */}
           <nav className="flex md:hidden items-center space-x-4">
-            <a 
-              href="https://www.instagram.com/wildscope.app/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-gray-600 hover:text-emerald-600 transition-colors"
-              aria-label="Follow us on Instagram"
-            >
-              <Instagram className="w-6 h-6" />
-            </a>
             <LanguageSwitcher />
           </nav>
         </div>
