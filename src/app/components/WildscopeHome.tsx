@@ -78,36 +78,45 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
     });
   };
 
-  // Animation variants
+  // Enhanced animation variants
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { 
+        duration: 0.6,
+        ease: "easeOut"
+      } 
+    }
   };
 
-  const staggerChildren = {
-    hidden: { opacity: 0 },
+  const slideIn = {
+    hidden: (isEven: boolean) => ({
+      opacity: 0,
+      x: isEven ? 50 : -50
+    }),
     visible: {
       opacity: 1,
+      x: 0,
       transition: {
-        staggerChildren: 0.2
+        duration: 0.8,
+        ease: "easeOut"
       }
     }
   };
 
-  const featureIcons = [
-    <Compass className="w-10 h-10 text-emerald-500 mb-4" key="compass" />,
-    <Camera className="w-10 h-10 text-emerald-500 mb-4" key="camera" />,
-    <MessageCircle className="w-10 h-10 text-emerald-500 mb-4" key="chat" />,
-    <WifiOff className="w-10 h-10 text-emerald-500 mb-4" key="offline" />,
-    <BookMarked className="w-10 h-10 text-emerald-500 mb-4" key="guide" />,
-    <Gamepad2 className="w-10 h-10 text-emerald-500 mb-4" key="quiz" />
-  ];
-
-  // Function to map img numbers to swap img2 and img3
+  // Function to map img numbers to new order
   const getImageNumber = (index: number) => {
-    if (index === 2) return 3;
-    if (index === 3) return 2;
-    return index;
+    const imageOrder = {
+      1: 6,  // First feature shows image 6
+      2: 4,  // Second feature shows image 4
+      3: 3,  // Third feature shows image 3
+      4: 1,  // Fourth feature shows image 1
+      5: 2,  // Fifth feature shows image 2
+      6: 5   // Sixth feature shows image 5
+    };
+    return imageOrder[index as keyof typeof imageOrder] || index;
   };
 
   return (
@@ -135,10 +144,10 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
             variants={fadeIn}
           >
             <div className="p-8 rounded-lg inline-block mx-auto">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg font-display tracking-tight">
                 {t('title')}
               </h1>
-              <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-white drop-shadow-md">
+              <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-white/90 drop-shadow-md font-display font-medium">
                 {t('subtitle')}
               </p>
               
@@ -149,7 +158,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={trackAppStoreClick}
-                  className="bg-black text-white font-semibold py-4 px-8 rounded-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center group"
+                  className="bg-black text-white font-display font-semibold py-4 px-8 rounded-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center group"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -163,7 +172,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={trackPlayStoreClick}
-                  className="bg-black text-white font-semibold py-4 px-8 rounded-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center group"
+                  className="bg-black text-white font-display font-semibold py-4 px-8 rounded-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center group"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -177,7 +186,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                 </motion.a>
               </div>
 
-              <p className="text-lg font-medium text-white/90 mb-8">
+              <p className="text-lg font-medium text-white/90 mb-8 font-display">
                 {t('download_subtext')}
               </p>
               
@@ -189,13 +198,122 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                     className="flex items-center space-x-3 text-left"
                     variants={fadeIn}
                   >
-                    <Check className="w-6 h-6 text-emerald-300 flex-shrink-0" />
-                    <span className="text-white/90 text-lg">{t(`feature_${i}`)}</span>
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-white/90 flex items-center justify-center">
+                      <Check className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                    </span>
+                    <span className="text-white/90 text-lg font-display">{t(`feature_${i}`)}</span>
                   </motion.div>
                 ))}
               </div>
             </div>
           </motion.div>
+        </section>
+
+        {/* Features Section */}
+        <section className="py-20">
+          <div className="container mx-auto px-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-800 font-display">
+              {tFeatures('title')}
+            </h2>
+            <div className="space-y-24">
+              {[1, 2, 3, 4, 5, 6].map((featureNum) => {
+                // Define feature-specific colors
+                const colors: Record<number, { bg: string; text: string; icon: string }> = {
+                  1: { bg: 'bg-emerald-50/50', text: 'text-emerald-800', icon: 'text-emerald-600' },
+                  2: { bg: 'bg-sky-50/50', text: 'text-sky-800', icon: 'text-sky-600' },
+                  3: { bg: 'bg-violet-50/50', text: 'text-violet-800', icon: 'text-violet-600' },
+                  4: { bg: 'bg-amber-50/50', text: 'text-amber-800', icon: 'text-amber-600' },
+                  5: { bg: 'bg-rose-50/50', text: 'text-rose-800', icon: 'text-rose-600' },
+                  6: { bg: 'bg-teal-50/50', text: 'text-teal-800', icon: 'text-teal-600' }
+                };
+
+                return (
+                  <motion.div
+                    key={featureNum}
+                    className={`flex flex-col md:flex-row items-center gap-8 md:gap-16 p-8 rounded-2xl ${
+                      featureNum % 2 === 0 ? colors[featureNum].bg : ''
+                    }`}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={slideIn}
+                    custom={featureNum % 2 === 0}
+                  >
+                    {/* Image container */}
+                    <div className={`w-full md:w-1/3 ${featureNum % 2 === 0 ? 'md:order-last' : ''}`}>
+                      <div className="relative mx-auto max-w-sm md:max-w-md rounded-2xl overflow-hidden shadow-lg cursor-pointer transform hover:scale-[1.02] transition-all duration-300 group"
+                           onClick={() => setSelectedImage(`/images/img${getImageNumber(featureNum)}_${locale}.png`)}>
+                        <div className="relative aspect-[3/5] md:aspect-[2/3] h-[500px] md:h-[600px] bg-gray-50">
+                          {/* Background blur for image */}
+                          <div className="absolute inset-0 z-0">
+                            <Image
+                              src={`/images/img${getImageNumber(featureNum)}_${locale}.png`}
+                              alt=""
+                              fill
+                              className="object-cover blur-xl opacity-30 scale-110"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                              onError={(e) => {
+                                const target = e.target as HTMLImageElement;
+                                target.onerror = null;
+                                target.src = `/images/img${getImageNumber(featureNum)}_en.png`;
+                              }}
+                            />
+                          </div>
+                          {/* Main image */}
+                          <div className="relative z-10 h-full flex items-center justify-center p-3">
+                            <div className="relative w-full h-full">
+                              <Image
+                                src={`/images/img${getImageNumber(featureNum)}_${locale}.png`}
+                                alt={tFeatures(`img${featureNum}_alt`)}
+                                fill
+                                className="object-contain md:scale-[1.3] scale-[1.60]"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                                onError={(e) => {
+                                  const target = e.target as HTMLImageElement;
+                                  target.onerror = null;
+                                  target.src = `/images/img${getImageNumber(featureNum)}_en.png`;
+                                }}
+                              />
+                            </div>
+                          </div>
+                          {/* Hover overlay */}
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20" />
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Text content */}
+                    <div className="w-full md:w-2/3 space-y-6">
+                      <h3 className={`text-2xl md:text-3xl font-bold font-display tracking-tight ${colors[featureNum].text}`}>
+                        {tFeatures(`feature${featureNum}_title`)}
+                      </h3>
+                      <p className={`text-lg font-display font-medium ${
+                        featureNum === 1 ? 'text-gray-500' : 
+                        featureNum % 2 === 0 ? 'text-gray-900/80' : 'text-gray-600'
+                      }`}>
+                        {tFeatures(`feature${featureNum}_desc`)}
+                      </p>
+                      <ul className="space-y-4">
+                        {[1, 2, 3].map((pointNum) => (
+                          <li key={pointNum} className="flex items-start space-x-3">
+                            <span className={`flex-shrink-0 w-6 h-6 rounded-full bg-white shadow-sm flex items-center justify-center mt-1`}>
+                              <Check className={`w-4 h-4 ${colors[featureNum].icon}`} />
+                            </span>
+                            <span className={`font-display font-medium ${
+                              featureNum === 1 ? 'text-gray-500' : 
+                              featureNum % 2 === 0 ? 'text-gray-900/80' : 'text-gray-600'
+                            }`}>
+                              {tFeatures(`feature${featureNum}_point${pointNum}`)}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
         </section>
 
         {/* About Section */}
@@ -235,65 +353,6 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
           </div>
         </motion.section>
 
-        {/* Features Section */}
-        <section className="py-16 md:py-24 bg-gray-100">
-          <motion.div 
-            className="container mx-auto px-6"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            variants={staggerChildren}
-          >
-            <motion.h2 
-              className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800"
-              variants={fadeIn}
-            >
-              {tFeatures('title')}
-            </motion.h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <motion.div 
-                  key={i}
-                  className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all"
-                  variants={fadeIn}
-                  whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                >
-                  <div className="flex flex-col items-center">
-                    {featureIcons[i-1]}
-                  </div>
-                  <div className="mb-6 overflow-hidden rounded-lg cursor-pointer" onClick={() => setSelectedImage(`/images/img${i}_${locale}.png`)}>
-                    <Image 
-                      src={`/images/img${i}_${locale}.png`}
-                      alt={tFeatures(`feature${i}_title`)}
-                      width={400}
-                      height={300}
-                      className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
-                      priority={i <= 3}
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.onerror = null;
-                        target.src = `/images/img${i}_en.png`;
-                      }}
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-4 text-emerald-600">{tFeatures(`feature${i}_title`)}</h3>
-                  <p className="text-gray-600 mb-4">{tFeatures(`feature${i}_desc`)}</p>
-                  <ul className="mt-4 space-y-3">
-                    {[1, 2, 3].map((subFeature) => (
-                      tFeatures(`feature${i}_point${subFeature}`) && (
-                        <li key={subFeature} className="flex items-start bg-gray-50 p-3 rounded-lg">
-                          <Check className="w-5 h-5 mr-3 text-emerald-500 flex-shrink-0 mt-1" />
-                          <span className="text-gray-700">{tFeatures(`feature${i}_point${subFeature}`)}</span>
-                        </li>
-                      )
-                    ))}
-                  </ul>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </section>
-
         {/* Call to Action Section */}
         <motion.section 
           className="py-20 bg-emerald-600 text-white" 
@@ -316,7 +375,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                 whileTap={{ scale: 0.95 }}
               >
                 <button 
-                  className="bg-black text-white font-semibold py-3 px-8 rounded-lg hover:bg-gray-900 transition-colors duration-300 flex items-center justify-center w-full"
+                  className="bg-black text-white font-semibold py-4 px-8 rounded-lg hover:bg-gray-900 transition-colors duration-300 flex items-center justify-center w-full"
                 >
                   <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M17.722 19.786c-.063.12-.143.24-.232.336-.336.36-.907.504-1.454.504-.318 0-.63-.048-.936-.156a2.416 2.416 0 01-.906-.516l-3.24-2.832-3.234 2.832c-.27.228-.576.396-.906.516a2.7 2.7 0 01-.936.156 2.19 2.19 0 01-1.458-.504 1.25 1.25 0 01-.228-.336 2.016 2.016 0 01-.192-.912V4.824c0-.324.066-.624.192-.912a1.25 1.25 0 01.228-.336c.336-.36.91-.504 1.458-.504.318 0 .63.048.936.156.33.12.636.288.906.516L12 6.576l3.24-2.832c.27-.228.576-.396.906-.516.306-.108.618-.156.936-.156.547 0 1.118.144 1.454.504.089.096.17.216.232.336.126.288.192.588.192.912v14.05c0 .324-.066.624-.192.912zm-4.446-6.924l3.432 3.001V5.421L13.276 8.4l3.438-2.988v2.496l-3.438 2.982z" />
@@ -345,72 +404,118 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
           </div>
         </motion.section>
 
-        {/* FAQ Section */}
+        {/* Online Features Section - MOVED UP */}
+        <section className="py-20 bg-gradient-to-br from-emerald-50 to-white">
+          <div className="container mx-auto px-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-emerald-800 font-display tracking-tight">
+              {tOnline('title')}
+            </h2>
+            <p className="text-lg text-center mb-16 text-gray-700 font-display font-medium">
+              {tOnline('intro')}
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[1, 2, 3, 4, 5].map((featureNum) => (
+                <motion.div
+                  key={featureNum}
+                  className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
+                  <h3 className="text-xl font-bold mb-4 text-emerald-700 font-display tracking-tight">
+                    {tOnline(`feature${featureNum}_title`)}
+                  </h3>
+                  <p className="text-gray-900/80 font-display font-medium">
+                    {tOnline(`feature${featureNum}_desc`)}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Offline Capabilities Section - MOVED UP */}
+        <section className="py-20">
+          <div className="container mx-auto px-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-emerald-800 font-display tracking-tight">
+              {tOffline('title')}
+            </h2>
+            <p className="text-lg text-center mb-16 text-gray-700 font-display font-medium">
+              {tOffline('intro')}
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Main Capabilities */}
+              <div className="col-span-full lg:col-span-1">
+                <div className="bg-emerald-50 p-8 rounded-xl">
+                  <h3 className="text-xl font-bold mb-6 text-emerald-800 font-display tracking-tight">
+                    {tOffline('capabilities_title')}
+                  </h3>
+                  <ul className="space-y-4">
+                    {[1, 2, 3].map((capNum) => (
+                      <li key={capNum} className="flex items-start space-x-3">
+                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-white shadow-sm flex items-center justify-center mt-1">
+                          <Check className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                        </span>
+                        <span className="text-gray-900/80 font-display font-medium">
+                          {tOffline(`capability${capNum}`)}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {/* Knowledge Libraries */}
+              <div className="col-span-full lg:col-span-2">
+                <div className="bg-white p-8 rounded-xl shadow-lg">
+                  <h3 className="text-xl font-bold mb-6 text-emerald-800 font-display tracking-tight">
+                    {tOffline('libraries_title')}
+                  </h3>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    {[1, 2, 3, 4, 5, 6, 7].map((libNum) => (
+                      <div key={libNum} className="flex items-center space-x-3">
+                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-50 flex items-center justify-center">
+                          <BookOpen className="w-4 h-4 text-emerald-500" />
+                        </span>
+                        <span className="text-gray-900/80 font-display font-medium">
+                          {tOffline(`library${libNum}`)}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section - MOVED DOWN */}
         <motion.section 
           className="py-16 bg-white"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
-          variants={staggerChildren}
+          variants={fadeIn}
         >
           <div className="container mx-auto px-6">
             <motion.h2 
-              className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800"
+              className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 tracking-tight"
               variants={fadeIn}
             >
               {tFaq('title')}
             </motion.h2>
             <div className="max-w-4xl mx-auto">
               <div className="space-y-8">
-                <motion.div 
-                  className="bg-gray-50 p-6 rounded-lg shadow"
-                  variants={fadeIn}
-                >
-                  <h3 className="text-xl font-semibold mb-3 text-emerald-600">{tFaq('question1')}</h3>
-                  <p className="text-gray-600">{tFaq('answer1')}</p>
-                </motion.div>
-                <motion.div 
-                  className="bg-gray-50 p-6 rounded-lg shadow"
-                  variants={fadeIn}
-                >
-                  <h3 className="text-xl font-semibold mb-3 text-emerald-600">{tFaq('question2')}</h3>
-                  <p className="text-gray-600">{tFaq('answer2')}</p>
-                </motion.div>
-                <motion.div 
-                  className="bg-gray-50 p-6 rounded-lg shadow"
-                  variants={fadeIn}
-                >
-                  <h3 className="text-xl font-semibold mb-3 text-emerald-600">{tFaq('question3')}</h3>
-                  <p className="text-gray-600">{tFaq('answer3')}</p>
-                </motion.div>
-                <motion.div 
-                  className="bg-gray-50 p-6 rounded-lg shadow"
-                  variants={fadeIn}
-                >
-                  <h3 className="text-xl font-semibold mb-3 text-emerald-600">{tFaq('question4')}</h3>
-                  <p className="text-gray-600">{tFaq('answer4')}</p>
-                </motion.div>
-                <motion.div 
-                  className="bg-gray-50 p-6 rounded-lg shadow"
-                  variants={fadeIn}
-                >
-                  <h3 className="text-xl font-semibold mb-3 text-emerald-600">{tFaq('question5')}</h3>
-                  <p className="text-gray-600">{tFaq('answer5')}</p>
-                </motion.div>
-                <motion.div 
-                  className="bg-gray-50 p-6 rounded-lg shadow"
-                  variants={fadeIn}
-                >
-                  <h3 className="text-xl font-semibold mb-3 text-emerald-600">{tFaq('question6')}</h3>
-                  <p className="text-gray-600">{tFaq('answer6')}</p>
-                </motion.div>
-                <motion.div 
-                  className="bg-gray-50 p-6 rounded-lg shadow"
-                  variants={fadeIn}
-                >
-                  <h3 className="text-xl font-semibold mb-3 text-emerald-600">{tFaq('question7')}</h3>
-                  <p className="text-gray-600">{tFaq('answer7')}</p>
-                </motion.div>
+                {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+                  <motion.div 
+                    key={num}
+                    className="bg-gray-50 p-6 rounded-lg shadow"
+                    variants={fadeIn}
+                  >
+                    <h3 className="text-xl font-semibold mb-3 text-emerald-600 tracking-tight">{tFaq(`question${num}`)}</h3>
+                    <p className="text-gray-700 font-medium">{tFaq(`answer${num}`)}</p>
+                  </motion.div>
+                ))}
               </div>
             </div>
           </div>
@@ -419,11 +524,13 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
       <Footer />
       <CookieBanner />
       
-      <ImageModal 
-        imageUrl={selectedImage || ''} 
-        isOpen={!!selectedImage} 
-        onClose={() => setSelectedImage(null)} 
-      />
+      {selectedImage && (
+        <ImageModal
+          imageUrl={selectedImage}
+          isOpen={true}
+          onClose={() => setSelectedImage(null)}
+        />
+      )}
     </div>
   );
 } 

@@ -1,76 +1,85 @@
 {
   "Navigation": {
     "home": "Accueil",
-    "impressum": "Mentions Légales",
-    "privacy": "Politique de Confidentialité",
+    "impressum": "Mentions légales",
+    "privacy": "Politique de confidentialité",
     "contact": "Contact",
     "language": "Langue",
-    "terms": "Conditions d'Utilisation"
+    "terms": "Conditions d'utilisation"
   },
   "Meta": {
-    "title": "Wildscope : Application d'Identification de la Faune et d'Exploration de la Nature par IA",
+    "title": "Wildscope : Application d'Identification de la Faune et d'Exploration de la Nature avec IA",
     "description": "Découvrez et identifiez la faune avec la technologie IA, explorez la nature avec des cartes hors ligne et suivez les animaux comme un pro. Votre compagnon ultime pour les aventures en pleine nature."
   },
   "Hero": {
-    "title": "Identification de la Faune et Exploration de la Nature par IA",
-    "subtitle": "Identifiez instantanément les plantes et les animaux, suivez la faune avec précision et explorez la nature en toute confiance - même hors ligne. Votre compagnon outdoor complet alimenté par l'IA avancée.",
-    "feature_1": "Reconnaissance et Suivi des Espèces par IA",
-    "feature_2": "Cartes Hors Ligne & Base de Données de la Faune",
-    "feature_3": "Quiz Interactifs sur la Nature & Apprentissage",
-    "feature_4": "Navigation GPS & Outils de Boussole",
-    "feature_5": "Mode Aventure Textuel",
-    "feature_6": "Communauté Mondiale de la Faune",
+    "title": "Votre Compagnon Outdoor Complet",
+    "subtitle": "Découvrez la faune, apprenez les techniques de survie et explorez la nature avec l'identification par IA, une base de données mondiale d'espèces et des guides interactifs.",
     "appstore": "Télécharger sur l'App Store",
     "playstore": "Obtenir sur Google Play",
-    "download_subtext": "Rejoignez plus de 50 000 Passionnés de Nature"
+    "download_subtext": "Téléchargement gratuit avec fonctionnalités premium disponibles",
+    "feature_1": "Reconnaissance IA de la Faune et Flore",
+    "feature_2": "Base de Données Mondiale d'Espèces",
+    "feature_3": "Cartes et Navigation Hors Ligne",
+    "feature_4": "Techniques de Survie et Guides",
+    "feature_5": "Alertes Météo et Sécurité",
+    "feature_6": "Apprentissage Interactif et Communauté"
   },
   "About": {
     "title": "Votre Guide Complet d'Identification de la Faune et de la Nature",
-    "paragraph1": "Vivez la nature comme jamais auparavant avec la technologie IA avancée de Wildscope. Que vous identifiiez des plantes lors d'une randonnée, suiviez la faune dans des zones reculées ou exploriez les écosystèmes locaux, nos fonctionnalités complètes fonctionnent parfaitement en ligne et hors ligne.",
-    "bullet1": "Identification instantanée par IA des plantes, animaux et champignons",
-    "bullet2": "Cartes détaillées hors ligne et guides des espèces pour chaque lieu",
-    "bullet3": "Apprentissage interactif via des quiz et le mode aventure",
-    "bullet4": "Navigation GPS et outils de suivi de la faune",
-    "bullet5": "Communauté mondiale de passionnés de nature",
-    "paragraph2": "Des promenades nature décontractées au suivi sérieux de la faune, Wildscope combine une technologie IA de pointe avec des outils outdoor complets pour enrichir chaque expérience nature."
+    "paragraph1": "Vivez la nature comme jamais auparavant avec la technologie IA avancée de Wildscope. Que vous identifiiez des plantes lors d'une randonnée, suiviez la faune dans des zones reculées ou découvriez les écosystèmes locaux, nos fonctionnalités complètes fonctionnent parfaitement en ligne et hors ligne.",
+    "paragraph2": "Des promenades nature occasionnelles au suivi sérieux de la faune, Wildscope combine une technologie IA de pointe avec des outils outdoor complets pour enrichir chaque expérience nature."
   },
   "Features": {
-    "title": "Outils Complets d'Identification de la Faune et d'Exploration de la Nature",
-    "feature1_title": "Reconnaissance Avancée de la Faune",
-    "feature1_desc": "Identifiez instantanément des milliers d'espèces avec notre système de reconnaissance par IA. Obtenez des informations détaillées sur les animaux, les plantes et les champignons, y compris les comportements, les préférences d'habitat et les variations saisonnières.",
-    "feature1_point1": "Identification des espèces en temps réel par IA",
-    "feature1_point2": "Base de données complète de la faune",
-    "feature1_point3": "Modèles de suivi saisonnier",
+    "title": "Outils Complets d'Identification et d'Exploration de la Nature",
+    "feature1_title": "Reconnaissance Avancée des Espèces et Coach IA",
+    "feature1_desc": "Identifiez instantanément des milliers d'espèces avec notre système de reconnaissance par IA et recevez des conseils personnalisés de votre guide nature IA. Le Coach Wildscope répond à vos questions sur votre environnement, fournit des conseils de sécurité et partage des connaissances fascinantes sur les espèces et écosystèmes locaux.",
+    "feature1_point1": "Identification en temps réel par IA",
+    "feature1_point2": "Guidage personnalisé par Coach IA",
+    "feature1_point3": "Alertes de sécurité contextuelles",
     
-    "feature2_title": "Cartes & Navigation Hors Ligne",
-    "feature2_desc": "Ne vous perdez plus jamais avec notre système complet de cartographie hors ligne. Téléchargez des cartes régionales et des données sur la faune pour une navigation et une identification fiables des espèces, même dans les zones reculées sans réseau mobile.",
-    "feature2_point1": "Téléchargement de cartes pour utilisation hors ligne",
-    "feature2_point2": "Suivi GPS et points de repère",
-    "feature2_point3": "Outils d'analyse du terrain",
+    "feature2_title": "Navigation et Outils de Sécurité",
+    "feature2_desc": "Naviguez en toute confiance avec notre boîte à outils complète comprenant des cartes hors ligne, une navigation par boussole, des données météo et un système de points de repère. Parfait pour les aventures en zones reculées.",
+    "feature2_point1": "Boussole avec navigation par points",
+    "feature2_point2": "Mises à jour météo en temps réel",
+    "feature2_point3": "Accès aux informations d'urgence",
     
-    "feature3_title": "Apprentissage Interactif",
-    "feature3_desc": "Apprenez sur la nature à travers des quiz captivants, des défis et notre mode aventure textuel unique. Testez vos connaissances, améliorez vos compétences outdoor et découvrez de nouvelles espèces dans votre région.",
-    "feature3_point1": "Quiz nature personnalisables",
-    "feature3_point2": "Scénarios d'aventure textuels",
-    "feature3_point3": "Défis spécifiques aux espèces",
+    "feature3_title": "Analyse d'Habitat et Bio-Index",
+    "feature3_desc": "Explorez et comprenez les écosystèmes avec nos outils d'analyse avancés. Suivez les indices de biodiversité, surveillez la distribution des espèces et découvrez les points chauds de la faune dans votre région.",
+    "feature3_point1": "Analyse d'habitat et biomes",
+    "feature3_point2": "Suivi de l'indice de biodiversité",
+    "feature3_point3": "Cartes de distribution des espèces",
     
-    "feature4_title": "Accès Complet Hors Ligne",
-    "feature4_desc": "Accédez à toutes les fonctionnalités essentielles sans connexion internet. Notre mode hors ligne inclut l'identification des espèces, des cartes détaillées, des guides de la faune et des outils de navigation - parfait pour les aventures reculées.",
-    "feature4_point1": "Fonctionnalité complète hors ligne",
-    "feature4_point2": "Données régionales téléchargeables",
-    "feature4_point3": "Guides des espèces hors ligne",
+    "feature4_title": "Guide de Survie Complet",
+    "feature4_desc": "Maîtrisez les compétences essentielles en plein air avec nos guides de survie complets. Apprenez les nœuds, la construction d'abris, l'allumage de feu et d'autres techniques cruciales de survie en milieu sauvage.",
+    "feature4_point1": "Tutoriels interactifs de nœuds",
+    "feature4_point2": "Techniques de construction d'abris",
+    "feature4_point3": "Méthodes d'allumage de feu",
     
-    "feature5_title": "Guide Nature IA",
-    "feature5_desc": "Obtenez des conseils personnalisés de notre expert nature IA. Posez des questions sur la faune locale, recevez des conseils spécifiques aux espèces et apprenez sur les écosystèmes par conversation naturelle.",
-    "feature5_point1": "Assistant nature IA 24/7",
-    "feature5_point2": "Informations contextuelles sur la faune",
-    "feature5_point3": "Parcours d'apprentissage personnalisés",
+    "feature5_title": "Communauté Nature et Médias",
+    "feature5_desc": "Connectez-vous avec d'autres passionnés de nature grâce à nos fonctionnalités communautaires dynamiques. Partagez vos découvertes, restez informé des actualités nature et participez aux défis communautaires.",
+    "feature5_point1": "Flux de photographie nature",
+    "feature5_point2": "Actualités faune et nature",
+    "feature5_point3": "Défis communautaires",
     
-    "feature6_title": "Communauté Mondiale de la Faune",
-    "feature6_desc": "Connectez-vous avec des passionnés de nature du monde entier. Partagez vos observations de la faune, découvrez de nouveaux endroits et contribuez à notre base de données croissante d'observations d'espèces.",
-    "feature6_point1": "Partagez vos rencontres avec la faune",
-    "feature6_point2": "Découvrez les points d'intérêt",
-    "feature6_point3": "Défis communautaires"
+    "feature6_title": "Expérience d'Apprentissage Interactive",
+    "feature6_desc": "Apprenez et testez vos connaissances à travers des quiz captivants, des aventures guidées et des parcours d'apprentissage personnalisés. Suivez vos progrès et gagnez des récompenses en maîtrisant les compétences outdoor.",
+    "feature6_point1": "Quiz d'identification d'espèces",
+    "feature6_point2": "Aventures nature guidées",
+    "feature6_point3": "Récompenses basées sur les compétences"
+  },
+  "OnlineFeatures": {
+    "title": "Fonctionnalités En Ligne - Enrichies par l'IA",
+    "intro": "Restez connecté pour l'expérience complète :",
+    "feature1_title": "Coach Wildscope",
+    "feature1_desc": "Posez des questions sur votre environnement, téléchargez des images et recevez des conseils personnalisés.",
+    "feature2_title": "Identification Alimentée par l'IA",
+    "feature2_desc": "Reconnaissez instantanément les espèces et accédez à des informations détaillées selon votre localisation.",
+    "feature3_title": "Analyses Intelligentes",
+    "feature3_desc": "Découvrez l'histoire locale, les observations de la communauté, les tendances saisonnières et plus encore.",
+    "feature4_title": "Communauté Mondiale et Partage",
+    "feature4_desc": "Partagez vos découvertes, suivez les observations rares et explorez les sentiers créés par les utilisateurs.",
+    "feature5_title": "Quiz et Aventures Textuelles Géolocalisés",
+    "feature5_desc": "Interagissez avec votre environnement à travers des expériences riches et immersives."
   },
   "CallToAction": {
     "title": "Ne Manquez Plus Aucun Moment Incroyable avec la Faune !",
@@ -113,7 +122,7 @@
   },
   "TermsPage": {
     "title": "Conditions d'utilisation",
-   "content": "# Conditions d'utilisation\n\nDernière mise à jour : 6 février 2025\n\n## 1. Généralités\nLes présentes Conditions d’utilisation régissent l’utilisation de l’application Wildscope. En créant un compte, vous acceptez ces conditions. L’âge minimum requis est de 16 ans. L’application propose des fonctions d’observation de la faune, d’identification des plantes et d’exploration de la nature afin d’enrichir votre expérience en plein air.\n\n## 2. Fonctionnalités de l’application\nWildscope fournit des données géolocalisées sur les animaux, les plantes, les points d’intérêt et la météo. L’application intègre des fonctionnalités basées sur l’intelligence artificielle (quiz nature, mode aventure), permet de publier des photos et vidéos, de créer des publications, et d’accéder à des contenus premium avec des fonctionnalités avancées.\n\n## 3. Compte utilisateur et responsabilité\nVous êtes responsable de la sécurité de votre compte et de l’utilisation d’un mot de passe sécurisé. Les utilisateurs doivent respecter toutes les lois et réglementations en vigueur.\n\n### Contenus interdits\nIl est interdit de publier du contenu illégal, offensant ou protégé par des droits d’auteur. La manipulation des données de localisation est strictement interdite. Vous pouvez supprimer votre compte à tout moment via les paramètres de l’application.\n\n## 4. Gestion technique des données\nLa majorité des données est stockée localement sur votre appareil pour garantir performance et confidentialité. Firebase est utilisé pour l’authentification et le stockage cloud si nécessaire. PostHog fournit des statistiques anonymisées pour améliorer l’application. Les API de Google assurent diverses fonctions. Vos données ne sont jamais utilisées à des fins publicitaires.\n\n## 5. Abonnement Premium\nLes fonctionnalités premium sont disponibles via Google Play ou Apple Pay. Il n’y a pas de droit de rétractation après utilisation des fonctionnalités premium. L’abonnement peut être annulé à tout moment via le store correspondant.\n\n## 6. Clause de non-responsabilité\n### Limitation de responsabilité\nNous déclinons toute responsabilité concernant :\n• Des informations erronées ou obsolètes sur les plantes, animaux ou points d’intérêt\n• Les dommages résultant d’une mauvaise utilisation des conseils ou contenus liés à la survie ou à la nature\n• La perte de données, les dysfonctionnements ou l’indisponibilité temporaire de fonctionnalités\n• Les failles de sécurité liées à des services tiers\n• Les contenus générés par l’IA ou les décisions qui en découlent — toutes les sorties IA (texte, image, audio, suggestions) sont fournies sans garantie d’exactitude ou d’adéquation. Utilisation à vos risques et périls, en particulier dans des contextes de survie ou d’urgence.\n\n### Contenus IA & situations d’urgence\nWildscope utilise des fonctionnalités expérimentales d’IA, fournies par des tiers comme OpenAI ou Google Gemini. Ces outils peuvent générer des contenus inexacts, inadaptés ou trompeurs. Ne vous fiez pas aux contenus IA dans des situations critiques. Vous êtes seul responsable des décisions prises à partir de ces informations. Nous déclinons toute responsabilité liée à leur utilisation.\n\n## 7. Droits sur les contenus\n### Contenus générés par l’utilisateur\nTous les contenus publiés ou créés par l’utilisateur lui appartiennent. Ils sont privés par défaut, sauf indication contraire. Les contenus illégaux seront supprimés sans préavis.\n\n### Contenus de l’application et droits d’auteur\nTous les contenus de l’application (textes, données, graphiques, etc.) sont protégés par le droit d’auteur. Toute utilisation commerciale sans autorisation écrite est interdite.\n\n## 8. Intégration de YouTube\nNotre application intègre les services YouTube API pour proposer des vidéos. L’utilisation de toute fonctionnalité liée à YouTube est soumise aux [Conditions d’utilisation de YouTube](https://www.youtube.com/t/terms), intégrées aux présentes Conditions.\n\n### Utilisation autorisée\nEn utilisant le Media Feed, vous vous engagez à :\n• Respecter les Conditions d’utilisation et les Règles de la communauté YouTube\n• N’utiliser les vidéos qu’à des fins personnelles et non commerciales\n• Ne pas télécharger, extraire ou redistribuer les contenus en dehors du cadre de l’application\n• Respecter les droits des créateurs de contenu et de YouTube\n\n### Clause de non-responsabilité liée à YouTube\n• Nous ne sommes pas responsables de l’exactitude, la légalité ou la pertinence des contenus affichés\n• Les contenus proviennent de tiers et ne reflètent pas nécessairement nos opinions\n• La disponibilité et les fonctionnalités de YouTube peuvent changer sans préavis\n\n### Traitement des données par YouTube\nEn utilisant les services YouTube, vous acceptez que :\n• Google/YouTube traitent vos données d’interaction selon leur politique de confidentialité\n• Les lecteurs intégrés puissent collecter des statistiques d’utilisation\n• Nous agissions en tant que sous-traitant de données sans contrôle sur les pratiques de YouTube\n\n## 9. Remboursements\nTous les paiements sont gérés via le Google Play Store ou l’Apple App Store. Les politiques de remboursement de ces plateformes s’appliquent.\n\nAucun remboursement n’est accordé en cas de :\n• Fonctionnalités IA ou média indisponibles à cause de limites atteintes\n• Problèmes temporaires liés aux services tiers\n• Incompatibilité avec l’appareil ou absence de connexion Internet\n\nL’utilisateur est responsable de la gestion de son abonnement. Nous n’avons pas accès aux systèmes de facturation des plateformes.\n\n## 10. Services tiers & limitations API\nWildscope repose sur de nombreux services tiers soumis à des quotas, restrictions ou interruptions. Cela peut impacter aussi bien les utilisateurs gratuits que premium.\n\n**Services utilisés (exemples) :**\n• API Google (Maps, Places, Geocoding, Static Maps)\n• Mapbox (cartes, styles, navigation)\n• PlantNet (identification de plantes)\n• YouTube Data API\n• API Wikipedia / Wikimedia\n• OpenStreetMap / Overpass\n• GBIF (biodiversité)\n• RainViewer & OpenWeatherMap (météo, radar)\n• Open Elevation & OpenTopo\n• RevenueCat (paiements intégrés)\n• Firebase (authentification, base de données, cloud)\n• OpenAI & Google Gemini (IA)\n\nNous ne sommes pas responsables des interruptions ou limitations causées par ces services. Exemples :\n• PlantNet limité à 500 requêtes/jour en gratuit\n• Mapbox peut cesser ses services après dépassement du quota mensuel\n• OpenAI/Gemini peuvent suspendre l’accès selon la charge ou les coûts\n\n## 11. Mentions légales\n• Aucune garantie n’est fournie concernant l’exactitude ou la fiabilité des contenus, conseils ou recommandations\n• Toutes les fonctionnalités (IA, cartes, identification) sont à but informatif et ludique\n• Wildscope n’est pas un outil médical ou de survie certifié\n• Vous devez respecter la législation locale lors de l’utilisation de données de localisation, d’espèces ou lors de la publication de contenus\n\n## 12. Modifications des Conditions\nContinuer à utiliser l’application après une mise à jour des Conditions implique votre acceptation des nouvelles règles. Vous serez informé(e) des changements majeurs via l’application ou par email.\n\n## 13. Contact\nPour toute question ou demande de support : duselkay@gmail.com"
+   "content": "# Conditions d'utilisation\n\nDernière mise à jour : 6 février 2025\n\n## 1. Généralités\nLes présentes Conditions d'utilisation régissent l'utilisation de l'application Wildscope. En créant un compte, vous acceptez ces conditions. L'âge minimum requis est de 16 ans. L'application propose des fonctions d'observation de la faune, d'identification des plantes et d'exploration de la nature afin d'enrichir votre expérience en plein air.\n\n## 2. Fonctionnalités de l'application\nWildscope fournit des données géolocalisées sur les animaux, les plantes, les points d'intérêt et la météo. L'application intègre des fonctionnalités basées sur l'intelligence artificielle (quiz nature, mode aventure), permet de publier des photos et vidéos, de créer des publications, et d'accéder à des contenus premium avec des fonctionnalités avancées.\n\n## 3. Compte utilisateur et responsabilité\nVous êtes responsable de la sécurité de votre compte et de l'utilisation d'un mot de passe sécurisé. Les utilisateurs doivent respecter toutes les lois et réglementations en vigueur.\n\n### Contenus interdits\nIl est interdit de publier du contenu illégal, offensant ou protégé par des droits d'auteur. La manipulation des données de localisation est strictement interdite. Vous pouvez supprimer votre compte à tout moment via les paramètres de l'application.\n\n## 4. Gestion technique des données\nLa majorité des données est stockée localement sur votre appareil pour garantir performance et confidentialité. Firebase est utilisé pour l'authentification et le stockage cloud si nécessaire. PostHog fournit des statistiques anonymisées pour améliorer l'application. Les API de Google assurent diverses fonctions. Vos données ne sont jamais utilisées à des fins publicitaires.\n\n## 5. Abonnement Premium\nLes fonctionnalités premium sont disponibles via Google Play ou Apple Pay. Il n'y a pas de droit de rétractation après utilisation des fonctionnalités premium. L'abonnement peut être annulé à tout moment via le store correspondant.\n\n## 6. Clause de non-responsabilité\n### Limitation de responsabilité\nNous déclinons toute responsabilité concernant :\n• Des informations erronées ou obsolètes sur les plantes, animaux ou points d'intérêt\n• Les dommages résultant d'une mauvaise utilisation des conseils ou contenus liés à la survie ou à la nature\n• La perte de données, les dysfonctionnements ou l'indisponibilité temporaire de fonctionnalités\n• Les failles de sécurité liées à des services tiers\n• Les contenus générés par l'IA ou les décisions qui en découlent — toutes les sorties IA (texte, image, audio, suggestions) sont fournies sans garantie d'exactitude ou d'adéquation. Utilisation à vos risques et périls, en particulier dans des contextes de survie ou d'urgence.\n\n### Contenus IA & situations d'urgence\nWildscope utilise des fonctionnalités expérimentales d'IA, fournies par des tiers comme OpenAI ou Google Gemini. Ces outils peuvent générer des contenus inexacts, inadaptés ou trompeurs. Ne vous fiez pas aux contenus IA dans des situations critiques. Vous êtes seul responsable des décisions prises à partir de ces informations. Nous déclinons toute responsabilité liée à leur utilisation.\n\n## 7. Droits sur les contenus\n### Contenus générés par l'utilisateur\nTous les contenus publiés ou créés par l'utilisateur lui appartiennent. Ils sont privés par défaut, sauf indication contraire. Les contenus illégaux seront supprimés sans préavis.\n\n### Contenus de l'application et droits d'auteur\nTous les contenus de l'application (textes, données, graphiques, etc.) sont protégés par le droit d'auteur. Toute utilisation commerciale sans autorisation écrite est interdite.\n\n## 8. Intégration de YouTube\nNotre application intègre les services YouTube API pour proposer des vidéos. L'utilisation de toute fonctionnalité liée à YouTube est soumise aux [Conditions d'utilisation de YouTube](https://www.youtube.com/t/terms), intégrées aux présentes Conditions.\n\n### Utilisation autorisée\nEn utilisant le Media Feed, vous vous engagez à :\n• Respecter les Conditions d'utilisation et les Règles de la communauté YouTube\n• N'utiliser les vidéos qu'à des fins personnelles et non commerciales\n• Ne pas télécharger, extraire ou redistribuer les contenus en dehors du cadre de l'application\n• Respecter les droits des créateurs de contenu et de YouTube\n\n### Clause de non-responsabilité liée à YouTube\n• Nous ne sommes pas responsables de l'exactitude, la légalité ou la pertinence des contenus affichés\n• Les contenus proviennent de tiers et ne reflètent pas nécessairement nos opinions\n• La disponibilité et les fonctionnalités de YouTube peuvent changer sans préavis\n\n### Traitement des données par YouTube\nEn utilisant les services YouTube, vous acceptez que :\n• Google/YouTube traitent vos données d'interaction selon leur politique de confidentialité\n• Les lecteurs intégrés puissent collecter des statistiques d'utilisation\n• Nous agissions en tant que sous-traitant de données sans contrôle sur les pratiques de YouTube\n\n## 9. Remboursements\nTous les paiements sont gérés via le Google Play Store ou l'Apple App Store. Les politiques de remboursement de ces plateformes s'appliquent.\n\nAucun remboursement n'est accordé en cas de :\n• Fonctionnalités IA ou média indisponibles à cause de limites atteintes\n• Problèmes temporaires liés aux services tiers\n• Incompatibilité avec l'appareil ou absence de connexion Internet\n\nL'utilisateur est responsable de la gestion de son abonnement. Nous n'avons pas accès aux systèmes de facturation des plateformes.\n\n## 10. Services tiers & limitations API\nWildscope repose sur de nombreux services tiers soumis à des quotas, restrictions ou interruptions. Cela peut impacter aussi bien les utilisateurs gratuits que premium.\n\n**Services utilisés (exemples) :**\n• API Google (Maps, Places, Geocoding, Static Maps)\n• Mapbox (cartes, styles, navigation)\n• PlantNet (identification de plantes)\n• YouTube Data API\n• API Wikipedia / Wikimedia\n• OpenStreetMap / Overpass\n• GBIF (biodiversité)\n• RainViewer & OpenWeatherMap (météo, radar)\n• Open Elevation & OpenTopo\n• RevenueCat (paiements intégrés)\n• Firebase (authentification, base de données, cloud)\n• OpenAI & Google Gemini (IA)\n\nNous ne sommes pas responsables des interruptions ou limitations causées par ces services. Exemples :\n• PlantNet limité à 500 requêtes/jour en gratuit\n• Mapbox peut cesser ses services après dépassement du quota mensuel\n• OpenAI/Gemini peuvent suspendre l'accès selon la charge ou les coûts\n\n## 11. Mentions légales\n• Aucune garantie n'est fournie concernant l'exactitude ou la fiabilité des contenus, conseils ou recommandations\n• Toutes les fonctionnalités (IA, cartes, identification) sont à but informatif et ludique\n• Wildscope n'est pas un outil médical ou de survie certifié\n• Vous devez respecter la législation locale lors de l'utilisation de données de localisation, d'espèces ou lors de la publication de contenus\n\n## 12. Modifications des Conditions\nContinuer à utiliser l'application après une mise à jour des Conditions implique votre acceptation des nouvelles règles. Vous serez informé(e) des changements majeurs via l'application ou par email.\n\n## 13. Contact\nPour toute question ou demande de support : duselkay@gmail.com"
 
   },
   "ContactPage": {

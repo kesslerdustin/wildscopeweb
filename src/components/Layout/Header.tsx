@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { track } from '@vercel/analytics';
 // import { Compass, Leaf, Users, Wifi, Map, Award } from 'lucide-react'; // Removed icons
+import { Instagram } from 'lucide-react';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export default function Header() {
@@ -32,6 +33,15 @@ export default function Header() {
           />
         </Link>
         <nav className="flex items-center space-x-4">
+          <a 
+            href="https://www.instagram.com/wildscope.app/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-gray-600 hover:text-emerald-600 transition-colors"
+            aria-label="Follow us on Instagram"
+          >
+            <Instagram className="w-6 h-6" />
+          </a>
           <LanguageSwitcher />
         </nav>
       </div>

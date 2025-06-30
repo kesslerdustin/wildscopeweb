@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
+import { Instagram } from 'lucide-react';
 import { getTermsPathForLocale } from '@/utils/localeHelpers';
 
 export default function Footer() {
@@ -19,9 +20,21 @@ export default function Footer() {
           <div className="text-gray-600 dark:text-gray-400">
             <h2 className="text-lg font-semibold mb-4 text-gray-800 dark:text-white">Wildscope</h2>
             <p className="mb-2">{t('copyright', { year: currentYear })}</p>
-            <p>
+            <p className="mb-4">
               Created by <a href="https://www.dustinkessler.de" target="_blank" rel="noopener noreferrer" aria-label="Developer's website" className="text-emerald-600 dark:text-emerald-400 hover:underline">Dustin Keßler</a>
             </p>
+            <div className="flex items-center">
+              <a 
+                href="https://www.instagram.com/wildscope.app/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center gap-2"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+                <span>Follow us on Instagram</span>
+              </a>
+            </div>
           </div>
           
           <div>
