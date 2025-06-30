@@ -138,79 +138,117 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
             />
           </div>
           <motion.div 
-            className="container mx-auto px-6 text-center relative z-10"
+            className="container mx-auto px-6 relative z-10"
             initial="hidden"
             animate="visible"
             variants={fadeIn}
           >
-            <div className="p-8 rounded-lg inline-block mx-auto">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg font-display tracking-tight">
-                {t('title')}
-              </h1>
-              <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-white/90 drop-shadow-md font-display font-medium">
-                {t('subtitle')}
-              </p>
-              
-              {/* Download Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <motion.a
-                  href="https://apps.apple.com/us/app/wildscope/id6741471953"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={trackAppStoreClick}
-                  className="bg-black text-white font-display font-semibold py-4 px-8 rounded-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center group"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <svg className="w-8 h-8 mr-3 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.722 19.786c-.063.12-.143.24-.232.336-.336.36-.907.504-1.454.504-.318 0-.63-.048-.936-.156a2.416 2.416 0 01-.906-.516l-3.24-2.832-3.234 2.832c-.27.228-.576.396-.906.516a2.7 2.7 0 01-.936.156 2.19 2.19 0 01-1.458-.504 1.25 1.25 0 01-.228-.336 2.016 2.016 0 01-.192-.912V4.824c0-.324.066-.624.192-.912a1.25 1.25 0 01.228-.336c.336-.36.91-.504 1.458-.504.318 0 .63.048.936.156.33.12.636.288.906.516L12 6.576l3.24-2.832c.27-.228.576-.396.906-.516.306-.108.618-.156.936-.156.547 0 1.118.144 1.454.504.089.096.17.216.232.336.126.288.192.588.192.912v14.05c0 .324-.066.624-.192.912zm-4.446-6.924l3.432 3.001V5.421L13.276 8.4l3.438-2.988v2.496l-3.438 2.982z" />
-                  </svg>
-                  {t('appstore')}
-                </motion.a>
-                <motion.a
-                  href="https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={trackPlayStoreClick}
-                  className="bg-black text-white font-display font-semibold py-4 px-8 rounded-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center group"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <svg className="w-8 h-8 mr-3 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3.186 4.352C2.575 5.027 2.25 6.046 2.25 7.357v9.286c0 1.311.325 2.33.936 3.005l.117.129.188-.117 8.97-5.196V9.536L3.373 4.223l-.187-.117-.117.13.117.116z" />
-                    <path d="M17.73 11l-3.75-2.143-9.938-5.679 9.938 5.679L17.73 11z" />
-                    <path d="M21.436 11L17.26 8.571 14 6.429v11.142l3.26-2.143 4.176-2.428V11z" />
-                    <path d="M13.53 19.446l-9.966-5.732-.188-.117-.118.13.118.116.118.13.187.117 9.85 5.732.187.117.117-.13-.117-.116.118-.13-.188-.117-.118.13z" />
-                  </svg>
-                  {t('playstore')}
-                </motion.a>
-              </div>
+            <div className="md:flex md:items-center md:gap-8">
+              <div className="md:w-2/3 text-center md:text-left">
+                <div className="p-8 rounded-lg inline-block md:inline-block mx-auto md:mx-0">
+                  <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg font-display tracking-tight">
+                    {t('title')}
+                  </h1>
+                  <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto md:mx-0 text-white/90 drop-shadow-md font-display font-medium">
+                    {t('subtitle')}
+                  </p>
 
-              <p className="text-lg font-medium text-white/90 mb-8 font-display">
-                {t('download_subtext')}
-              </p>
-              
-              {/* Key Features Grid */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto bg-black/20 p-6 rounded-lg">
-                {[1, 2, 3, 4, 5, 6].map((i) => (
-                  <motion.div 
-                    key={i}
-                    className="flex items-center space-x-3 text-left"
-                    variants={fadeIn}
-                  >
-                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-white/90 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-emerald-500 flex-shrink-0" />
-                    </span>
-                    <span className="text-white/90 text-lg font-display">{t(`feature_${i}`)}</span>
-                  </motion.div>
-                ))}
+                  {/* Image for Mobile & Tablet */}
+                  <div className="md:hidden my-8 flex justify-center items-center">
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.6, ease: "easeOut" }}
+                    >
+                      <Image
+                        src="/images/main_image.png"
+                        alt="Wildscope App on iPhone"
+                        width={300}
+                        height={420}
+                        priority
+                        className="object-contain"
+                      />
+                    </motion.div>
+                  </div>
+                  
+                  {/* Download Buttons */}
+                  <div className="flex flex-col lg:flex-row gap-4 justify-center md:justify-start mb-8">
+                    <motion.a
+                      href="https://apps.apple.com/us/app/wildscope/id6741471953"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={trackAppStoreClick}
+                      className="bg-black text-white font-display font-semibold py-4 px-8 rounded-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center group"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <svg className="w-8 h-8 mr-3 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.722 19.786c-.063.12-.143.24-.232.336-.336.36-.907.504-1.454.504-.318 0-.63-.048-.936-.156a2.416 2.416 0 01-.906-.516l-3.24-2.832-3.234 2.832c-.27.228-.576.396-.906.516a2.7 2.7 0 01-.936.156 2.19 2.19 0 01-1.458-.504 1.25 1.25 0 01-.228-.336 2.016 2.016 0 01-.192-.912V4.824c0-.324.066-.624.192-.912a1.25 1.25 0 01.228-.336c.336-.36.91-.504 1.458-.504.318 0 .63.048.936.156.33.12.636.288.906.516L12 6.576l3.24-2.832c.27-.228.576-.396.906-.516.306-.108.618-.156.936-.156.547 0 1.118.144 1.454.504.089.096.17.216.232.336.126.288.192.588.192.912v14.05c0 .324-.066.624-.192.912zm-4.446-6.924l3.432 3.001V5.421L13.276 8.4l3.438-2.988v2.496l-3.438 2.982z" />
+                      </svg>
+                      {t('appstore')}
+                    </motion.a>
+                    <motion.a
+                      href="https://play.google.com/store/apps/details?id=com.duselk.theoutdoorbible"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={trackPlayStoreClick}
+                      className="bg-black text-white font-display font-semibold py-4 px-8 rounded-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center group"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <svg className="w-8 h-8 mr-3 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3.186 4.352C2.575 5.027 2.25 6.046 2.25 7.357v9.286c0 1.311.325 2.33.936 3.005l.117.129.188-.117 8.97-5.196V9.536L3.373 4.223l-.187-.117-.117.13.117.116z" />
+                        <path d="M17.73 11l-3.75-2.143-9.938-5.679 9.938 5.679L17.73 11z" />
+                        <path d="M21.436 11L17.26 8.571 14 6.429v11.142l3.26-2.143 4.176-2.428V11z" />
+                        <path d="M13.53 19.446l-9.966-5.732-.188-.117-.118.13.118.116.118.13.187.117 9.85 5.732.187.117.117-.13-.117-.116.118-.13-.188-.117-.118.13z" />
+                      </svg>
+                      {t('playstore')}
+                    </motion.a>
+                  </div>
+
+                  <p className="text-lg font-medium text-white/90 mb-8 font-display">
+                    {t('download_subtext')}
+                  </p>
+                  
+                  {/* Key Features Grid */}
+                  <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 max-w-5xl mx-auto bg-black/20 p-6 rounded-lg">
+                    {[1, 2, 3, 4, 5, 6].map((i) => (
+                      <motion.div 
+                        key={i}
+                        className="flex items-center space-x-3 text-left"
+                        variants={fadeIn}
+                      >
+                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-white/90 flex items-center justify-center">
+                          <Check className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                        </span>
+                        <span className="text-white/90 text-lg font-display">{t(`feature_${i}`)}</span>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="md:w-1/3 hidden md:flex justify-center items-center">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8, x: 100 }}
+                  animate={{ opacity: 1, scale: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                >
+                  <Image
+                    src="/images/main_image.png"
+                    alt="Wildscope App on iPhone"
+                    width={500}
+                    height={700}
+                    priority
+                    className="object-contain"
+                  />
+                </motion.div>
               </div>
             </div>
           </motion.div>
         </section>
 
         {/* Features Section */}
-        <section className="py-20">
+        <section id="features" className="py-20">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-800 font-display">
               {tFeatures('title')}
@@ -355,6 +393,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
 
         {/* Call to Action Section */}
         <motion.section 
+          id="download"
           className="py-20 bg-emerald-600 text-white" 
           ref={downloadSectionRef}
           initial="hidden"
@@ -491,6 +530,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
 
         {/* FAQ Section - MOVED DOWN */}
         <motion.section 
+          id="faq"
           className="py-16 bg-white"
           initial="hidden"
           whileInView="visible"

@@ -66,17 +66,14 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 items-center">
-            <Link href={`/${locale}`} className="text-gray-600 hover:text-emerald-600 transition-colors">
-              {t('home')}
+            <Link href={`/${locale}/#download`} className="text-gray-600 hover:text-emerald-600 transition-colors font-semibold">
+              {t('download')}
             </Link>
-            <Link href={`/${locale}/impressum`} className="text-gray-600 hover:text-emerald-600 transition-colors">
-              {t('impressum')}
+            <Link href={`/${locale}/#features`} className="text-gray-600 hover:text-emerald-600 transition-colors">
+              {t('features')}
             </Link>
-            <Link href={`/${locale}/privacy`} className="text-gray-600 hover:text-emerald-600 transition-colors">
-              {t('privacy')}
-            </Link>
-            <Link href={`/${locale}/contact`} className="text-gray-600 hover:text-emerald-600 transition-colors">
-              {t('contact')}
+            <Link href={`/${locale}/#faq`} className="text-gray-600 hover:text-emerald-600 transition-colors">
+              {t('faq')}
             </Link>
             <a 
               href="https://www.instagram.com/wildscope.app/" 
@@ -93,6 +90,9 @@ export default function Header() {
 
           {/* Mobile Navigation */}
           <nav className="flex md:hidden items-center space-x-4">
+            <Link href={`/${locale}/#download`} className="text-gray-600 hover:text-emerald-600 transition-colors font-semibold">
+              {t('download')}
+            </Link>
             <a 
               href="https://www.instagram.com/wildscope.app/" 
               target="_blank" 
