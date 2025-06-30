@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { locales } from '../../i18n/request';
+import { locales, defaultLocale } from '../../i18n/request';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app';
@@ -48,16 +48,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Create sitemap entries for each locale and route
   const sitemapEntries = locales.flatMap(locale => {
     return routes.map(route => {
-      const path = route.path ? `/${locale}${route.path}` : `/${locale}`;
+      // For default locale, don't add locale prefix
+      const path = locale === defaultLocale 
+        ? route.path
+        : `/${locale}${route.path}`;
       
       // Generate alternate language URLs for this page
       const alternateLanguages = locales
         .filter(loc => loc !== locale)
         .reduce((acc, lang) => {
-          const altPath = route.path ? `/${lang}${route.path}` : `/${lang}`;
+          const altPath = lang === defaultLocale
+            ? route.path
+            : `/${lang}${route.path}`;
           acc[lang] = `${baseUrl}${altPath}`;
           return acc;
         }, {} as Record<string, string>);
+      
+      // Set canonical URL - for default locale, use unprefixed path
+      const canonicalPath = locale === defaultLocale
+        ? route.path
+        : path;
       
       return {
         url: `${baseUrl}${path}`,
@@ -66,7 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: route.priority,
         alternates: {
           languages: alternateLanguages,
-          canonical: `${baseUrl}${path}`
+          canonical: `${baseUrl}${canonicalPath}`
         }
       };
     });
