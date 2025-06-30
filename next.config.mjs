@@ -12,7 +12,16 @@ const nextConfig = {
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.wildscope.app'
   },
   images: {
-    domains: ['wildscope.com', 'www.wildscope.app'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'wildscope.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.wildscope.app'
+      }
+    ],
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],

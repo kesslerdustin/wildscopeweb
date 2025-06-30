@@ -87,11 +87,6 @@ export const metadata: Metadata = {
     ],
     shortcut: '/favicon.ico'
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || 'your-google-site-verification-if-available',
     other: {

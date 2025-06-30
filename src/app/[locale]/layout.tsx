@@ -64,11 +64,6 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         'x-default': `${baseUrl}/`
       }
     },
-    viewport: {
-      width: 'device-width',
-      initialScale: 1,
-      maximumScale: 5
-    },
     openGraph: {
       title: titles[locale as keyof typeof titles] || titles.en,
       description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
