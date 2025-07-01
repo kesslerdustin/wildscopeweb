@@ -279,11 +279,11 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   >
                     {/* Image container */}
                     <div className={`w-full md:w-1/3 ${featureNum % 2 === 0 ? 'md:order-last' : ''}`}>
-                      <div className="relative mx-auto max-w-sm md:max-w-md rounded-2xl overflow-hidden shadow-lg cursor-pointer transform hover:scale-[1.02] transition-all duration-300 group"
+                      <div className="relative mx-auto w-full max-w-sm md:max-w-md rounded-2xl overflow-hidden shadow-lg cursor-pointer transform hover:scale-[1.02] transition-all duration-300 group"
                            onClick={() => setSelectedImage(`/images/img${getImageNumber(featureNum)}_${locale}.png`)}>
-                        <div className="relative aspect-[3/5] md:aspect-[2/3] h-[600px] md:h-[600px] bg-gray-50 flex items-center justify-center">
+                        <div className="relative aspect-[3/5] md:aspect-[2/3] h-[500px] md:h-[600px] bg-gray-50 flex items-center justify-center">
                           {/* Background blur for image */}
-                          <div className="absolute inset-0 z-0 flex items-center justify-center">
+                          <div className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden">
                             <Image
                               src={`/images/img${getImageNumber(featureNum)}_${locale}.png`}
                               alt=""
@@ -298,13 +298,13 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                             />
                           </div>
                           {/* Main image */}
-                          <div className="relative z-10 h-full w-full flex items-center justify-center p-3">
+                          <div className="relative z-10 h-full w-full flex items-center justify-center p-3 overflow-hidden">
                             <div className="relative w-full h-full flex items-center justify-center">
                               <Image
                                 src={`/images/img${getImageNumber(featureNum)}_${locale}.png`}
                                 alt={tFeatures(`img${featureNum}_alt`)}
                                 fill
-                                className="object-contain md:scale-[1.3] scale-[1.35]"
+                                className="object-contain scale-[1.3] md:scale-[1.35]"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
                                 onError={(e) => {
                                   const target = e.target as HTMLImageElement;
@@ -356,13 +356,13 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
 
         {/* About Section */}
         <motion.section 
-          className="py-16 bg-white"
+          className="py-16 bg-white overflow-hidden"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeIn}
         >
-          <div className="container mx-auto px-6">
+          <div className="container mx-auto px-4 sm:px-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">{tAbout('title')}</h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-gray-600 mb-6">{tAbout('paragraph1')}</p>
@@ -444,8 +444,8 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
         </motion.section>
 
         {/* Online Features Section - MOVED UP */}
-        <section className="py-20 bg-gradient-to-br from-emerald-50 to-white">
-          <div className="container mx-auto px-6">
+        <section className="py-20 bg-gradient-to-br from-emerald-50 to-white overflow-hidden">
+          <div className="container mx-auto px-4 sm:px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-emerald-800 font-display tracking-tight">
               {tOnline('title')}
             </h2>
@@ -474,8 +474,8 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
         </section>
 
         {/* Offline Capabilities Section - MOVED UP */}
-        <section className="py-20">
-          <div className="container mx-auto px-6">
+        <section className="py-20 overflow-hidden">
+          <div className="container mx-auto px-4 sm:px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-emerald-800 font-display tracking-tight">
               {tOffline('title')}
             </h2>
