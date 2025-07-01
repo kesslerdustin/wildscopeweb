@@ -120,14 +120,14 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
       <ArticleJsonLd />
       <SoftwareApplicationJsonLd />
       <AppStoreDataJsonLd />
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600 text-white py-20 md:py-32 relative">
+        <section className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600 text-white py-20 md:py-32 relative overflow-hidden">
           <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
             <Image
               src="/images/header.png"
@@ -138,7 +138,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
             />
           </div>
           <motion.div 
-            className="container mx-auto px-6 relative z-10"
+            className="container mx-auto px-4 sm:px-6 relative z-10"
             initial="hidden"
             animate="visible"
             variants={fadeIn}
@@ -211,7 +211,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                   </p>
                   
                   {/* Key Features Grid */}
-                  <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 max-w-5xl mx-auto bg-black/20 p-6 rounded-lg">
+                  <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 max-w-5xl mx-auto bg-black/20 p-4 sm:p-6 rounded-lg">
                     {[1, 2, 3, 4, 5, 6].map((i) => (
                       <motion.div 
                         key={i}
@@ -248,8 +248,8 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
         </section>
 
         {/* Features Section */}
-        <section id="features" className="py-20">
-          <div className="container mx-auto px-6">
+        <section id="features" className="py-20 overflow-hidden">
+          <div className="container mx-auto px-4 sm:px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-800 font-display">
               {tFeatures('title')}
             </h2>
@@ -268,7 +268,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                 return (
                   <motion.div
                     key={featureNum}
-                    className={`flex flex-col md:flex-row items-center gap-8 md:gap-16 p-8 rounded-2xl ${
+                    className={`flex flex-col md:flex-row items-center gap-8 md:gap-16 p-4 sm:p-8 rounded-2xl ${
                       featureNum % 2 === 0 ? colors[featureNum].bg : ''
                     }`}
                     initial="hidden"
