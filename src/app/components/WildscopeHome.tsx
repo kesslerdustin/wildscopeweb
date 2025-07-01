@@ -145,11 +145,11 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
           >
             <div className="md:flex md:items-center md:gap-8">
               <div className="md:w-2/3 text-center md:text-left">
-                <div className="p-8 sm:p-8 rounded-lg inline-block md:inline-block mx-auto md:mx-0">
-                  <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg font-display tracking-tight px-2 sm:px-0">
+                <div className="pt-4 pb-8 px-3 sm:p-8 rounded-lg inline-block md:inline-block mx-auto md:mx-0">
+                  <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg font-display tracking-tight">
                     {t('title')}
                   </h1>
-                  <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto md:mx-0 text-white/90 drop-shadow-md font-display font-medium px-2 sm:px-0">
+                  <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto md:mx-0 text-white/90 drop-shadow-md font-display font-medium">
                     {t('subtitle')}
                   </p>
 
