@@ -258,11 +258,11 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                 // Define feature-specific colors
                 const colors: Record<number, { bg: string; text: string; icon: string }> = {
                   1: { bg: 'bg-emerald-50/50', text: 'text-emerald-800', icon: 'text-emerald-600' },
-                  2: { bg: 'bg-sky-50/50', text: 'text-sky-800', icon: 'text-sky-600' },
+                  2: { bg: 'bg-sky-50/60', text: 'text-sky-800', icon: 'text-sky-600' },
                   3: { bg: 'bg-violet-50/50', text: 'text-violet-800', icon: 'text-violet-600' },
-                  4: { bg: 'bg-amber-50/50', text: 'text-amber-800', icon: 'text-amber-600' },
+                  4: { bg: 'bg-amber-50/60', text: 'text-amber-800', icon: 'text-amber-600' },
                   5: { bg: 'bg-rose-50/50', text: 'text-rose-800', icon: 'text-rose-600' },
-                  6: { bg: 'bg-teal-50/50', text: 'text-teal-800', icon: 'text-teal-600' }
+                  6: { bg: 'bg-teal-50/60', text: 'text-teal-800', icon: 'text-teal-600' }
                 };
 
                 return (
@@ -278,8 +278,8 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                     custom={featureNum % 2 === 0}
                   >
                     {/* Image container */}
-                    <div className={`w-full md:w-1/3 ${featureNum % 2 === 0 ? 'md:order-last' : ''}`}>
-                      <div className="relative mx-auto w-full max-w-sm md:max-w-md rounded-2xl overflow-hidden shadow-lg cursor-pointer transform hover:scale-[1.02] transition-all duration-300 group"
+                    <div className={`w-full md:w-1/4 flex items-center justify-center ${featureNum % 2 === 0 ? 'md:order-last' : ''}`}>
+                      <div className="relative w-full max-w-[280px] md:max-w-[320px] rounded-2xl overflow-hidden shadow-lg cursor-pointer transform hover:scale-[1.02] transition-all duration-300 group"
                            onClick={() => setSelectedImage(`/images/img${getImageNumber(featureNum)}_${locale}.png`)}>
                         <div className="relative aspect-[3/5] md:aspect-[2/3] h-[500px] md:h-[600px] bg-gray-50 flex items-center justify-center">
                           {/* Background blur for image */}
@@ -298,13 +298,13 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                             />
                           </div>
                           {/* Main image */}
-                          <div className="relative z-10 h-full w-full flex items-center justify-center p-3 overflow-hidden">
+                          <div className="relative z-10 h-full w-full flex items-center justify-center">
                             <div className="relative w-full h-full flex items-center justify-center">
                               <Image
                                 src={`/images/img${getImageNumber(featureNum)}_${locale}.png`}
                                 alt={tFeatures(`img${featureNum}_alt`)}
                                 fill
-                                className="object-contain scale-[1.3] md:scale-[1.35]"
+                                className="object-contain scale-[1.15] md:scale-[1.2] translate-x-[-8%]"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
                                 onError={(e) => {
                                   const target = e.target as HTMLImageElement;
@@ -321,7 +321,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
                     </div>
                     
                     {/* Text content */}
-                    <div className="w-full md:w-2/3 space-y-6">
+                    <div className="w-full md:w-3/4 space-y-6">
                       <h3 className={`text-2xl md:text-3xl font-bold font-display tracking-tight ${colors[featureNum].text}`}>
                         {tFeatures(`feature${featureNum}_title`)}
                       </h3>
