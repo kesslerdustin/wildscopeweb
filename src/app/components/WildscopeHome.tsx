@@ -127,7 +127,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600 text-white py-12 md:py-32 relative overflow-hidden">
+        <section className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600 text-white pt-6 pb-12 md:py-32 relative overflow-hidden">
           <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
             <Image
               src="/images/header.png"
