@@ -59,9 +59,8 @@ export default function Header() {
               alt="Wildscope - Wildlife Tracking & Outdoor Adventure App Logo" 
               width={160} 
               height={40} 
-              className="h-8 w-auto hidden md:block"
+              className="h-8 w-auto"
             />
-            <span className="md:hidden">Wildscope</span>
           </Link>
 
           {/* Desktop Navigation */}
