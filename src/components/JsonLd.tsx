@@ -94,7 +94,7 @@ export function OrganizationJsonLd() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      email: 'duselkay@gmail.com'
+      email: 'info@wildscope.app'
     }
   };
   

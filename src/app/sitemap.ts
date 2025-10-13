@@ -77,6 +77,11 @@ export function generateImageSitemap(): {
       caption: 'Preview of the Wildscope wildlife identification app'
     },
     {
+      url: `${baseUrl}/images/7vWS5.jpg`,
+      title: '7 vs Wild Staffel 5 Amazonas - Wildscope App',
+      caption: 'Wildscope präsentiert in 7 vs. Wild Season 5 Amazon - Survival App'
+    },
+    {
       url: `${baseUrl}/images/header.png`,
       title: 'AI Species Identification',
       caption: 'Identify wildlife using AI technology'

@@ -33,7 +33,7 @@ export default function ImpressumPage({params: {locale}}: Props) {
           
           <h2>{t('contact_title')}</h2>
           <p>
-            {t('contact_email')} <a href="mailto:duselkay@gmail.com" className="text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300">duselkay@gmail.com</a>
+            {t('contact_email')} <a href="mailto:info@wildscope.app" className="text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300">info@wildscope.app</a>
           </p>
           
           <h2>{t('responsibility_title')}</h2>

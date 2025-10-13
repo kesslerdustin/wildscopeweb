@@ -22,7 +22,7 @@ export default function ContactForm() {
     // Create a mailto link with the form data
     const subject = `Contact from ${formState.name}`;
     const body = `Name: ${formState.name}\nEmail: ${formState.email}\n\nMessage:\n${formState.message}`;
-    const mailtoLink = `mailto:duselkay@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:info@wildscope.app?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     // Open the user's mail client
     window.location.href = mailtoLink;

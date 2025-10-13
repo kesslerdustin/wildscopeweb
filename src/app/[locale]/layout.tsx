@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   // Define title and description by locale
   const titles = {
     en: 'Wildscope - All-in-One Wildlife & Plant Identification | Outdoor Survival Guide',
-    de: 'Wildscope - Tiere & Pflanzen bestimmen | Outdoor Survival Ratgeber',
+    de: '7 vs Wild App - Wildscope | Tiere & Pflanzen bestimmen | Survival Ratgeber',
     fr: 'Wildscope - Identification Faune & Flore | App Survie Nature',
     it: 'Wildscope - Riconoscimento Fauna & Flora | App Sopravvivenza',
     es: 'Wildscope - Identificación de Fauna y Flora | App Supervivencia',
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
 
   const descriptions = {
     en: "Discover nature with AI: Instant wildlife & plant identification, offline maps, and expert survival guides. Free app with GPS tracking, weather alerts, and interactive learning. Perfect for hikers, photographers, and nature enthusiasts.",
-    de: "Entdecke die Natur mit KI: Sofortige Tier- & Pflanzenbestimmung, Offline-Karten und Experten-Survival-Guides. Kostenlose App mit GPS-Tracking, Wetterwarnungen und interaktivem Lernen. Perfekt für Wanderer, Fotografen und Naturbegeisterte.",
+    de: "Offiziell präsentiert in 7 vs Wild Staffel 5 Amazonas! Entdecke die Natur mit KI: Sofortige Tier- & Pflanzenbestimmung, Offline-Karten und Survival-Guides. Kostenlose 7 vs Wild App mit GPS-Tracking, Wetterwarnungen und interaktivem Lernen für Outdoor-Abenteuer.",
     fr: 'Identifiez la faune et la flore avec l\'IA. Application gratuite avec cartes hors ligne, boussole, outils de survie et reconnaissance d\'espèces. Parfait pour la randonnée et le camping.',
     it: 'Riconosci fauna e flora con l\'intelligenza artificiale. App gratuita con mappe offline, bussola, strumenti di sopravvivenza e identificazione delle specie. Ideale per escursioni e campeggio.',
     es: 'Wildscope combina identificación de vida silvestre con IA, herramientas de supervivencia, navegación por brújula y aventuras de texto interactivas. Explore la naturaleza con reconocimiento de especies, mapas sin conexión y herramientas de seguimiento.',
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
 
   const keywords = {
     en: "AI nature guide, wildlife recognition app, offline species identification, nature exploration app, biodiversity tracking, outdoor survival guide, wildlife photography assistant, hiking companion app, plant identification AI, nature learning app, wildlife identification app, species database, survival skills, knot tying, shelter building, fire making, weather data, compass navigation, bio index, nature community",
-    de: "KI Naturführer, Wildtier Erkennungs-App, Offline Artenbestimmung, Naturerkundungs-App, Artenvielfalt tracking, Outdoor Überlebensguide, Naturfotografie Assistent, Wander-App, Pflanzen KI-Bestimmung, Natur Lern-App, Tier bestimmen App, Artendatenbank, Survival Skills, Knoten binden, Unterschlupf bauen, Feuer machen, Wetterdaten, Kompass Navigation, Bio-Index, Naturgemeinschaft",
+    de: "7 vs Wild App, 7 versus Wild, 7 vs. Wild Staffel 5, 7 vs Wild Amazonas, Fritz Meinecke, Survival App Deutschland, KI Naturführer, Wildtier Erkennungs-App, Offline Artenbestimmung, Naturerkundungs-App, Artenvielfalt tracking, Outdoor Überlebensguide, Naturfotografie Assistent, Wander-App, Pflanzen KI-Bestimmung, Natur Lern-App, Tier bestimmen App, Artendatenbank, Survival Skills, Knoten binden, Unterschlupf bauen, Feuer machen, Wetterdaten, Kompass Navigation, Bio-Index, Naturgemeinschaft, Bushcraft App, Amazonas Survival",
     fr: 'identification animaux app, identification plantes, guide nature, application randonnée, reconnaissance espèces, cartes hors ligne, boussole navigation, survie nature, application outdoor, guide faune flore',
     it: 'riconoscimento animali app, identificazione piante, guida natura, app escursionismo, riconoscimento specie, mappe offline, navigazione bussola, sopravvivenza outdoor, app trekking, guida fauna flora',
     es: 'app identificar animales, identificación plantas, guía naturaleza, app senderismo, reconocimiento especies, mapas sin conexión, navegación brújula, supervivencia aire libre, app excursiones, guía fauna flora',
@@ -132,7 +132,7 @@ export default async function LocaleLayout({
   // Define localized titles and descriptions
   const titles = {
     en: 'Wildscope - Wildlife Identification & Outdoor Survival App',
-    de: 'Wildscope - Tiere & Pflanzen bestimmen | Outdoor Survival App',
+    de: '7 vs Wild - Wildscope App | Tiere & Pflanzen bestimmen | Survival',
     fr: 'Wildscope - Guide Animalier IA & App de Survie en Plein Air',
     it: 'Wildscope - Guida Naturalistica AI & App di Sopravvivenza Outdoor',
     es: 'Wildscope - Guía de Vida Silvestre con IA & App de Supervivencia',
@@ -142,7 +142,7 @@ export default async function LocaleLayout({
 
   const descriptions = {
     en: 'Identify wildlife, plants & animals with AI technology. Free outdoor app with offline maps, compass navigation, survival tools, and species recognition. Perfect for hiking, camping & nature exploration.',
-    de: 'Tiere und Pflanzen mit KI erkennen - kostenlose Outdoor App mit Offline-Karten, Kompass, Überlebenstipps und Artenbestimmung. Ideal für Wandern, Camping & Naturerkundung.',
+    de: 'Präsentiert in 7 vs Wild Staffel 5 Amazonas - Tiere und Pflanzen mit KI erkennen. Kostenlose 7 versus Wild Survival App mit Offline-Karten, Kompass, Überlebenstipps und Artenbestimmung für Outdoor-Abenteuer.',
     fr: 'Wildscope combine l\'identification de la faune par IA, des outils de survie, la navigation par boussole et des aventures textuelles interactives. Explorez la nature avec la reconnaissance des espèces, des cartes hors ligne et des outils de suivi.',
     it: 'Wildscope combina identificazione della fauna con AI, strumenti di sopravvivenza, navigazione con bussola e avventure testuali interattive. Esplora la natura con riconoscimento delle specie, mappe offline e strumenti di tracciamento.',
     es: 'Wildscope combina identificación de vida silvestre con IA, herramientas de supervivencia, navegación por brújula y aventuras de texto interactivas. Explore la naturaleza con reconocimiento de especies, mapas sin conexión y herramientas de seguimiento.',
@@ -172,16 +172,17 @@ export default async function LocaleLayout({
             "url": baseUrl
           },
           "featureList": locale === 'de' ? [
+            "Präsentiert in 7 vs Wild Staffel 5 Amazonas",
             "KI-gestützte Artenbestimmung",
             "Offline-Kartenfunktion",
-            "Survival-Guides",
+            "Survival-Guides wie bei 7 vs. Wild",
             "GPS-Tracking",
             "Wetterwarnungen",
             "Interaktives Naturlernen",
             "Artenvielfalt-Tracking",
             "Community-Funktionen",
             "Sicherheitshinweise",
-            "Überlebenstechniken"
+            "Überlebenstechniken für Amazonas und mehr"
           ] : [
             "AI-powered species identification",
             "Offline maps functionality",

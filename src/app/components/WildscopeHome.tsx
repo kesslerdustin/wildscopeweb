@@ -50,6 +50,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
   const tPricing = useTranslations('Pricing');
   const tFaq = useTranslations('FAQ');
   const tCta = useTranslations('CallToAction');
+  const t7vsWild = useTranslations('SevenVsWild');
   
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -246,6 +247,55 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
             </div>
           </motion.div>
         </section>
+
+        {/* 7 vs Wild Section - German only */}
+        {locale === 'de' && (
+          <motion.section 
+            className="py-12 bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50 overflow-hidden"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={fadeIn}
+          >
+            <div className="container mx-auto px-4 sm:px-8 lg:px-12">
+              <div className="max-w-7xl mx-auto">
+                <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                  {/* Image */}
+                  <div className="w-full md:w-2/5">
+                    <div className="relative w-full overflow-hidden rounded-xl shadow-2xl">
+                      <Image
+                        src="/images/7vWS5.jpg"
+                        alt="Wildscope präsentiert von 7 vs. Wild Staffel 5 Amazonas - Survival App für Outdoor Abenteuer"
+                        width={600}
+                        height={400}
+                        className="w-full h-auto object-cover"
+                        priority
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="w-full md:w-3/5">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-amber-900 font-display tracking-tight">
+                      {t7vsWild('title')}
+                    </h2>
+                    <p className="text-base md:text-lg text-gray-800 mb-4 font-display font-medium leading-relaxed">
+                      {t7vsWild('subtitle')}
+                    </p>
+                    <p className="text-sm md:text-base text-gray-700 font-display leading-relaxed">
+                      {t7vsWild('description')}
+                    </p>
+                    
+                    {/* SEO Keywords (visually hidden but readable by search engines) */}
+                    <div className="sr-only" aria-hidden="true">
+                      {t7vsWild('keywords')}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.section>
+        )}
 
         {/* Features Section */}
         <section id="features" className="py-20 overflow-hidden">
@@ -546,7 +596,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
             </motion.h2>
             <div className="max-w-4xl mx-auto">
               <div className="space-y-8">
-                {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+                {[1, 2, 3, 4, 5, 6, 7, ...(locale === 'de' ? [8] : [])].map((num) => (
                   <motion.div 
                     key={num}
                     className="bg-gray-50 p-6 rounded-lg shadow"
