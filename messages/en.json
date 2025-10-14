@@ -8,7 +8,8 @@
     "terms": "Terms of Use",
     "features": "Features",
     "faq": "FAQ",
-    "download": "Download"
+    "download": "Download",
+    "partner": "Become a Partner"
   },
   "Meta": {
     "title": "Free AI Wildlife Identification & Nature Exploration App | Wildscope",
@@ -26,6 +27,25 @@
     "feature_4": "Survival Skills & Guides",
     "feature_5": "Weather & Safety Alerts",
     "feature_6": "Interactive Learning & Community"
+  },
+  "Partners": {
+    "title": "Wildscope Seeks Partners",
+    "subtitle": "Wildscope offers the possibility to display custom, handcrafted information about special locations directly in the app. This is particularly suitable for national parks, wildlife parks, nature reserves, and similar institutions that want to provide their visitors with a unique digital nature experience.",
+    "description": "Visitors automatically receive this information when they are nearby – without any additional effort, directly on their smartphone.",
+    "features_title": "What we offer partners:",
+    "feature1": "Background Information & History",
+    "feature2": "Statistical Data & Facts",
+    "feature3": "Points of Interest with Coordinates",
+    "feature4": "Interactive Tours & Routes",
+    "feature5": "Multilingual Support",
+    "feature6": "Custom Quizzes & Learning Modules",
+    "feature7": "Contact Information & Services",
+    "feature8": "Ticket Links & Discount Codes",
+    "implemented_title": "Already implemented locations by Wildscope:",
+    "implemented_locations": "Grand Canyon National Park, Zugspitze, Eifel National Park, Black Forest and many more",
+    "cta_title": "Interested?",
+    "cta_button": "Contact us now",
+    "cta_description": "Get in touch and learn more about partnership opportunities"
   },
   "About": {
     "title": "Your Complete Wildlife Identification & Nature Guide",

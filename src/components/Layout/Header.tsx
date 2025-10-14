@@ -71,6 +71,9 @@ export default function Header() {
             <Link href={`/${locale}/#features`} className="text-gray-600 hover:text-emerald-600 transition-colors">
               {t('features')}
             </Link>
+            <Link href={`/${locale}/#partner`} className="text-gray-600 hover:text-emerald-600 transition-colors">
+              {t('partner')}
+            </Link>
             <Link href={`/${locale}/#faq`} className="text-gray-600 hover:text-emerald-600 transition-colors">
               {t('faq')}
             </Link>

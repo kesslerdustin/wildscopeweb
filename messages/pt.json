@@ -5,7 +5,11 @@
     "privacy": "Política de Privacidade",
     "contact": "Contato",
     "language": "Idioma",
-    "terms": "Termos de Uso"
+    "terms": "Termos de Uso",
+    "features": "Recursos",
+    "faq": "FAQ",
+    "download": "Baixar",
+    "partner": "Tornar-se Parceiro"
   },
   "Meta": {
     "title": "App Gratuito de Identificação de Vida Selvagem com IA | Wildscope",
@@ -25,6 +29,25 @@
     "download_subtext": "Junte-se a milhares de Entusiastas da Natureza",
     "cta": "Inicie Sua Aventura Selvagem Agora",
     "cta_subtext": "Junte-se a Milhares de Entusiastas da Natureza - Download Gratuito"
+  },
+  "Partners": {
+    "title": "Wildscope Busca Parceiros",
+    "subtitle": "Wildscope oferece a possibilidade de exibir informações personalizadas sobre lugares especiais diretamente no aplicativo. Isto é particularmente adequado para parques nacionais, parques de vida selvagem, reservas naturais e instituições similares que desejam oferecer aos seus visitantes uma experiência natural digital única.",
+    "description": "Os visitantes recebem automaticamente essas informações quando estão próximos - sem nenhum esforço adicional, diretamente em seu smartphone.",
+    "features_title": "O que oferecemos aos parceiros:",
+    "feature1": "Informações de Contexto e História",
+    "feature2": "Dados Estatísticos e Fatos",
+    "feature3": "Pontos de Interesse com Coordenadas",
+    "feature4": "Tours e Rotas Interativas",
+    "feature5": "Suporte Multilíngue",
+    "feature6": "Questionários e Módulos de Aprendizagem Personalizados",
+    "feature7": "Informações de Contato e Serviços",
+    "feature8": "Links de Ingressos e Códigos de Desconto",
+    "implemented_title": "Locais já implementados pelo Wildscope:",
+    "implemented_locations": "Zugspitze, Parque Nacional de Eifel, Floresta Negra e muitos mais",
+    "cta_title": "Interessado?",
+    "cta_button": "Entre em contato agora",
+    "cta_description": "Entre em contato e saiba mais sobre oportunidades de parceria"
   },
   "About": {
     "title": "Transforme Sua Experiência na Natureza com Monitoramento de Vida Selvagem por IA",

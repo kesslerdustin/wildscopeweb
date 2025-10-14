@@ -8,7 +8,8 @@
     "terms": "Nutzungsbedingungen",
     "features": "Funktionen",
     "faq": "FAQ",
-    "download": "Download"
+    "download": "Download",
+    "partner": "Partner werden"
   },
   "Meta": {
     "title": "7 vs Wild App - Wildscope | KI-gestützte Wildtier-Erkennung & Survival-App",
@@ -32,6 +33,26 @@
     "subtitle": "Das 7 vs Wild Team war von der Idee von Wildscope begeistert und wollte das Projekt unterstützen. Deshalb wird eine komplette Episode der 5. Staffel - 7 vs. Wild Amazonas - offiziell von Wildscope präsentiert.",
     "description": "7 vs. Wild ist eine der erfolgreichsten deutschen Survival-Serien auf YouTube, in der Teilnehmer unter extremen Bedingungen im Amazonas-Regenwald überleben müssen. Die Wildscope App bietet genau die Werkzeuge, die Outdoor-Enthusiasten und Survival-Fans brauchen: Pflanzenbestimmung, Tieridentifikation, Offline-Navigation und Survival-Anleitungen - perfekt für jedes Abenteuer in der Wildnis.",
     "keywords": "7 vs Wild App, 7 versus Wild, 7 vs. Wild Staffel 5, 7 vs Wild Amazonas, 7 vs Wild Season 5, Fritz Meinecke, Survival App Deutschland, Outdoor App, Wildnis Überlebens App, Bushcraft App, Natur App, Pflanzen bestimmen, Tiere erkennen"
+  },
+  "Partners": {
+    "title": "Wildscope sucht Partner",
+    "subtitle": "Wildscope bietet die Möglichkeit, handgefertigte Informationen zu besonderen Orten direkt in der App anzuzeigen. Dies eignet sich besonders für Nationalparks, Tierparks, Naturschutzgebiete und ähnliche Einrichtungen, die ihren Besuchern ein einzigartiges, digitales Naturerlebnis bieten möchten.",
+    "description": "Besucher erhalten diese Informationen automatisch eingeblendet, sobald sie sich in der Nähe befinden – ohne zusätzlichen Aufwand und direkt auf ihrem Smartphone.",
+    "features_title": "Was wir für Partner anbieten:",
+    "feature1": "Hintergrundinformationen & Geschichte",
+    "feature2": "Statistische Daten & Fakten",
+    "feature3": "Interessante Orte mit Koordinaten",
+    "feature4": "Interaktive Touren & Routen",
+    "feature5": "Mehrsprachiger Support",
+    "feature6": "Eigene Quizze & Lernmodule",
+    "feature7": "Kontaktinformationen & Services",
+    "feature8": "Ticket-Links & Ermäßigungscodes",
+    "implemented_title": "Bereits implementierte Orte durch Wildscope:",
+    "implemented_locations": "Zugspitze, Naturpark Eifel, Schwarzwald und viele mehr",
+    "cta_title": "Interesse?",
+    "cta_button": "Jetzt Kontakt aufnehmen",
+    "cta_description": "Kontaktieren Sie uns und erfahren Sie mehr über die Partnerschaftsmöglichkeiten",
+    "keywords": "Wildscope Partner, Nationalpark App, Tierpark digitale Lösung, Naturschutzgebiet App, digitaler Naturführer, Besucherinformationssystem, Location-based Services, Tourismus App, Naturpark digitalisierung, interaktive Naturführung, GPS-basierte Informationen, Besuchererlebnis App, Outdoor Education Partner, Naturerlebnis App, Wanderweg App, Naturtourismus digital"
   },
   "About": {
     "title": "Dein kompletter Wildtier-Erkennungs- & Naturführer",

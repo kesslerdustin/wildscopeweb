@@ -5,7 +5,11 @@
     "privacy": "Politique de confidentialité",
     "contact": "Contact",
     "language": "Langue",
-    "terms": "Conditions d'utilisation"
+    "terms": "Conditions d'utilisation",
+    "features": "Fonctionnalités",
+    "faq": "FAQ",
+    "download": "Télécharger",
+    "partner": "Devenir Partenaire"
   },
   "Meta": {
     "title": "Application Gratuite d'Identification de la Faune avec IA | Wildscope",
@@ -23,6 +27,25 @@
     "feature_4": "Techniques de Survie et Guides",
     "feature_5": "Alertes Météo et Sécurité",
     "feature_6": "Apprentissage Interactif et Communauté"
+  },
+  "Partners": {
+    "title": "Wildscope Recherche des Partenaires",
+    "subtitle": "Wildscope offre la possibilité d'afficher des informations personnalisées sur des lieux spéciaux directement dans l'application. Ceci est particulièrement adapté aux parcs nationaux, parcs animaliers, réserves naturelles et institutions similaires souhaitant offrir à leurs visiteurs une expérience naturelle numérique unique.",
+    "description": "Les visiteurs reçoivent automatiquement ces informations lorsqu'ils se trouvent à proximité - sans effort supplémentaire, directement sur leur smartphone.",
+    "features_title": "Ce que nous offrons aux partenaires:",
+    "feature1": "Informations Contextuelles et Histoire",
+    "feature2": "Données Statistiques et Faits",
+    "feature3": "Points d'Intérêt avec Coordonnées",
+    "feature4": "Circuits et Parcours Interactifs",
+    "feature5": "Support Multilingue",
+    "feature6": "Quiz et Modules d'Apprentissage Personnalisés",
+    "feature7": "Informations de Contact et Services",
+    "feature8": "Liens de Billetterie et Codes de Réduction",
+    "implemented_title": "Lieux déjà implémentés par Wildscope:",
+    "implemented_locations": "Corse, Zugspitze, Parc National de l'Eifel, Forêt-Noire et bien plus encore",
+    "cta_title": "Intéressé?",
+    "cta_button": "Contactez-nous maintenant",
+    "cta_description": "Prenez contact et découvrez les opportunités de partenariat"
   },
   "About": {
     "title": "Votre Guide Complet d'Identification de la Faune et de la Nature",

@@ -5,7 +5,11 @@
     "privacy": "Privacy",
     "contact": "Contatti",
     "language": "Lingua",
-    "terms": "Termini di utilizzo"
+    "terms": "Termini di utilizzo",
+    "features": "Funzionalità",
+    "faq": "FAQ",
+    "download": "Scarica",
+    "partner": "Diventa Partner"
   },
   "Meta": {
     "title": "App Gratuita di Identificazione della Fauna con IA | Wildscope",
@@ -23,6 +27,25 @@
     "feature_4": "Tecniche di Sopravvivenza e Guide",
     "feature_5": "Allerte Meteo e Sicurezza",
     "feature_6": "Apprendimento Interattivo e Comunità"
+  },
+  "Partners": {
+    "title": "Wildscope Cerca Partner",
+    "subtitle": "Wildscope offre la possibilità di visualizzare informazioni personalizzate su luoghi speciali direttamente nell'app. Questo è particolarmente adatto per parchi nazionali, parchi faunistici, riserve naturali e istituzioni simili che desiderano offrire ai loro visitatori un'esperienza naturale digitale unica.",
+    "description": "I visitatori ricevono automaticamente queste informazioni quando si trovano nelle vicinanze - senza alcuno sforzo aggiuntivo, direttamente sul loro smartphone.",
+    "features_title": "Cosa offriamo ai partner:",
+    "feature1": "Informazioni di Contesto e Storia",
+    "feature2": "Dati Statistici e Fatti",
+    "feature3": "Punti di Interesse con Coordinate",
+    "feature4": "Tour e Percorsi Interattivi",
+    "feature5": "Supporto Multilingue",
+    "feature6": "Quiz e Moduli di Apprendimento Personalizzati",
+    "feature7": "Informazioni di Contatto e Servizi",
+    "feature8": "Link ai Biglietti e Codici Sconto",
+    "implemented_title": "Luoghi già implementati da Wildscope:",
+    "implemented_locations": "Sardegna, Zugspitze, Parco Nazionale dell'Eifel, Foresta Nera e molti altri",
+    "cta_title": "Interessato?",
+    "cta_button": "Contattaci ora",
+    "cta_description": "Mettiti in contatto e scopri le opportunità di partnership"
   },
   "About": {
     "title": "La Tua Guida Completa all'Identificazione della Fauna e della Natura",

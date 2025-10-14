@@ -24,7 +24,15 @@ import {
   Gamepad2,
   Cloud,
   WifiOff,
-  Check
+  Check,
+  MapPin,
+  Globe,
+  HelpCircle,
+  Mail,
+  Ticket,
+  Info,
+  BarChart3,
+  Route
 } from 'lucide-react';
 import { 
   ArticleJsonLd, 
@@ -51,6 +59,7 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
   const tFaq = useTranslations('FAQ');
   const tCta = useTranslations('CallToAction');
   const t7vsWild = useTranslations('SevenVsWild');
+  const tPartners = useTranslations('Partners');
   
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -403,6 +412,203 @@ export default function WildscopeHome({ locale }: WildscopeHomeProps) {
             </div>
           </div>
         </section>
+
+        {/* Partners Section */}
+        <motion.section 
+          id="partner"
+          className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-green-50 overflow-hidden"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeIn}
+        >
+            <div className="container mx-auto px-4 sm:px-8 lg:px-12">
+              <div className="max-w-6xl mx-auto">
+                {/* Header */}
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-emerald-900 font-display tracking-tight">
+                    {tPartners('title')}
+                  </h2>
+                  <p className="text-lg md:text-xl text-gray-700 mb-3 font-display font-medium max-w-4xl mx-auto leading-relaxed">
+                    {tPartners('subtitle')}
+                  </p>
+                  <p className="text-base md:text-lg text-gray-600 font-display max-w-3xl mx-auto">
+                    {tPartners('description')}
+                  </p>
+                </div>
+
+                {/* Features Grid */}
+                <div className="mb-12">
+                  <h3 className="text-2xl font-bold mb-8 text-center text-emerald-800 font-display tracking-tight">
+                    {tPartners('features_title')}
+                  </h3>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {/* Feature 1 */}
+                    <motion.div 
+                      className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-200"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.1 }}
+                    >
+                      <div className="flex flex-col items-center text-center">
+                        <div className="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+                          <Info className="w-7 h-7 text-emerald-600" />
+                        </div>
+                        <p className="text-gray-800 font-display font-semibold">{tPartners('feature1')}</p>
+                      </div>
+                    </motion.div>
+
+                    {/* Feature 2 */}
+                    <motion.div 
+                      className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-200"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.2 }}
+                    >
+                      <div className="flex flex-col items-center text-center">
+                        <div className="w-14 h-14 bg-sky-100 rounded-full flex items-center justify-center mb-4">
+                          <BarChart3 className="w-7 h-7 text-sky-600" />
+                        </div>
+                        <p className="text-gray-800 font-display font-semibold">{tPartners('feature2')}</p>
+                      </div>
+                    </motion.div>
+
+                    {/* Feature 3 */}
+                    <motion.div 
+                      className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-200"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3 }}
+                    >
+                      <div className="flex flex-col items-center text-center">
+                        <div className="w-14 h-14 bg-violet-100 rounded-full flex items-center justify-center mb-4">
+                          <MapPin className="w-7 h-7 text-violet-600" />
+                        </div>
+                        <p className="text-gray-800 font-display font-semibold">{tPartners('feature3')}</p>
+                      </div>
+                    </motion.div>
+
+                    {/* Feature 4 */}
+                    <motion.div 
+                      className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-200"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.4 }}
+                    >
+                      <div className="flex flex-col items-center text-center">
+                        <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+                          <Route className="w-7 h-7 text-amber-600" />
+                        </div>
+                        <p className="text-gray-800 font-display font-semibold">{tPartners('feature4')}</p>
+                      </div>
+                    </motion.div>
+
+                    {/* Feature 5 */}
+                    <motion.div 
+                      className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-200"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.5 }}
+                    >
+                      <div className="flex flex-col items-center text-center">
+                        <div className="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center mb-4">
+                          <Globe className="w-7 h-7 text-rose-600" />
+                        </div>
+                        <p className="text-gray-800 font-display font-semibold">{tPartners('feature5')}</p>
+                      </div>
+                    </motion.div>
+
+                    {/* Feature 6 */}
+                    <motion.div 
+                      className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-200"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.6 }}
+                    >
+                      <div className="flex flex-col items-center text-center">
+                        <div className="w-14 h-14 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                          <HelpCircle className="w-7 h-7 text-teal-600" />
+                        </div>
+                        <p className="text-gray-800 font-display font-semibold">{tPartners('feature6')}</p>
+                      </div>
+                    </motion.div>
+
+                    {/* Feature 7 */}
+                    <motion.div 
+                      className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-200"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.7 }}
+                    >
+                      <div className="flex flex-col items-center text-center">
+                        <div className="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                          <Mail className="w-7 h-7 text-indigo-600" />
+                        </div>
+                        <p className="text-gray-800 font-display font-semibold">{tPartners('feature7')}</p>
+                      </div>
+                    </motion.div>
+
+                    {/* Feature 8 */}
+                    <motion.div 
+                      className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-200"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.8 }}
+                    >
+                      <div className="flex flex-col items-center text-center">
+                        <div className="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                          <Ticket className="w-7 h-7 text-orange-600" />
+                        </div>
+                        <p className="text-gray-800 font-display font-semibold">{tPartners('feature8')}</p>
+                      </div>
+                    </motion.div>
+                  </div>
+                </div>
+
+                {/* Implemented Locations */}
+                <div className="bg-white/70 backdrop-blur-sm p-6 rounded-xl mb-10 border-2 border-emerald-100">
+                  <h4 className="text-lg font-bold mb-3 text-emerald-800 font-display text-center">
+                    {tPartners('implemented_title')}
+                  </h4>
+                  <p className="text-gray-700 font-display font-medium text-center text-lg">
+                    {tPartners('implemented_locations')}
+                  </p>
+                </div>
+
+                {/* CTA */}
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold mb-4 text-emerald-900 font-display">
+                    {tPartners('cta_title')}
+                  </h3>
+                  <p className="text-gray-700 mb-6 font-display font-medium text-lg">
+                    {tPartners('cta_description')}
+                  </p>
+                  <motion.a
+                    href="mailto:info@wildscope.app?subject=Partnerschaft"
+                    className="inline-flex items-center gap-3 bg-emerald-600 text-white font-display font-bold py-4 px-8 rounded-lg hover:bg-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Mail className="w-5 h-5" />
+                    {tPartners('cta_button')}
+                  </motion.a>
+                </div>
+
+                {/* SEO Keywords (visually hidden but readable by search engines) */}
+                <div className="sr-only" aria-hidden="true">
+                  {tPartners('keywords')}
+                </div>
+              </div>
+            </div>
+        </motion.section>
 
         {/* About Section */}
         <motion.section 

@@ -5,7 +5,11 @@
     "privacy": "Política de Privacidad",
     "contact": "Contacto",
     "language": "Idioma",
-    "terms": "Términos de Uso"
+    "terms": "Términos de Uso",
+    "features": "Funciones",
+    "faq": "FAQ",
+    "download": "Descargar",
+    "partner": "Ser Socio"
   },
   "Meta": {
     "title": "App Gratuita de Identificación de Fauna con IA | Wildscope",
@@ -25,6 +29,25 @@
     "download_subtext": "Únete a miles de Entusiastas de la Naturaleza",
     "cta": "Inicia Tu Aventura Salvaje Ahora",
     "cta_subtext": "Únete a Miles de Entusiastas de la Naturaleza - Descarga Gratuita"
+  },
+  "Partners": {
+    "title": "Wildscope Busca Socios",
+    "subtitle": "Wildscope ofrece la posibilidad de mostrar información personalizada sobre lugares especiales directamente en la aplicación. Esto es especialmente adecuado para parques nacionales, parques de fauna, reservas naturales e instituciones similares que desean ofrecer a sus visitantes una experiencia natural digital única.",
+    "description": "Los visitantes reciben esta información automáticamente cuando se encuentran cerca, sin ningún esfuerzo adicional y directamente en su smartphone.",
+    "features_title": "Lo que ofrecemos a los socios:",
+    "feature1": "Información de Fondo e Historia",
+    "feature2": "Datos Estadísticos y Hechos",
+    "feature3": "Puntos de Interés con Coordenadas",
+    "feature4": "Rutas y Tours Interactivos",
+    "feature5": "Soporte Multilingüe",
+    "feature6": "Cuestionarios y Módulos de Aprendizaje Personalizados",
+    "feature7": "Información de Contacto y Servicios",
+    "feature8": "Enlaces de Entradas y Códigos de Descuento",
+    "implemented_title": "Lugares ya implementados por Wildscope:",
+    "implemented_locations": "Zugspitze, Parque Nacional Eifel, Selva Negra y muchos más",
+    "cta_title": "¿Interesado?",
+    "cta_button": "Contáctanos ahora",
+    "cta_description": "Ponte en contacto y conoce más sobre las oportunidades de asociación"
   },
   "About": {
     "title": "Transforma Tu Experiencia Natural con Seguimiento de Fauna por IA",
