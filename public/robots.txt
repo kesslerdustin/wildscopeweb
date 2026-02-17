@@ -1,4 +1,5 @@
 # Block OpenAI crawler to prevent aggressive media crawling/storage spikes
+# Re-confirmed and re-committed: 2026-02-17
 User-agent: GPTBot
 Disallow: /
 
