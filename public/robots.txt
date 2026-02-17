@@ -1,4 +1,8 @@
-# Allow all web crawlers
+# Block OpenAI crawler to prevent aggressive media crawling/storage spikes
+User-agent: GPTBot
+Disallow: /
+
+# Allow all other web crawlers
 User-agent: *
 Allow: /
 
@@ -12,4 +16,4 @@ Sitemap: https://www.wildscope.app/image-sitemap.xml
 Sitemap: https://www.wildscope.app/news-sitemap.xml
 
 # Crawl Delay to avoid overloading the server
-Crawl-delay: 5 
+Crawl-delay: 5
